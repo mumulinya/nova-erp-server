@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.controller.admin.logger.vo.operatelog;
 
-import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.framework.excel.core.annotations.DictFormat;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
 import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
 import cn.idev.excel.annotation.ExcelProperty;
-import cn.iocoder.yudao.module.system.enums.DictTypeConstants;
+import cn.nova.erp.module.system.enums.DictTypeConstants;
 import com.fhs.core.trans.anno.Trans;
 import com.fhs.core.trans.constant.TransType;
 import com.fhs.core.trans.vo.VO;

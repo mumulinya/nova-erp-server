@@ -5,18 +5,18 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RolePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.RoleMapper;
-import cn.iocoder.yudao.module.system.dal.redis.RedisKeyConstants;
-import cn.iocoder.yudao.module.system.enums.permission.DataScopeEnum;
-import cn.iocoder.yudao.module.system.enums.permission.RoleCodeEnum;
-import cn.iocoder.yudao.module.system.enums.permission.RoleTypeEnum;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.permission.vo.role.RolePageReqVO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.role.RoleSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.permission.RoleDO;
+import cn.nova.erp.module.system.dal.mysql.permission.RoleMapper;
+import cn.nova.erp.module.system.dal.redis.RedisKeyConstants;
+import cn.nova.erp.module.system.enums.permission.DataScopeEnum;
+import cn.nova.erp.module.system.enums.permission.RoleCodeEnum;
+import cn.nova.erp.module.system.enums.permission.RoleTypeEnum;
 import com.google.common.annotations.VisibleForTesting;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.service.impl.DiffParseFunction;
@@ -31,10 +31,10 @@ import org.springframework.util.StringUtils;
 
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
-import static cn.iocoder.yudao.module.system.enums.LogRecordConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.module.system.enums.LogRecordConstants.*;
 
 /**
  * 角色 Service 实现类

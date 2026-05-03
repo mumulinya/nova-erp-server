@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.dal.dataobject.purchase;
 
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.finance.ErpAccountDO;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.module.erp.dal.dataobject.finance.ErpAccountDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -37,7 +37,7 @@ public class ErpPurchaseOrderDO extends BaseDO {
     /**
      * 采购状态
      *
-     * 枚举 {@link cn.iocoder.yudao.module.erp.enums.ErpAuditStatus}
+     * 枚举 {@link cn.nova.erp.module.erp.enums.ErpAuditStatus}
      */
     private Integer status;
     /**

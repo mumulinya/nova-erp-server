@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.framework.sms.core.property;
 
-import cn.iocoder.yudao.module.system.framework.sms.core.enums.SmsChannelEnum;
+import cn.nova.erp.module.system.framework.sms.core.enums.SmsChannelEnum;
 import lombok.Data;
 import org.springframework.validation.annotation.Validated;
 

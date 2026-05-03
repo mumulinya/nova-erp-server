@@ -2,16 +2,16 @@ package cn.nova.erp.module.infra.service.demo.demo03.inner;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjectUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.inner.vo.Demo03StudentInnerPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.inner.vo.Demo03StudentInnerSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo03.inner.Demo03CourseInnerMapper;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo03.inner.Demo03GradeInnerMapper;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo03.inner.Demo03StudentInnerMapper;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.demo.demo03.inner.vo.Demo03StudentInnerPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.demo.demo03.inner.vo.Demo03StudentInnerSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo03.inner.Demo03CourseInnerMapper;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo03.inner.Demo03GradeInnerMapper;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo03.inner.Demo03StudentInnerMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,10 +19,10 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.diffList;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.DEMO03_STUDENT_NOT_EXISTS;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.diffList;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.DEMO03_STUDENT_NOT_EXISTS;
 
 /**
  * 学生 Service 实现类

@@ -1,20 +1,20 @@
 package cn.nova.erp.module.infra.service.demo.demo01;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo01.vo.Demo01ContactPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo01.vo.Demo01ContactSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo01.Demo01ContactDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo01.Demo01ContactMapper;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.demo.demo01.vo.Demo01ContactPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.demo.demo01.vo.Demo01ContactSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo01.Demo01ContactDO;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo01.Demo01ContactMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.DEMO01_CONTACT_NOT_EXISTS;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.DEMO01_CONTACT_NOT_EXISTS;
 
 /**
  * 示例联系人 Service 实现类

@@ -2,18 +2,18 @@ package cn.nova.erp.module.infra.service.file;
 
 import cn.hutool.core.io.resource.ResourceUtil;
 import cn.hutool.core.util.IdUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
-import cn.iocoder.yudao.framework.common.util.validation.ValidationUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.config.FileConfigPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
-import cn.iocoder.yudao.module.infra.convert.file.FileConfigConvert;
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileConfigDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.file.FileConfigMapper;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientFactory;
-import cn.iocoder.yudao.module.infra.framework.file.core.enums.FileStorageEnum;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.nova.erp.framework.common.util.validation.ValidationUtils;
+import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
+import cn.nova.erp.module.infra.convert.file.FileConfigConvert;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileConfigDO;
+import cn.nova.erp.module.infra.dal.mysql.file.FileConfigMapper;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClientFactory;
+import cn.nova.erp.module.infra.framework.file.core.enums.FileStorageEnum;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import jakarta.annotation.Resource;
@@ -29,10 +29,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.cache.CacheUtils.buildAsyncReloadingCache;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.FILE_CONFIG_DELETE_FAIL_MASTER;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.FILE_CONFIG_NOT_EXISTS;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.cache.CacheUtils.buildAsyncReloadingCache;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.FILE_CONFIG_DELETE_FAIL_MASTER;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.FILE_CONFIG_NOT_EXISTS;
 
 /**
  * 文件配置 Service 实现类

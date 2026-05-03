@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.mq.consumer.sms;
 
-import cn.iocoder.yudao.module.system.mq.message.sms.SmsSendMessage;
-import cn.iocoder.yudao.module.system.service.sms.SmsSendService;
+import cn.nova.erp.module.system.mq.message.sms.SmsSendMessage;
+import cn.nova.erp.module.system.service.sms.SmsSendService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;

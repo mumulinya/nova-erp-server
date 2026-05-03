@@ -1,16 +1,16 @@
 package cn.nova.erp.module.system.controller.admin.socail;
 
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.user.SocialUserBindReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.user.SocialUserRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.user.SocialUserUnbindReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.social.SocialUserDO;
-import cn.iocoder.yudao.module.system.service.social.SocialUserService;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.user.SocialUserBindReqVO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.user.SocialUserRespVO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.user.SocialUserUnbindReqVO;
+import cn.nova.erp.module.system.dal.dataobject.social.SocialUserDO;
+import cn.nova.erp.module.system.service.social.SocialUserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -22,9 +22,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 
 @Tag(name = "管理后台 - 社交用户")
 @RestController

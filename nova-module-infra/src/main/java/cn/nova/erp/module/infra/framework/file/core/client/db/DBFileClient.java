@@ -2,9 +2,9 @@ package cn.nova.erp.module.infra.framework.file.core.client.db;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileContentDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.file.FileContentMapper;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.AbstractFileClient;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileContentDO;
+import cn.nova.erp.module.infra.dal.mysql.file.FileContentMapper;
+import cn.nova.erp.module.infra.framework.file.core.client.AbstractFileClient;
 
 import java.util.Comparator;
 import java.util.List;

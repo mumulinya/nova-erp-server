@@ -1,16 +1,16 @@
 package cn.nova.erp.module.infra.dal.dataobject.file;
 
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.db.DBFileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.ftp.FtpFileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.local.LocalFileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.s3.S3FileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.sftp.SftpFileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.enums.FileStorageEnum;
+import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.db.DBFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.ftp.FtpFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.local.LocalFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.s3.S3FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.sftp.SftpFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.enums.FileStorageEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

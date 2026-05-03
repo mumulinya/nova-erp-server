@@ -1,12 +1,12 @@
 package cn.nova.erp.module.infra.service.demo.demo03.erp;
 
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
+import cn.nova.erp.framework.common.pojo.PageParam;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
 import jakarta.validation.Valid;
 
 import java.util.List;

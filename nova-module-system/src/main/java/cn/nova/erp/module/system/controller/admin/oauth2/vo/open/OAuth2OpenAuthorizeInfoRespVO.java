@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.controller.admin.oauth2.vo.open;
 
-import cn.iocoder.yudao.framework.common.core.KeyValue;
+import cn.nova.erp.framework.common.core.KeyValue;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;

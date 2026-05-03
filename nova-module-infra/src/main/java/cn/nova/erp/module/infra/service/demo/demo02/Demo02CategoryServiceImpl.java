@@ -1,10 +1,10 @@
 package cn.nova.erp.module.infra.service.demo.demo02;
 
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo02.vo.Demo02CategoryListReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo02.vo.Demo02CategorySaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo02.Demo02CategoryDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo02.Demo02CategoryMapper;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.demo.demo02.vo.Demo02CategoryListReqVO;
+import cn.nova.erp.module.infra.controller.admin.demo.demo02.vo.Demo02CategorySaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo02.Demo02CategoryDO;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo02.Demo02CategoryMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -12,8 +12,8 @@ import org.springframework.validation.annotation.Validated;
 import java.util.List;
 import java.util.Objects;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**
  * 示例分类 Service 实现类

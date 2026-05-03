@@ -1,11 +1,11 @@
 package cn.nova.erp.module.system.controller.app.dict;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.app.dict.vo.AppDictDataRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictDataDO;
-import cn.iocoder.yudao.module.system.service.dict.DictDataService;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.app.dict.vo.AppDictDataRespVO;
+import cn.nova.erp.module.system.dal.dataobject.dict.DictDataDO;
+import cn.nova.erp.module.system.service.dict.DictDataService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.annotation.Resource;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "用户 App - 字典数据")
 @RestController

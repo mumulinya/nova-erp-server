@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.service.statistics;
 
-import cn.iocoder.yudao.module.erp.dal.mysql.statistics.ErpPurchaseStatisticsMapper;
+import cn.nova.erp.module.erp.dal.mysql.statistics.ErpPurchaseStatisticsMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 

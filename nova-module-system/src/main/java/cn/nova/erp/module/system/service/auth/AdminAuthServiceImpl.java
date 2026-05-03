@@ -1,31 +1,31 @@
 package cn.nova.erp.module.system.service.auth;
 
 import cn.hutool.core.util.ObjectUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.util.monitor.TracerUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.common.util.servlet.ServletUtils;
-import cn.iocoder.yudao.framework.common.util.validation.ValidationUtils;
-import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
-import cn.iocoder.yudao.module.system.api.logger.dto.LoginLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.SmsCodeApi;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserRespDTO;
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.*;
-import cn.iocoder.yudao.module.system.convert.auth.AuthConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.enums.logger.LoginLogTypeEnum;
-import cn.iocoder.yudao.module.system.enums.logger.LoginResultEnum;
-import cn.iocoder.yudao.module.system.enums.oauth2.OAuth2ClientConstants;
-import cn.iocoder.yudao.module.system.enums.sms.SmsSceneEnum;
-import cn.iocoder.yudao.module.system.service.logger.LoginLogService;
-import cn.iocoder.yudao.module.system.service.member.MemberService;
-import cn.iocoder.yudao.module.system.service.oauth2.OAuth2TokenService;
-import cn.iocoder.yudao.module.system.service.social.SocialUserService;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.framework.common.util.monitor.TracerUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.common.util.servlet.ServletUtils;
+import cn.nova.erp.framework.common.util.validation.ValidationUtils;
+import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
+import cn.nova.erp.module.system.api.logger.dto.LoginLogCreateReqDTO;
+import cn.nova.erp.module.system.api.sms.SmsCodeApi;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
+import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
+import cn.nova.erp.module.system.api.social.dto.SocialUserRespDTO;
+import cn.nova.erp.module.system.controller.admin.auth.vo.*;
+import cn.nova.erp.module.system.convert.auth.AuthConvert;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.module.system.enums.logger.LoginLogTypeEnum;
+import cn.nova.erp.module.system.enums.logger.LoginResultEnum;
+import cn.nova.erp.module.system.enums.oauth2.OAuth2ClientConstants;
+import cn.nova.erp.module.system.enums.sms.SmsSceneEnum;
+import cn.nova.erp.module.system.service.logger.LoginLogService;
+import cn.nova.erp.module.system.service.member.MemberService;
+import cn.nova.erp.module.system.service.oauth2.OAuth2TokenService;
+import cn.nova.erp.module.system.service.social.SocialUserService;
+import cn.nova.erp.module.system.service.user.AdminUserService;
 import com.anji.captcha.model.common.ResponseModel;
 import com.anji.captcha.model.vo.CaptchaVO;
 import com.anji.captcha.service.CaptchaService;
@@ -40,9 +40,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Objects;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.servlet.ServletUtils.getClientIP;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.servlet.ServletUtils.getClientIP;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**
  * Auth Service 实现类

@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.framework.sms.core.client.dto;
 
-import cn.iocoder.yudao.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
+import cn.nova.erp.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
 import lombok.Data;
 
 /**

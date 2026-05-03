@@ -1,10 +1,10 @@
 package cn.nova.erp.module.infra.dal.mysql.logger;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.logger.ApiAccessLogDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.nova.erp.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.logger.ApiAccessLogDO;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.framework.file.core.client.s3;
 
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClientConfig;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;

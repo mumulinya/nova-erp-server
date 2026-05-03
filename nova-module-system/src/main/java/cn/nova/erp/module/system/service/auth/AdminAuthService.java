@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.service.auth;
 
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.*;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.module.system.controller.admin.auth.vo.*;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
 
 import jakarta.validation.Valid;
 

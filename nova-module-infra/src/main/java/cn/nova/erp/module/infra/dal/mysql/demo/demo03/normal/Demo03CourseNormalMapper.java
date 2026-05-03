@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.dal.mysql.demo.demo03.normal;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

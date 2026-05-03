@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.controller.admin.permission;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.permission.PermissionAssignRoleDataScopeReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.permission.PermissionAssignRoleMenuReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.permission.PermissionAssignUserRoleReqVO;
-import cn.iocoder.yudao.module.system.service.permission.PermissionService;
-import cn.iocoder.yudao.module.system.service.tenant.TenantService;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.module.system.controller.admin.permission.vo.permission.PermissionAssignRoleDataScopeReqVO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.permission.PermissionAssignRoleMenuReqVO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.permission.PermissionAssignUserRoleReqVO;
+import cn.nova.erp.module.system.service.permission.PermissionService;
+import cn.nova.erp.module.system.service.tenant.TenantService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -18,7 +18,7 @@ import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import java.util.Set;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 /**
  * 权限 Controller，提供赋予用户、角色的权限的 API 接口

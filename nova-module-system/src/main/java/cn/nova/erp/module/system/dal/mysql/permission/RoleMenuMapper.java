@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.dal.mysql.permission;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleMenuDO;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.module.system.dal.dataobject.permission.RoleMenuDO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.apache.ibatis.annotations.Mapper;
 

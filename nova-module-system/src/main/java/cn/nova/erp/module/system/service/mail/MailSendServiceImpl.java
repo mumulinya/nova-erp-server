@@ -3,15 +3,15 @@ package cn.nova.erp.module.system.service.mail;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Validator;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailAccountDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailTemplateDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.mq.message.mail.MailSendMessage;
-import cn.iocoder.yudao.module.system.mq.producer.mail.MailProducer;
-import cn.iocoder.yudao.module.system.service.member.MemberService;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailTemplateDO;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.module.system.mq.message.mail.MailSendMessage;
+import cn.nova.erp.module.system.mq.producer.mail.MailProducer;
+import cn.nova.erp.module.system.service.member.MemberService;
+import cn.nova.erp.module.system.service.user.AdminUserService;
 import com.google.common.annotations.VisibleForTesting;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -25,8 +25,8 @@ import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**
  * 邮箱发送 Service 实现类

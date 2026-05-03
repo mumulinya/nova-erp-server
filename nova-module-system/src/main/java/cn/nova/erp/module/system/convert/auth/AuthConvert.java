@@ -2,27 +2,27 @@ package cn.nova.erp.module.system.convert.auth;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.AuthPermissionInfoRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.AuthSmsLoginReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.AuthSmsSendReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.AuthSocialLoginReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.enums.permission.MenuTypeEnum;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
+import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
+import cn.nova.erp.module.system.controller.admin.auth.vo.AuthPermissionInfoRespVO;
+import cn.nova.erp.module.system.controller.admin.auth.vo.AuthSmsLoginReqVO;
+import cn.nova.erp.module.system.controller.admin.auth.vo.AuthSmsSendReqVO;
+import cn.nova.erp.module.system.controller.admin.auth.vo.AuthSocialLoginReqVO;
+import cn.nova.erp.module.system.dal.dataobject.permission.MenuDO;
+import cn.nova.erp.module.system.dal.dataobject.permission.RoleDO;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.module.system.enums.permission.MenuTypeEnum;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.filterList;
-import static cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO.ID_ROOT;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.filterList;
+import static cn.nova.erp.module.system.dal.dataobject.permission.MenuDO.ID_ROOT;
 
 @Mapper
 public interface AuthConvert {

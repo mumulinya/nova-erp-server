@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.dal.dataobject.notify;
 
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailTemplateDO;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailTemplateDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

@@ -1,11 +1,11 @@
 package cn.nova.erp.module.infra.controller.admin.db;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.db.vo.DataSourceConfigRespVO;
-import cn.iocoder.yudao.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.db.DataSourceConfigDO;
-import cn.iocoder.yudao.module.infra.service.db.DataSourceConfigService;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.db.vo.DataSourceConfigRespVO;
+import cn.nova.erp.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.db.DataSourceConfigDO;
+import cn.nova.erp.module.infra.service.db.DataSourceConfigService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 数据源配置")
 @RestController

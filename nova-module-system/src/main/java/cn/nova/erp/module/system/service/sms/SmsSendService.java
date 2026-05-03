@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.sms;
 
-import cn.iocoder.yudao.module.system.mq.message.sms.SmsSendMessage;
+import cn.nova.erp.module.system.mq.message.sms.SmsSendMessage;
 
 import java.util.List;
 import java.util.Map;

@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.framework.sms.core.client;
 
-import cn.iocoder.yudao.framework.common.core.KeyValue;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
+import cn.nova.erp.framework.common.core.KeyValue;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
 
 import java.util.List;
 

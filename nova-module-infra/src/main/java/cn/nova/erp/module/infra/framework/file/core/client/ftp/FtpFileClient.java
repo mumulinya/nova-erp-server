@@ -7,7 +7,7 @@ import cn.hutool.extra.ftp.Ftp;
 import cn.hutool.extra.ftp.FtpConfig;
 import cn.hutool.extra.ftp.FtpException;
 import cn.hutool.extra.ftp.FtpMode;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.AbstractFileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.AbstractFileClient;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

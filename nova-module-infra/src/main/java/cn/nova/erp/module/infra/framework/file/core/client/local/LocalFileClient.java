@@ -2,7 +2,7 @@ package cn.nova.erp.module.infra.framework.file.core.client.local;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.IORuntimeException;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.AbstractFileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.AbstractFileClient;
 
 import java.io.File;
 

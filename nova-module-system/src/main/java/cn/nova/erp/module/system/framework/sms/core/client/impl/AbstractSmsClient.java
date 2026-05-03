@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.framework.sms.core.client.impl;
 
-import cn.iocoder.yudao.module.system.framework.sms.core.client.SmsClient;
-import cn.iocoder.yudao.module.system.framework.sms.core.property.SmsChannelProperties;
+import cn.nova.erp.module.system.framework.sms.core.client.SmsClient;
+import cn.nova.erp.module.system.framework.sms.core.property.SmsChannelProperties;
 import lombok.extern.slf4j.Slf4j;
 
 /**

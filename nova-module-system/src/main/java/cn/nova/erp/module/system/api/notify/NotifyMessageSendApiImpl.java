@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.api.notify;
 
-import cn.iocoder.yudao.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
-import cn.iocoder.yudao.module.system.service.notify.NotifySendService;
+import cn.nova.erp.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
+import cn.nova.erp.module.system.service.notify.NotifySendService;
 import org.springframework.stereotype.Service;
 
 import jakarta.annotation.Resource;

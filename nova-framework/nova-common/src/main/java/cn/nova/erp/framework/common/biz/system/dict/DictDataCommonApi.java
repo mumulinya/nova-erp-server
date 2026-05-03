@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.biz.system.dict;
 
-import cn.nova.erp.framework.common.biz.system.dict.dto.DictDataRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.dict.dto.DictDataRespDTO;
 
 import java.util.List;
 

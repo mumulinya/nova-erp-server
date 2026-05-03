@@ -1,19 +1,19 @@
 package cn.nova.erp.module.system.service.notice;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticeSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.notice.NoticeDO;
-import cn.iocoder.yudao.module.system.dal.mysql.notice.NoticeMapper;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.notice.vo.NoticePageReqVO;
+import cn.nova.erp.module.system.controller.admin.notice.vo.NoticeSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.notice.NoticeDO;
+import cn.nova.erp.module.system.dal.mysql.notice.NoticeMapper;
 import com.google.common.annotations.VisibleForTesting;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.NOTICE_NOT_FOUND;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.NOTICE_NOT_FOUND;
 
 /**
  * 通知公告 Service 实现类

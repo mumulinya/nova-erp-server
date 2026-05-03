@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.framework.codegen.config;
 
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenFrontTypeEnum;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenVOTypeEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenFrontTypeEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenVOTypeEnum;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;

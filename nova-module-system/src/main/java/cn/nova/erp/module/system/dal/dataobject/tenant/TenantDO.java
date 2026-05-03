@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.dal.dataobject.tenant;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.mybatis.core.type.StringListTypeHandler;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.framework.mybatis.core.type.StringListTypeHandler;
+import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

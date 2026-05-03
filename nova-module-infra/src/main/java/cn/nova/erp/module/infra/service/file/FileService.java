@@ -1,10 +1,10 @@
 package cn.nova.erp.module.infra.service.file;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.FileCreateReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.FilePageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.FilePresignedUrlRespVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.FileCreateReqVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.FilePageReqVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.FilePresignedUrlRespVO;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileDO;
 import jakarta.validation.constraints.NotEmpty;
 
 import java.util.List;

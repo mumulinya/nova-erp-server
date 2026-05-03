@@ -1,13 +1,13 @@
 package cn.nova.erp.module.infra.convert.codegen;
 
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.CodegenDetailRespVO;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.CodegenPreviewRespVO;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.column.CodegenColumnRespVO;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.table.CodegenTableRespVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenColumnDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenTableDO;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenDetailRespVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenPreviewRespVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.column.CodegenColumnRespVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.table.CodegenTableRespVO;
+import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenColumnDO;
+import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenTableDO;
 import com.baomidou.mybatisplus.generator.config.po.TableField;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import org.apache.ibatis.type.JdbcType;

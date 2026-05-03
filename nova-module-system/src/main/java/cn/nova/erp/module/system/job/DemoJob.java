@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.job;
 
-import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
-import cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder;
-import cn.iocoder.yudao.framework.tenant.core.job.TenantJob;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.dal.mysql.user.AdminUserMapper;
+import cn.nova.erp.framework.quartz.core.handler.JobHandler;
+import cn.nova.erp.framework.tenant.core.context.TenantContextHolder;
+import cn.nova.erp.framework.tenant.core.job.TenantJob;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.module.system.dal.mysql.user.AdminUserMapper;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.Resource;

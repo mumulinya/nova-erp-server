@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.convert.tenant;
 
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.TenantSaveReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.user.UserSaveReqVO;
+import cn.nova.erp.module.system.controller.admin.tenant.vo.tenant.TenantSaveReqVO;
+import cn.nova.erp.module.system.controller.admin.user.vo.user.UserSaveReqVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

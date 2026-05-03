@@ -2,8 +2,8 @@ package cn.nova.erp.module.system.framework.operatelog.core;
 
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.PostDO;
-import cn.iocoder.yudao.module.system.service.dept.PostService;
+import cn.nova.erp.module.system.dal.dataobject.dept.PostDO;
+import cn.nova.erp.module.system.service.dept.PostService;
 import com.mzt.logapi.service.IParseFunction;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;

@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.mail;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.account.MailAccountPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.account.MailAccountSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailAccountDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.controller.admin.mail.vo.account.MailAccountPageReqVO;
+import cn.nova.erp.module.system.controller.admin.mail.vo.account.MailAccountSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;
 import jakarta.validation.Valid;
 
 import java.util.List;

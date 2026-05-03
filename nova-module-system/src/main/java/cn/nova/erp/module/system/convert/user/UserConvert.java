@@ -1,18 +1,18 @@
 package cn.nova.erp.module.system.convert.user;
 
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.profile.UserProfileRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.user.UserRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.user.UserSimpleRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.PostDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.framework.common.util.collection.MapUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.dept.vo.dept.DeptSimpleRespVO;
+import cn.nova.erp.module.system.controller.admin.dept.vo.post.PostSimpleRespVO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.role.RoleSimpleRespVO;
+import cn.nova.erp.module.system.controller.admin.user.vo.profile.UserProfileRespVO;
+import cn.nova.erp.module.system.controller.admin.user.vo.user.UserRespVO;
+import cn.nova.erp.module.system.controller.admin.user.vo.user.UserSimpleRespVO;
+import cn.nova.erp.module.system.dal.dataobject.dept.DeptDO;
+import cn.nova.erp.module.system.dal.dataobject.dept.PostDO;
+import cn.nova.erp.module.system.dal.dataobject.permission.RoleDO;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

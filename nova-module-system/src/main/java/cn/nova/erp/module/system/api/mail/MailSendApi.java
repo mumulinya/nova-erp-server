@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.mail;
 
-import cn.iocoder.yudao.module.system.api.mail.dto.MailSendSingleToUserReqDTO;
+import cn.nova.erp.module.system.api.mail.dto.MailSendSingleToUserReqDTO;
 
 import jakarta.validation.Valid;
 

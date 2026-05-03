@@ -1,8 +1,8 @@
 package cn.nova.erp.module.infra.dal.dataobject.logger;
 
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.module.infra.enums.logger.ApiErrorLogProcessStatusEnum;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.module.infra.enums.logger.ApiErrorLogProcessStatusEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -154,7 +154,7 @@ public class ApiErrorLogDO extends BaseDO {
     /**
      * 处理用户编号
      *
-     * 关联 cn.iocoder.yudao.adminserver.modules.system.dal.dataobject.user.SysUserDO.SysUserDO#getId()
+     * 关联 cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO#getId()
      */
     private Long processUserId;
 

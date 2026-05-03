@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.biz.system.permission;
 
-import cn.nova.erp.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
 
 /**
  * 权限 API 接口

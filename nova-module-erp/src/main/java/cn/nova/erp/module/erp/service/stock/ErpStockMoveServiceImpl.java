@@ -1,21 +1,21 @@
 package cn.nova.erp.module.erp.service.stock;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.number.MoneyUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.erp.controller.admin.stock.vo.move.ErpStockMovePageReqVO;
-import cn.iocoder.yudao.module.erp.controller.admin.stock.vo.move.ErpStockMoveSaveReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.product.ErpProductDO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockMoveDO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockMoveItemDO;
-import cn.iocoder.yudao.module.erp.dal.mysql.stock.ErpStockMoveItemMapper;
-import cn.iocoder.yudao.module.erp.dal.mysql.stock.ErpStockMoveMapper;
-import cn.iocoder.yudao.module.erp.dal.redis.no.ErpNoRedisDAO;
-import cn.iocoder.yudao.module.erp.enums.ErpAuditStatus;
-import cn.iocoder.yudao.module.erp.enums.stock.ErpStockRecordBizTypeEnum;
-import cn.iocoder.yudao.module.erp.service.product.ErpProductService;
-import cn.iocoder.yudao.module.erp.service.stock.bo.ErpStockRecordCreateReqBO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.number.MoneyUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.erp.controller.admin.stock.vo.move.ErpStockMovePageReqVO;
+import cn.nova.erp.module.erp.controller.admin.stock.vo.move.ErpStockMoveSaveReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductDO;
+import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockMoveDO;
+import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockMoveItemDO;
+import cn.nova.erp.module.erp.dal.mysql.stock.ErpStockMoveItemMapper;
+import cn.nova.erp.module.erp.dal.mysql.stock.ErpStockMoveMapper;
+import cn.nova.erp.module.erp.dal.redis.no.ErpNoRedisDAO;
+import cn.nova.erp.module.erp.enums.ErpAuditStatus;
+import cn.nova.erp.module.erp.enums.stock.ErpStockRecordBizTypeEnum;
+import cn.nova.erp.module.erp.service.product.ErpProductService;
+import cn.nova.erp.module.erp.service.stock.bo.ErpStockRecordCreateReqBO;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,9 +28,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.*;
-import static cn.iocoder.yudao.module.erp.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.*;
+import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.*;
 
 // TODO 芋艿：记录操作日志
 

@@ -1,14 +1,14 @@
 package cn.nova.erp.module.infra.service.logger;
 
-import cn.iocoder.yudao.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.common.util.string.StrUtils;
-import cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder;
-import cn.iocoder.yudao.framework.tenant.core.util.TenantUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.logger.ApiAccessLogDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.logger.ApiAccessLogMapper;
+import cn.nova.erp.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.common.util.string.StrUtils;
+import cn.nova.erp.framework.tenant.core.context.TenantContextHolder;
+import cn.nova.erp.framework.tenant.core.util.TenantUtils;
+import cn.nova.erp.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.logger.ApiAccessLogDO;
+import cn.nova.erp.module.infra.dal.mysql.logger.ApiAccessLogMapper;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -16,8 +16,8 @@ import org.springframework.validation.annotation.Validated;
 
 import java.time.LocalDateTime;
 
-import static cn.iocoder.yudao.module.infra.dal.dataobject.logger.ApiAccessLogDO.REQUEST_PARAMS_MAX_LENGTH;
-import static cn.iocoder.yudao.module.infra.dal.dataobject.logger.ApiAccessLogDO.RESULT_MSG_MAX_LENGTH;
+import static cn.nova.erp.module.infra.dal.dataobject.logger.ApiAccessLogDO.REQUEST_PARAMS_MAX_LENGTH;
+import static cn.nova.erp.module.infra.dal.dataobject.logger.ApiAccessLogDO.RESULT_MSG_MAX_LENGTH;
 
 /**
  * API 访问日志 Service 实现类

@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.controller.admin.job.vo.job;
 
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
+import cn.nova.erp.framework.common.pojo.PageParam;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

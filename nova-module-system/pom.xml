@@ -37,7 +37,10 @@
             <groupId>cn.iocoder.boot</groupId>
             <artifactId>nova-spring-boot-starter-biz-ip</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-common</artifactId>
+        </dependency>
         <!-- Web 相关 -->
         <dependency>
             <groupId>cn.iocoder.boot</groupId>

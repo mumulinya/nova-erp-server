@@ -1,11 +1,11 @@
 package cn.nova.erp.module.system.service.notify;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessageMyPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.notify.NotifyMessageDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.notify.NotifyTemplateDO;
-import cn.iocoder.yudao.module.system.dal.mysql.notify.NotifyMessageMapper;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.controller.admin.notify.vo.message.NotifyMessageMyPageReqVO;
+import cn.nova.erp.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.notify.NotifyMessageDO;
+import cn.nova.erp.module.system.dal.dataobject.notify.NotifyTemplateDO;
+import cn.nova.erp.module.system.dal.mysql.notify.NotifyMessageMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

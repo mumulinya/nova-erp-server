@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.convert.redis;
 
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.module.infra.controller.admin.redis.vo.RedisMonitorRespVO;
+import cn.nova.erp.module.infra.controller.admin.redis.vo.RedisMonitorRespVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

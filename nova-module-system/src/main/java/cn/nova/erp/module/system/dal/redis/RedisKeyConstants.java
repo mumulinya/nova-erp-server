@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.dal.redis;
 
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 
 /**
  * System Redis Key 枚举类

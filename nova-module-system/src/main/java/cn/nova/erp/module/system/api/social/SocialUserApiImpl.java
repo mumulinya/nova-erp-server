@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.api.social;
 
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserRespDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserUnbindReqDTO;
-import cn.iocoder.yudao.module.system.service.social.SocialUserService;
+import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
+import cn.nova.erp.module.system.api.social.dto.SocialUserRespDTO;
+import cn.nova.erp.module.system.api.social.dto.SocialUserUnbindReqDTO;
+import cn.nova.erp.module.system.service.social.SocialUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

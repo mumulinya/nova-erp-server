@@ -2,8 +2,8 @@ package cn.nova.erp.module.system.api.dept;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.map.MapUtil;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.api.dept.dto.PostRespDTO;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.module.system.api.dept.dto.PostRespDTO;
 
 import java.util.Collection;
 import java.util.List;

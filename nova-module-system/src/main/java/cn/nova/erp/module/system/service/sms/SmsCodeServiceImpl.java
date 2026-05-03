@@ -3,13 +3,13 @@ package cn.nova.erp.module.system.service.sms;
 import cn.hutool.core.date.LocalDateTimeUtil;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.map.MapUtil;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeValidateReqDTO;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsCodeDO;
-import cn.iocoder.yudao.module.system.dal.mysql.sms.SmsCodeMapper;
-import cn.iocoder.yudao.module.system.enums.sms.SmsSceneEnum;
-import cn.iocoder.yudao.module.system.framework.sms.config.SmsCodeProperties;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeValidateReqDTO;
+import cn.nova.erp.module.system.dal.dataobject.sms.SmsCodeDO;
+import cn.nova.erp.module.system.dal.mysql.sms.SmsCodeMapper;
+import cn.nova.erp.module.system.enums.sms.SmsSceneEnum;
+import cn.nova.erp.module.system.framework.sms.config.SmsCodeProperties;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -17,9 +17,9 @@ import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static cn.hutool.core.util.RandomUtil.randomInt;
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.date.DateUtils.isToday;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.date.DateUtils.isToday;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**
  * 短信验证码 Service 实现类

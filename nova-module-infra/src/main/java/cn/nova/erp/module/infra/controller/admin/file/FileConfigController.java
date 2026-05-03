@@ -1,13 +1,13 @@
 package cn.nova.erp.module.infra.controller.admin.file;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.config.FileConfigPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.config.FileConfigRespVO;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileConfigDO;
-import cn.iocoder.yudao.module.infra.service.file.FileConfigService;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigRespVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileConfigDO;
+import cn.nova.erp.module.infra.service.file.FileConfigService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 文件配置")
 @RestController

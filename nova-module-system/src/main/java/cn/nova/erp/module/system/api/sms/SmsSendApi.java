@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.sms;
 
-import cn.iocoder.yudao.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
+import cn.nova.erp.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
 
 import jakarta.validation.Valid;
 

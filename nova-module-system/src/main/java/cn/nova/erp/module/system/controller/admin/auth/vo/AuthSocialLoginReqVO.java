@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.controller.admin.auth.vo;
 
-import cn.iocoder.yudao.framework.common.validation.InEnum;
-import cn.iocoder.yudao.module.system.enums.social.SocialTypeEnum;
+import cn.nova.erp.framework.common.validation.InEnum;
+import cn.nova.erp.module.system.enums.social.SocialTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

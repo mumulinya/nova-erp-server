@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.api.mail;
 
-import cn.iocoder.yudao.module.system.api.mail.dto.MailSendSingleToUserReqDTO;
-import cn.iocoder.yudao.module.system.service.mail.MailSendService;
+import cn.nova.erp.module.system.api.mail.dto.MailSendSingleToUserReqDTO;
+import cn.nova.erp.module.system.service.mail.MailSendService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

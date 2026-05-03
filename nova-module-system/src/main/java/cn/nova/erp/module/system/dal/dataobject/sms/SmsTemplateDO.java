@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.dal.dataobject.sms;
 
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.system.enums.sms.SmsTemplateTypeEnum;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.nova.erp.module.system.enums.sms.SmsTemplateTypeEnum;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

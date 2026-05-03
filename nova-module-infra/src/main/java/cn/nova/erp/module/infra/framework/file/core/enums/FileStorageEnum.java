@@ -1,18 +1,18 @@
 package cn.nova.erp.module.infra.framework.file.core.enums;
 
 import cn.hutool.core.util.ArrayUtil;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.db.DBFileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.db.DBFileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.ftp.FtpFileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.ftp.FtpFileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.local.LocalFileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.local.LocalFileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.s3.S3FileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.s3.S3FileClientConfig;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.sftp.SftpFileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.sftp.SftpFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.db.DBFileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.db.DBFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.ftp.FtpFileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.ftp.FtpFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.local.LocalFileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.local.LocalFileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.s3.S3FileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.s3.S3FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.sftp.SftpFileClient;
+import cn.nova.erp.module.infra.framework.file.core.client.sftp.SftpFileClientConfig;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

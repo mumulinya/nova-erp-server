@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.api.logger;
 
-import cn.iocoder.yudao.module.system.api.logger.dto.LoginLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.service.logger.LoginLogService;
+import cn.nova.erp.module.system.api.logger.dto.LoginLogCreateReqDTO;
+import cn.nova.erp.module.system.service.logger.LoginLogService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

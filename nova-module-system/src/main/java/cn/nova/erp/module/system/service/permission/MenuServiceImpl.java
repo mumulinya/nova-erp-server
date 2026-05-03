@@ -3,15 +3,15 @@ package cn.nova.erp.module.system.service.permission;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper;
-import cn.iocoder.yudao.module.system.dal.redis.RedisKeyConstants;
-import cn.iocoder.yudao.module.system.enums.permission.MenuTypeEnum;
-import cn.iocoder.yudao.module.system.service.tenant.TenantService;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
+import cn.nova.erp.module.system.dal.dataobject.permission.MenuDO;
+import cn.nova.erp.module.system.dal.mysql.permission.MenuMapper;
+import cn.nova.erp.module.system.dal.redis.RedisKeyConstants;
+import cn.nova.erp.module.system.enums.permission.MenuTypeEnum;
+import cn.nova.erp.module.system.service.tenant.TenantService;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
 import jakarta.annotation.Resource;
@@ -24,11 +24,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO.ID_ROOT;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.nova.erp.module.system.dal.dataobject.permission.MenuDO.ID_ROOT;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**
  * 菜单 Service 实现

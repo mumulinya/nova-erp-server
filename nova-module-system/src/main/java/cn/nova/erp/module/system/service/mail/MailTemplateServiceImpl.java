@@ -3,13 +3,13 @@ package cn.nova.erp.module.system.service.mail;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.ReUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.template.MailTemplatePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.template.MailTemplateSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailTemplateDO;
-import cn.iocoder.yudao.module.system.dal.mysql.mail.MailTemplateMapper;
-import cn.iocoder.yudao.module.system.dal.redis.RedisKeyConstants;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.mail.vo.template.MailTemplatePageReqVO;
+import cn.nova.erp.module.system.controller.admin.mail.vo.template.MailTemplateSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailTemplateDO;
+import cn.nova.erp.module.system.dal.mysql.mail.MailTemplateMapper;
+import cn.nova.erp.module.system.dal.redis.RedisKeyConstants;
 import com.google.common.annotations.VisibleForTesting;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
@@ -25,9 +25,9 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.MAIL_TEMPLATE_CODE_EXISTS;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.MAIL_TEMPLATE_NOT_EXISTS;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.MAIL_TEMPLATE_CODE_EXISTS;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.MAIL_TEMPLATE_NOT_EXISTS;
 
 /**
  * 邮箱模版 Service 实现类

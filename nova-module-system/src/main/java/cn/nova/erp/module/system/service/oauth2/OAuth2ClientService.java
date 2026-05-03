@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.oauth2;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 import jakarta.validation.Valid;
 
 import java.util.Collection;

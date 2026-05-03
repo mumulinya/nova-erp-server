@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.dal.mysql.social;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.dal.dataobject.social.SocialUserBindDO;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.nova.erp.module.system.dal.dataobject.social.SocialUserBindDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

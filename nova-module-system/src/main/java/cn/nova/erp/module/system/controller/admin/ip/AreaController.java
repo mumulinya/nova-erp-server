@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.controller.admin.ip;
 
 import cn.hutool.core.lang.Assert;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.ip.core.Area;
-import cn.iocoder.yudao.framework.ip.core.utils.AreaUtils;
-import cn.iocoder.yudao.framework.ip.core.utils.IPUtils;
-import cn.iocoder.yudao.module.system.controller.admin.ip.vo.AreaNodeRespVO;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.ip.core.Area;
+import cn.nova.erp.framework.ip.core.utils.AreaUtils;
+import cn.nova.erp.framework.ip.core.utils.IPUtils;
+import cn.nova.erp.module.system.controller.admin.ip.vo.AreaNodeRespVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 地区")
 @RestController

@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.mq.producer.mail;
 
-import cn.iocoder.yudao.module.system.mq.message.mail.MailSendMessage;
+import cn.nova.erp.module.system.mq.message.mail.MailSendMessage;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;

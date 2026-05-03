@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.enums;
 
-import cn.iocoder.yudao.framework.common.exception.ErrorCode;
+import cn.nova.erp.framework.common.exception.ErrorCode;
 
 /**
  * Infra 错误码枚举类

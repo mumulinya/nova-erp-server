@@ -1,12 +1,12 @@
 package cn.nova.erp.module.infra.service.config;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.infra.controller.admin.config.vo.ConfigPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.config.vo.ConfigSaveReqVO;
-import cn.iocoder.yudao.module.infra.convert.config.ConfigConvert;
-import cn.iocoder.yudao.module.infra.dal.dataobject.config.ConfigDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.config.ConfigMapper;
-import cn.iocoder.yudao.module.infra.enums.config.ConfigTypeEnum;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.infra.controller.admin.config.vo.ConfigPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.config.vo.ConfigSaveReqVO;
+import cn.nova.erp.module.infra.convert.config.ConfigConvert;
+import cn.nova.erp.module.infra.dal.dataobject.config.ConfigDO;
+import cn.nova.erp.module.infra.dal.mysql.config.ConfigMapper;
+import cn.nova.erp.module.infra.enums.config.ConfigTypeEnum;
 import com.google.common.annotations.VisibleForTesting;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -15,8 +15,8 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**
  * 参数配置 Service 实现类

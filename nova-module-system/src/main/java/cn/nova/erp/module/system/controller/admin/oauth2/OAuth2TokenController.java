@@ -1,14 +1,14 @@
 package cn.nova.erp.module.system.controller.admin.oauth2;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import cn.iocoder.yudao.module.system.enums.logger.LoginLogTypeEnum;
-import cn.iocoder.yudao.module.system.service.auth.AdminAuthService;
-import cn.iocoder.yudao.module.system.service.oauth2.OAuth2TokenService;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenRespVO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import cn.nova.erp.module.system.enums.logger.LoginLogTypeEnum;
+import cn.nova.erp.module.system.service.auth.AdminAuthService;
+import cn.nova.erp.module.system.service.oauth2.OAuth2TokenService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - OAuth2.0 令牌")
 @RestController

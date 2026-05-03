@@ -1,10 +1,10 @@
 package cn.nova.erp.module.infra.service.db;
 
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.mybatis.core.util.JdbcUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.db.DataSourceConfigDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.db.DataSourceConfigMapper;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.mybatis.core.util.JdbcUtils;
+import cn.nova.erp.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.db.DataSourceConfigDO;
+import cn.nova.erp.module.infra.dal.mysql.db.DataSourceConfigMapper;
 import com.baomidou.dynamic.datasource.creator.DataSourceProperty;
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties;
 import jakarta.annotation.Resource;
@@ -14,9 +14,9 @@ import org.springframework.validation.annotation.Validated;
 import java.util.List;
 import java.util.Objects;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.DATA_SOURCE_CONFIG_NOT_EXISTS;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.DATA_SOURCE_CONFIG_NOT_OK;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.DATA_SOURCE_CONFIG_NOT_EXISTS;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.DATA_SOURCE_CONFIG_NOT_OK;
 
 /**
  * 数据源配置 Service 实现类

@@ -1,15 +1,15 @@
 package cn.nova.erp.module.system.controller.admin.socail;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.api.social.SocialClientApi;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialWxaSubscribeMessageSendReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.client.SocialClientPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.client.SocialClientRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.client.SocialClientSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.social.SocialClientDO;
-import cn.iocoder.yudao.module.system.service.social.SocialClientService;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.api.social.SocialClientApi;
+import cn.nova.erp.module.system.api.social.dto.SocialWxaSubscribeMessageSendReqDTO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.client.SocialClientPageReqVO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.client.SocialClientRespVO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.client.SocialClientSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.social.SocialClientDO;
+import cn.nova.erp.module.system.service.social.SocialClientService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 社交客户端")
 @RestController

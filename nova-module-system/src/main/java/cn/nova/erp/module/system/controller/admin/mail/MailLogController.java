@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.controller.admin.mail;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.log.MailLogPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.log.MailLogRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailLogDO;
-import cn.iocoder.yudao.module.system.service.mail.MailLogService;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.mail.vo.log.MailLogPageReqVO;
+import cn.nova.erp.module.system.controller.admin.mail.vo.log.MailLogRespVO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailLogDO;
+import cn.nova.erp.module.system.service.mail.MailLogService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 邮件日志")
 @RestController

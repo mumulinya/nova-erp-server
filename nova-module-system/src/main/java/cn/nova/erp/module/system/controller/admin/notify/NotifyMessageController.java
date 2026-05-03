@@ -1,15 +1,15 @@
 package cn.nova.erp.module.system.controller.admin.notify;
 
-import cn.iocoder.yudao.framework.apilog.core.annotation.ApiAccessLog;
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessageMyPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessageRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.notify.NotifyMessageDO;
-import cn.iocoder.yudao.module.system.service.notify.NotifyMessageService;
+import cn.nova.erp.framework.apilog.core.annotation.ApiAccessLog;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.notify.vo.message.NotifyMessageMyPageReqVO;
+import cn.nova.erp.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
+import cn.nova.erp.module.system.controller.admin.notify.vo.message.NotifyMessageRespVO;
+import cn.nova.erp.module.system.dal.dataobject.notify.NotifyMessageDO;
+import cn.nova.erp.module.system.service.notify.NotifyMessageService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -21,8 +21,8 @@ import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 
 @Tag(name = "管理后台 - 我的站内信")
 @RestController

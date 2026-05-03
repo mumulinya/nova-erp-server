@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.framework.file.core.client.local;
 
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClientConfig;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;
 

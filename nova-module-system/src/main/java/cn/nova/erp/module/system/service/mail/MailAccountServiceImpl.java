@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.service.mail;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.account.MailAccountPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.account.MailAccountSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailAccountDO;
-import cn.iocoder.yudao.module.system.dal.mysql.mail.MailAccountMapper;
-import cn.iocoder.yudao.module.system.dal.redis.RedisKeyConstants;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.mail.vo.account.MailAccountPageReqVO;
+import cn.nova.erp.module.system.controller.admin.mail.vo.account.MailAccountSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;
+import cn.nova.erp.module.system.dal.mysql.mail.MailAccountMapper;
+import cn.nova.erp.module.system.dal.redis.RedisKeyConstants;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
@@ -16,9 +16,9 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.MAIL_ACCOUNT_NOT_EXISTS;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.MAIL_ACCOUNT_RELATE_TEMPLATE_EXISTS;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.MAIL_ACCOUNT_NOT_EXISTS;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.MAIL_ACCOUNT_RELATE_TEMPLATE_EXISTS;
 
 /**
  * 邮箱账号 Service 实现类

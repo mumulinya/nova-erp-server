@@ -1,12 +1,12 @@
 package cn.nova.erp.module.infra.service.codegen;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.CodegenCreateListReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.CodegenUpdateReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.table.CodegenTablePageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.table.DatabaseTableRespVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenColumnDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenTableDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenCreateListReqVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenUpdateReqVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.table.CodegenTablePageReqVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.table.DatabaseTableRespVO;
+import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenColumnDO;
+import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenTableDO;
 
 import java.util.List;
 import java.util.Map;

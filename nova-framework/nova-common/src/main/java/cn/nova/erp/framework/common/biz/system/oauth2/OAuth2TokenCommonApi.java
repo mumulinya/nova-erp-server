@@ -1,8 +1,8 @@
 package cn.nova.erp.framework.common.biz.system.oauth2;
 
-import cn.nova.erp.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCheckRespDTO;
-import cn.nova.erp.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCreateReqDTO;
-import cn.nova.erp.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCheckRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCreateReqDTO;
+import cn.iocoder.yudao.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenRespDTO;
 
 import jakarta.validation.Valid;
 

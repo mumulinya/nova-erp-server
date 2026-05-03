@@ -1,7 +1,7 @@
 package cn.nova.erp.framework.common.validation;
 
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.validation.ValidationUtils;
+import cn.iocoder.yudao.framework.common.util.validation.ValidationUtils;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.dict;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.type.DictTypePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.type.DictTypeSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictTypeDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.controller.admin.dict.vo.type.DictTypePageReqVO;
+import cn.nova.erp.module.system.controller.admin.dict.vo.type.DictTypeSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.dict.DictTypeDO;
 
 import java.util.List;
 

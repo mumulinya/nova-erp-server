@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.convert.file;
 
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileConfigDO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileConfigDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

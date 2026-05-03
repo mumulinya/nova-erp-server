@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.api.config;
 
-import cn.iocoder.yudao.module.infra.dal.dataobject.config.ConfigDO;
-import cn.iocoder.yudao.module.infra.service.config.ConfigService;
+import cn.nova.erp.module.infra.dal.dataobject.config.ConfigDO;
+import cn.nova.erp.module.infra.service.config.ConfigService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;

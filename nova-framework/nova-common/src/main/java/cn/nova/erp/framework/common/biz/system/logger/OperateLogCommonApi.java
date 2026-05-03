@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.biz.system.logger;
 
-import cn.nova.erp.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
+import cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
 import jakarta.validation.Valid;
 import org.springframework.scheduling.annotation.Async;
 

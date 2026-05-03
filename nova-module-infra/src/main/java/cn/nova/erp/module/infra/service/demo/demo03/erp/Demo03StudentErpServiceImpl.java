@@ -1,17 +1,17 @@
 package cn.nova.erp.module.infra.service.demo.demo03.erp;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo03.erp.Demo03CourseErpMapper;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo03.erp.Demo03GradeErpMapper;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.demo03.erp.Demo03StudentErpMapper;
+import cn.nova.erp.framework.common.pojo.PageParam;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo03.erp.Demo03CourseErpMapper;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo03.erp.Demo03GradeErpMapper;
+import cn.nova.erp.module.infra.dal.mysql.demo.demo03.erp.Demo03StudentErpMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,8 +19,8 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**
  * 学生 Service 实现类

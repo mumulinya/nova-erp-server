@@ -1,18 +1,18 @@
 package cn.nova.erp.module.system.convert.oauth2;
 
 import cn.hutool.core.date.LocalDateTimeUtil;
-import cn.iocoder.yudao.framework.common.core.KeyValue;
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.open.OAuth2OpenCheckTokenRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
-import cn.iocoder.yudao.module.system.util.oauth2.OAuth2Utils;
+import cn.nova.erp.framework.common.core.KeyValue;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenCheckTokenRespVO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import cn.nova.erp.module.system.util.oauth2.OAuth2Utils;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,11 +1,11 @@
 package cn.nova.erp.module.erp.dal.mysql.stock;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.MPJLambdaWrapperX;
-import cn.iocoder.yudao.module.erp.controller.admin.stock.vo.move.ErpStockMovePageReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockMoveDO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockMoveItemDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.framework.mybatis.core.query.MPJLambdaWrapperX;
+import cn.nova.erp.module.erp.controller.admin.stock.vo.move.ErpStockMovePageReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockMoveDO;
+import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockMoveItemDO;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import org.apache.ibatis.annotations.Mapper;
 

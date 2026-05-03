@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.dal.mysql.file;
 
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileContentDO;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileContentDO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;

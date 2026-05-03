@@ -3,13 +3,13 @@ package cn.nova.erp.module.infra.controller.admin.file;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.*;
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileDO;
-import cn.iocoder.yudao.module.infra.service.file.FileService;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.*;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileDO;
+import cn.nova.erp.module.infra.service.file.FileService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -30,8 +30,8 @@ import org.springframework.web.multipart.MultipartFile;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-import static cn.iocoder.yudao.module.infra.framework.file.core.utils.FileTypeUtils.writeAttachment;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.module.infra.framework.file.core.utils.FileTypeUtils.writeAttachment;
 
 @Tag(name = "管理后台 - 文件存储")
 @RestController

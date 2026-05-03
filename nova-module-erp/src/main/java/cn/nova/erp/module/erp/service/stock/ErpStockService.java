@@ -1,8 +1,8 @@
 package cn.nova.erp.module.erp.service.stock;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.erp.controller.admin.stock.vo.stock.ErpStockPageReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.erp.controller.admin.stock.vo.stock.ErpStockPageReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockDO;
 
 import java.math.BigDecimal;
 

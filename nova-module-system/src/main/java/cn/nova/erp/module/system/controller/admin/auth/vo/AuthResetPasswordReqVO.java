@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.controller.admin.auth.vo;
 
-import cn.iocoder.yudao.framework.common.validation.Mobile;
+import cn.nova.erp.framework.common.validation.Mobile;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;

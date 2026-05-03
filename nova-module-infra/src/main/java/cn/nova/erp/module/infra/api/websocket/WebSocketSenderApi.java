@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.api.websocket;
 
-import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
+import cn.nova.erp.framework.common.util.json.JsonUtils;
 
 /**
  * WebSocket 发送器的 API 接口

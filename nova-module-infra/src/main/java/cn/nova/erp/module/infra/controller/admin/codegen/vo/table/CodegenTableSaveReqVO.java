@@ -1,8 +1,8 @@
 package cn.nova.erp.module.infra.controller.admin.codegen.vo.table;
 
 import cn.hutool.core.util.ObjectUtil;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenSceneEnum;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenTemplateTypeEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenSceneEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenTemplateTypeEnum;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.AssertTrue;

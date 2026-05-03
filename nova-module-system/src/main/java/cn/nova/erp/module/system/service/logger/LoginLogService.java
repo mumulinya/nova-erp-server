@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.logger;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.api.logger.dto.LoginLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.logger.LoginLogDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.api.logger.dto.LoginLogCreateReqDTO;
+import cn.nova.erp.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.logger.LoginLogDO;
 
 import jakarta.validation.Valid;
 

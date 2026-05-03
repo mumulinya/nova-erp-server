@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.controller.admin.socail.vo.client;
 
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
+import cn.nova.erp.framework.common.pojo.PageParam;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.mq.producer.sms;
 
-import cn.iocoder.yudao.framework.common.core.KeyValue;
-import cn.iocoder.yudao.module.system.mq.message.sms.SmsSendMessage;
+import cn.nova.erp.framework.common.core.KeyValue;
+import cn.nova.erp.module.system.mq.message.sms.SmsSendMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;

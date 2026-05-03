@@ -1,8 +1,8 @@
 package cn.nova.erp.module.erp.dal.mysql.purchase;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.module.erp.dal.dataobject.purchase.ErpPurchaseInItemDO;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseInItemDO;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
 
 /**
  * ERP 采购入库项 Mapper

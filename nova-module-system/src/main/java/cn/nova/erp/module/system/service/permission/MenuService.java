@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.service.permission;
 
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
+import cn.nova.erp.module.system.dal.dataobject.permission.MenuDO;
 
 import java.util.Collection;
 import java.util.List;

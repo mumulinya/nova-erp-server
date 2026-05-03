@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.validation;
 
-import cn.nova.erp.framework.common.core.ArrayValuable;
+import cn.iocoder.yudao.framework.common.core.ArrayValuable;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 

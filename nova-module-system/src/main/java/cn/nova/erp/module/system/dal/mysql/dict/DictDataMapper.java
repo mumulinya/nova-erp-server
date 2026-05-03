@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.dal.mysql.dict;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictDataDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.nova.erp.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.dict.DictDataDO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.apache.ibatis.annotations.Mapper;
 

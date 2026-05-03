@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.framework.file.core.client;
 
-import cn.iocoder.yudao.module.infra.framework.file.core.enums.FileStorageEnum;
+import cn.nova.erp.module.infra.framework.file.core.enums.FileStorageEnum;
 
 public interface FileClientFactory {
 

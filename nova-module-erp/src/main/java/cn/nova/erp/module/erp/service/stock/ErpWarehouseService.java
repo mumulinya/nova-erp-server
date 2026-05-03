@@ -1,16 +1,16 @@
 package cn.nova.erp.module.erp.service.stock;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.erp.controller.admin.stock.vo.warehouse.ErpWarehouseSaveReqVO;
-import cn.iocoder.yudao.module.erp.controller.admin.stock.vo.warehouse.ErpWarehousePageReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpWarehouseDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.erp.controller.admin.stock.vo.warehouse.ErpWarehouseSaveReqVO;
+import cn.nova.erp.module.erp.controller.admin.stock.vo.warehouse.ErpWarehousePageReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.stock.ErpWarehouseDO;
 import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
 
 /**
  * ERP 仓库 Service 接口

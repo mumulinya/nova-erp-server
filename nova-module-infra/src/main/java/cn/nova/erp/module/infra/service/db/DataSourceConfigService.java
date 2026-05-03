@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.service.db;
 
-import cn.iocoder.yudao.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.db.DataSourceConfigDO;
+import cn.nova.erp.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.db.DataSourceConfigDO;
 import jakarta.validation.Valid;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.permission;
 
-import cn.iocoder.yudao.module.system.service.permission.RoleService;
+import cn.nova.erp.module.system.service.permission.RoleService;
 import org.springframework.stereotype.Service;
 
 import jakarta.annotation.Resource;

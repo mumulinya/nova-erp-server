@@ -1,8 +1,8 @@
 package cn.nova.erp.module.infra.job.job;
 
-import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.infra.service.job.JobLogService;
+import cn.nova.erp.framework.quartz.core.handler.JobHandler;
+import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.nova.erp.module.infra.service.job.JobLogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import jakarta.annotation.Resource;

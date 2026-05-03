@@ -1,8 +1,8 @@
 package cn.nova.erp.framework.common.exception.util;
 
-import cn.nova.erp.framework.common.exception.ErrorCode;
-import cn.nova.erp.framework.common.exception.ServiceException;
-import cn.nova.erp.framework.common.exception.enums.GlobalErrorCodeConstants;
+import cn.iocoder.yudao.framework.common.exception.ErrorCode;
+import cn.iocoder.yudao.framework.common.exception.ServiceException;
+import cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants;
 import com.google.common.annotations.VisibleForTesting;
 import lombok.extern.slf4j.Slf4j;
 

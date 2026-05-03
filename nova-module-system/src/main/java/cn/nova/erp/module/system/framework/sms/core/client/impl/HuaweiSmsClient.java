@@ -8,14 +8,14 @@ import cn.hutool.crypto.SecureUtil;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import cn.iocoder.yudao.framework.common.core.KeyValue;
-import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
-import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
-import cn.iocoder.yudao.module.system.framework.sms.core.property.SmsChannelProperties;
+import cn.nova.erp.framework.common.core.KeyValue;
+import cn.nova.erp.framework.common.util.http.HttpUtils;
+import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
+import cn.nova.erp.module.system.framework.sms.core.property.SmsChannelProperties;
 import lombok.extern.slf4j.Slf4j;
 
 import java.nio.charset.StandardCharsets;
@@ -25,7 +25,7 @@ import java.time.ZoneId;
 import java.util.*;
 
 import static cn.hutool.crypto.digest.DigestUtil.sha256Hex;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
 
 /**
  * 华为短信客户端的实现类

@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.dal.dataobject.finance;
 
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.sale.ErpSaleOutDO;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleOutDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -39,7 +39,7 @@ public class ErpFinanceReceiptItemDO extends BaseDO {
     /**
      * 业务类型
      *
-     * 枚举 {@link cn.iocoder.yudao.module.erp.enums.common.ErpBizTypeEnum} 的销售出库、退货
+     * 枚举 {@link cn.nova.erp.module.erp.enums.common.ErpBizTypeEnum} 的销售出库、退货
      */
     private Integer bizType;
     /**

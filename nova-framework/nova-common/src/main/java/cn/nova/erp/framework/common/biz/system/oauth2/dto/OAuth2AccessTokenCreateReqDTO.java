@@ -1,7 +1,7 @@
 package cn.nova.erp.framework.common.biz.system.oauth2.dto;
 
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.validation.InEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.validation.InEnum;
 import lombok.Data;
 
 import jakarta.validation.constraints.NotNull;

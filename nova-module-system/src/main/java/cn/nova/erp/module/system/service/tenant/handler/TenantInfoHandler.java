@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.tenant.handler;
 
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantDO;
+import cn.nova.erp.module.system.dal.dataobject.tenant.TenantDO;
 
 /**
  * 租户信息处理

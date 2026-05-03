@@ -1,7 +1,7 @@
 package cn.nova.erp.framework.common.enums;
 
 import cn.hutool.core.util.ObjUtil;
-import cn.nova.erp.framework.common.core.ArrayValuable;
+import cn.iocoder.yudao.framework.common.core.ArrayValuable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

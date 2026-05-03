@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.exception;
 
-import cn.nova.erp.framework.common.exception.enums.ServiceErrorCodeRange;
+import cn.iocoder.yudao.framework.common.exception.enums.ServiceErrorCodeRange;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

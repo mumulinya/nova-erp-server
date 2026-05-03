@@ -1,13 +1,13 @@
 package cn.nova.erp.module.system.service.mail;
 
 import cn.hutool.core.collection.ListUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.mail.vo.log.MailLogPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailAccountDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailLogDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailTemplateDO;
-import cn.iocoder.yudao.module.system.dal.mysql.mail.MailLogMapper;
-import cn.iocoder.yudao.module.system.enums.mail.MailSendStatusEnum;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.controller.admin.mail.vo.log.MailLogPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailLogDO;
+import cn.nova.erp.module.system.dal.dataobject.mail.MailTemplateDO;
+import cn.nova.erp.module.system.dal.mysql.mail.MailLogMapper;
+import cn.nova.erp.module.system.enums.mail.MailSendStatusEnum;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

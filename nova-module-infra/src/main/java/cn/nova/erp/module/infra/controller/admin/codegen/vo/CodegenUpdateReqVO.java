@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.controller.admin.codegen.vo;
 
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.column.CodegenColumnSaveReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.codegen.vo.table.CodegenTableSaveReqVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.column.CodegenColumnSaveReqVO;
+import cn.nova.erp.module.infra.controller.admin.codegen.vo.table.CodegenTableSaveReqVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;

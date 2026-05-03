@@ -2,16 +2,16 @@ package cn.nova.erp.module.system.service.social;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
-import cn.iocoder.yudao.framework.common.exception.ServiceException;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserRespDTO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.social.SocialUserBindDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.social.SocialUserDO;
-import cn.iocoder.yudao.module.system.dal.mysql.social.SocialUserBindMapper;
-import cn.iocoder.yudao.module.system.dal.mysql.social.SocialUserMapper;
-import cn.iocoder.yudao.module.system.enums.social.SocialTypeEnum;
+import cn.nova.erp.framework.common.exception.ServiceException;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
+import cn.nova.erp.module.system.api.social.dto.SocialUserRespDTO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.social.SocialUserBindDO;
+import cn.nova.erp.module.system.dal.dataobject.social.SocialUserDO;
+import cn.nova.erp.module.system.dal.mysql.social.SocialUserBindMapper;
+import cn.nova.erp.module.system.dal.mysql.social.SocialUserMapper;
+import cn.nova.erp.module.system.enums.social.SocialTypeEnum;
 import jakarta.annotation.Resource;
 import jakarta.validation.constraints.NotNull;
 import lombok.extern.slf4j.Slf4j;
@@ -23,10 +23,10 @@ import org.springframework.validation.annotation.Validated;
 import java.util.Collections;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.iocoder.yudao.framework.common.util.json.JsonUtils.toJsonString;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.SOCIAL_USER_NOT_FOUND;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.nova.erp.framework.common.util.json.JsonUtils.toJsonString;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.SOCIAL_USER_NOT_FOUND;
 
 /**
  * 社交用户 Service 实现类

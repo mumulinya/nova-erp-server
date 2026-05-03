@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.biz.system.logger.dto;
 
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;

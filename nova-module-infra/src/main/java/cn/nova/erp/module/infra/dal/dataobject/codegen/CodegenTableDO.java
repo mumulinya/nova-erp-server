@@ -1,11 +1,11 @@
 package cn.nova.erp.module.infra.dal.dataobject.codegen;
 
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.infra.dal.dataobject.db.DataSourceConfigDO;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenFrontTypeEnum;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenSceneEnum;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenTemplateTypeEnum;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.nova.erp.module.infra.dal.dataobject.db.DataSourceConfigDO;
+import cn.nova.erp.module.infra.enums.codegen.CodegenFrontTypeEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenSceneEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenTemplateTypeEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;

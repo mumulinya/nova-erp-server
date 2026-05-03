@@ -5,24 +5,24 @@ import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.exception.ServiceException;
-import cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.date.DateUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.security.core.LoginUser;
-import cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder;
-import cn.iocoder.yudao.framework.tenant.core.util.TenantUtils;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2RefreshTokenDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.dal.mysql.oauth2.OAuth2AccessTokenMapper;
-import cn.iocoder.yudao.module.system.dal.mysql.oauth2.OAuth2RefreshTokenMapper;
-import cn.iocoder.yudao.module.system.dal.redis.oauth2.OAuth2AccessTokenRedisDAO;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
+import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.nova.erp.framework.common.exception.ServiceException;
+import cn.nova.erp.framework.common.exception.enums.GlobalErrorCodeConstants;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.date.DateUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.security.core.LoginUser;
+import cn.nova.erp.framework.tenant.core.context.TenantContextHolder;
+import cn.nova.erp.framework.tenant.core.util.TenantUtils;
+import cn.nova.erp.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2RefreshTokenDO;
+import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
+import cn.nova.erp.module.system.dal.mysql.oauth2.OAuth2AccessTokenMapper;
+import cn.nova.erp.module.system.dal.mysql.oauth2.OAuth2RefreshTokenMapper;
+import cn.nova.erp.module.system.dal.redis.oauth2.OAuth2AccessTokenRedisDAO;
+import cn.nova.erp.module.system.service.user.AdminUserService;
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -33,8 +33,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception0;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception0;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
 
 /**
  * OAuth2.0 Token Service 实现类
@@ -212,7 +212,7 @@ public class OAuth2TokenServiceImpl implements OAuth2TokenService {
     }
 
     /**
-     * 加载用户信息，方便 {@link cn.iocoder.yudao.framework.security.core.LoginUser} 获取到昵称、部门等信息
+     * 加载用户信息，方便 {@link cn.nova.erp.framework.security.core.LoginUser} 获取到昵称、部门等信息
      *
      * @param userId 用户编号
      * @param userType 用户类型

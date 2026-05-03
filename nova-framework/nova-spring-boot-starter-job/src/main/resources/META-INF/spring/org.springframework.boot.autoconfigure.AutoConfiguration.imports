@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.quartz.config.YudaoQuartzAutoConfiguration
-cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration
+cn.nova.erp.framework.quartz.config.YudaoQuartzAutoConfiguration
+cn.nova.erp.framework.quartz.config.YudaoAsyncAutoConfiguration

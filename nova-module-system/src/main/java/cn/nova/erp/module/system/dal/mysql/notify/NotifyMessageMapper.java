@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.dal.mysql.notify;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.QueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessageMyPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.notify.NotifyMessageDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.nova.erp.framework.mybatis.core.query.QueryWrapperX;
+import cn.nova.erp.module.system.controller.admin.notify.vo.message.NotifyMessageMyPageReqVO;
+import cn.nova.erp.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.notify.NotifyMessageDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.time.LocalDateTime;

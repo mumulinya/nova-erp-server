@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.controller.admin.demo.demo03.inner.vo;
 
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
+import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;

@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.sms;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplatePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsTemplateDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.controller.admin.sms.vo.template.SmsTemplatePageReqVO;
+import cn.nova.erp.module.system.controller.admin.sms.vo.template.SmsTemplateSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.sms.SmsTemplateDO;
 import jakarta.validation.Valid;
 
 import java.util.List;

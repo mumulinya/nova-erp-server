@@ -1,16 +1,16 @@
 package cn.nova.erp.module.infra.service.job;
 
 import cn.hutool.extra.spring.SpringUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
-import cn.iocoder.yudao.framework.quartz.core.scheduler.SchedulerManager;
-import cn.iocoder.yudao.framework.quartz.core.util.CronUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.job.vo.job.JobPageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.job.vo.job.JobSaveReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.job.JobDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.job.JobMapper;
-import cn.iocoder.yudao.module.infra.enums.job.JobStatusEnum;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.quartz.core.handler.JobHandler;
+import cn.nova.erp.framework.quartz.core.scheduler.SchedulerManager;
+import cn.nova.erp.framework.quartz.core.util.CronUtils;
+import cn.nova.erp.module.infra.controller.admin.job.vo.job.JobPageReqVO;
+import cn.nova.erp.module.infra.controller.admin.job.vo.job.JobSaveReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.job.JobDO;
+import cn.nova.erp.module.infra.dal.mysql.job.JobMapper;
+import cn.nova.erp.module.infra.enums.job.JobStatusEnum;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.SchedulerException;
@@ -22,9 +22,9 @@ import org.springframework.validation.annotation.Validated;
 import java.util.List;
 import java.util.Objects;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.containsAny;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.containsAny;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**
  * 定时任务 Service 实现类

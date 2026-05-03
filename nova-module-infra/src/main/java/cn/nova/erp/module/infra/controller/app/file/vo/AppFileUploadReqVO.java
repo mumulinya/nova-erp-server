@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.controller.app.file.vo;
 
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.FileUploadReqVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.FileUploadReqVO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.AssertTrue;

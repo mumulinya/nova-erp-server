@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.api.tenant;
 
-import cn.iocoder.yudao.framework.common.biz.system.tenant.TenantCommonApi;
-import cn.iocoder.yudao.module.system.service.tenant.TenantService;
+import cn.nova.erp.framework.common.biz.system.tenant.TenantCommonApi;
+import cn.nova.erp.module.system.service.tenant.TenantService;
 import org.springframework.stereotype.Service;
 
 import jakarta.annotation.Resource;

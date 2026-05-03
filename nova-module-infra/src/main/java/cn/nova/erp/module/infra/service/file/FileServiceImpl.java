@@ -5,16 +5,16 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.digest.DigestUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.FileCreateReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.FilePageReqVO;
-import cn.iocoder.yudao.module.infra.controller.admin.file.vo.file.FilePresignedUrlRespVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.file.FileDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.file.FileMapper;
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClient;
-import cn.iocoder.yudao.module.infra.framework.file.core.utils.FileTypeUtils;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.http.HttpUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.FileCreateReqVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.FilePageReqVO;
+import cn.nova.erp.module.infra.controller.admin.file.vo.file.FilePresignedUrlRespVO;
+import cn.nova.erp.module.infra.dal.dataobject.file.FileDO;
+import cn.nova.erp.module.infra.dal.mysql.file.FileMapper;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClient;
+import cn.nova.erp.module.infra.framework.file.core.utils.FileTypeUtils;
 import com.google.common.annotations.VisibleForTesting;
 import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
@@ -23,8 +23,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 import static cn.hutool.core.date.DatePattern.PURE_DATE_PATTERN;
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.FILE_NOT_EXISTS;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.FILE_NOT_EXISTS;
 
 /**
  * 文件 Service 实现类

@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.service.social;
 
-import cn.iocoder.yudao.framework.common.exception.ServiceException;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserRespDTO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.social.SocialUserDO;
-import cn.iocoder.yudao.module.system.enums.social.SocialTypeEnum;
+import cn.nova.erp.framework.common.exception.ServiceException;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
+import cn.nova.erp.module.system.api.social.dto.SocialUserRespDTO;
+import cn.nova.erp.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.social.SocialUserDO;
+import cn.nova.erp.module.system.enums.social.SocialTypeEnum;
 
 import jakarta.validation.Valid;
 import java.util.List;

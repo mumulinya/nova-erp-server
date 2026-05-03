@@ -2,7 +2,7 @@ package cn.nova.erp.module.erp.dal.redis.no;
 
 import cn.hutool.core.date.DatePattern;
 import cn.hutool.core.date.DateUtil;
-import cn.iocoder.yudao.module.erp.dal.redis.RedisKeyConstants;
+import cn.nova.erp.module.erp.dal.redis.RedisKeyConstants;
 import jakarta.annotation.Resource;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
@@ -20,56 +20,56 @@ import java.time.LocalDateTime;
 public class ErpNoRedisDAO {
 
     /**
-     * 其它入库 {@link cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockInDO}
+     * 其它入库 {@link cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockInDO}
      */
     public static final String STOCK_IN_NO_PREFIX = "QTRK";
     /**
-     * 其它出库 {@link cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockOutDO}
+     * 其它出库 {@link cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockOutDO}
      */
     public static final String STOCK_OUT_NO_PREFIX = "QCKD";
 
     /**
-     * 库存调拨 {@link cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockMoveDO}
+     * 库存调拨 {@link cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockMoveDO}
      */
     public static final String STOCK_MOVE_NO_PREFIX = "QCDB";
 
     /**
-     * 库存盘点 {@link cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockCheckDO}
+     * 库存盘点 {@link cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockCheckDO}
      */
     public static final String STOCK_CHECK_NO_PREFIX = "QCPD";
 
     /**
-     * 销售订单 {@link cn.iocoder.yudao.module.erp.dal.dataobject.sale.ErpSaleOrderDO}
+     * 销售订单 {@link cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleOrderDO}
      */
     public static final String SALE_ORDER_NO_PREFIX = "XSDD";
     /**
-     * 销售出库 {@link cn.iocoder.yudao.module.erp.dal.dataobject.sale.ErpSaleOutDO}
+     * 销售出库 {@link cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleOutDO}
      */
     public static final String SALE_OUT_NO_PREFIX = "XSCK";
     /**
-     * 销售退货 {@link cn.iocoder.yudao.module.erp.dal.dataobject.sale.ErpSaleReturnDO}
+     * 销售退货 {@link cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleReturnDO}
      */
     public static final String SALE_RETURN_NO_PREFIX = "XSTH";
 
     /**
-     * 采购订单 {@link cn.iocoder.yudao.module.erp.dal.dataobject.purchase.ErpPurchaseOrderDO}
+     * 采购订单 {@link cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseOrderDO}
      */
     public static final String PURCHASE_ORDER_NO_PREFIX = "CGDD";
     /**
-     * 采购入库 {@link cn.iocoder.yudao.module.erp.dal.dataobject.purchase.ErpPurchaseInDO}
+     * 采购入库 {@link cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseInDO}
      */
     public static final String PURCHASE_IN_NO_PREFIX = "CGRK";
     /**
-     * 采购退货 {@link cn.iocoder.yudao.module.erp.dal.dataobject.purchase.ErpPurchaseReturnDO}
+     * 采购退货 {@link cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseReturnDO}
      */
     public static final String PURCHASE_RETURN_NO_PREFIX = "CGTH";
 
     /**
-     * 付款单 {@link cn.iocoder.yudao.module.erp.dal.dataobject.finance.ErpFinancePaymentDO}
+     * 付款单 {@link cn.nova.erp.module.erp.dal.dataobject.finance.ErpFinancePaymentDO}
      */
     public static final String FINANCE_PAYMENT_NO_PREFIX = "FKD";
     /**
-     * 收款单 {@link cn.iocoder.yudao.module.erp.dal.dataobject.finance.ErpFinanceReceiptDO}
+     * 收款单 {@link cn.nova.erp.module.erp.dal.dataobject.finance.ErpFinanceReceiptDO}
      */
     public static final String FINANCE_RECEIPT_NO_PREFIX = "SKD";
 

@@ -1,19 +1,19 @@
 package cn.nova.erp.module.erp.service.stock;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.erp.controller.admin.stock.vo.stock.ErpStockPageReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockDO;
-import cn.iocoder.yudao.module.erp.dal.mysql.stock.ErpStockMapper;
-import cn.iocoder.yudao.module.erp.service.product.ErpProductService;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.erp.controller.admin.stock.vo.stock.ErpStockPageReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockDO;
+import cn.nova.erp.module.erp.dal.mysql.stock.ErpStockMapper;
+import cn.nova.erp.module.erp.service.product.ErpProductService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
 import java.math.BigDecimal;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.erp.enums.ErrorCodeConstants.STOCK_COUNT_NEGATIVE;
-import static cn.iocoder.yudao.module.erp.enums.ErrorCodeConstants.STOCK_COUNT_NEGATIVE2;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.STOCK_COUNT_NEGATIVE;
+import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.STOCK_COUNT_NEGATIVE2;
 
 /**
  * ERP 产品库存 Service 实现类

@@ -9,15 +9,15 @@ import cn.hutool.crypto.digest.DigestUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import cn.iocoder.yudao.framework.common.core.KeyValue;
-import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
-import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
-import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
-import cn.iocoder.yudao.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
-import cn.iocoder.yudao.module.system.framework.sms.core.property.SmsChannelProperties;
+import cn.nova.erp.framework.common.core.KeyValue;
+import cn.nova.erp.framework.common.util.collection.MapUtils;
+import cn.nova.erp.framework.common.util.http.HttpUtils;
+import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
+import cn.nova.erp.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
+import cn.nova.erp.module.system.framework.sms.core.property.SmsChannelProperties;
 import com.google.common.annotations.VisibleForTesting;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -25,7 +25,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
 
 /**
  * 阿里短信客户端的实现类

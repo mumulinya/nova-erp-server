@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.api.dept;
 
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.api.dept.dto.DeptRespDTO;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.module.system.api.dept.dto.DeptRespDTO;
 
 import java.util.Collection;
 import java.util.List;

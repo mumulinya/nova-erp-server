@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.permission;
 
-import cn.iocoder.yudao.framework.common.biz.system.permission.PermissionCommonApi;
+import cn.nova.erp.framework.common.biz.system.permission.PermissionCommonApi;
 
 import java.util.Collection;
 import java.util.Set;

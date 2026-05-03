@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.user.vo.profile;
 
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleSimpleRespVO;
+import cn.nova.erp.module.system.controller.admin.dept.vo.dept.DeptSimpleRespVO;
+import cn.nova.erp.module.system.controller.admin.dept.vo.post.PostSimpleRespVO;
+import cn.nova.erp.module.system.controller.admin.permission.vo.role.RoleSimpleRespVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

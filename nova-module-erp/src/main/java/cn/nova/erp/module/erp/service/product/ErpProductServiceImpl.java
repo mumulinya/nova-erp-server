@@ -1,26 +1,26 @@
 package cn.nova.erp.module.erp.service.product;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.erp.controller.admin.product.vo.product.ErpProductPageReqVO;
-import cn.iocoder.yudao.module.erp.controller.admin.product.vo.product.ErpProductRespVO;
-import cn.iocoder.yudao.module.erp.controller.admin.product.vo.product.ProductSaveReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.product.ErpProductCategoryDO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.product.ErpProductDO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.product.ErpProductUnitDO;
-import cn.iocoder.yudao.module.erp.dal.mysql.product.ErpProductMapper;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.collection.MapUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.erp.controller.admin.product.vo.product.ErpProductPageReqVO;
+import cn.nova.erp.module.erp.controller.admin.product.vo.product.ErpProductRespVO;
+import cn.nova.erp.module.erp.controller.admin.product.vo.product.ProductSaveReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductCategoryDO;
+import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductDO;
+import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductUnitDO;
+import cn.nova.erp.module.erp.dal.mysql.product.ErpProductMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.*;
-import static cn.iocoder.yudao.module.erp.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.*;
+import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.*;
 
 /**
  * ERP 产品 Service 实现类

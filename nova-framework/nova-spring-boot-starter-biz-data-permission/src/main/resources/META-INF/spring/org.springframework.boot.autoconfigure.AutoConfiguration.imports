@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration
-cn.iocoder.yudao.framework.datapermission.config.YudaoDeptDataPermissionAutoConfiguration
+cn.nova.erp.framework.datapermission.config.YudaoDataPermissionAutoConfiguration
+cn.nova.erp.framework.datapermission.config.YudaoDeptDataPermissionAutoConfiguration

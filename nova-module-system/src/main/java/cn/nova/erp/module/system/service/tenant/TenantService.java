@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.service.tenant;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.TenantPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.TenantSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantDO;
-import cn.iocoder.yudao.module.system.service.tenant.handler.TenantInfoHandler;
-import cn.iocoder.yudao.module.system.service.tenant.handler.TenantMenuHandler;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.tenant.core.context.TenantContextHolder;
+import cn.nova.erp.module.system.controller.admin.tenant.vo.tenant.TenantPageReqVO;
+import cn.nova.erp.module.system.controller.admin.tenant.vo.tenant.TenantSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.tenant.TenantDO;
+import cn.nova.erp.module.system.service.tenant.handler.TenantInfoHandler;
+import cn.nova.erp.module.system.service.tenant.handler.TenantMenuHandler;
 import jakarta.validation.Valid;
 
 import java.util.List;

@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.api.dept;
 
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.api.dept.dto.DeptRespDTO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
-import cn.iocoder.yudao.module.system.service.dept.DeptService;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.api.dept.dto.DeptRespDTO;
+import cn.nova.erp.module.system.dal.dataobject.dept.DeptDO;
+import cn.nova.erp.module.system.service.dept.DeptService;
 import org.springframework.stereotype.Service;
 
 import jakarta.annotation.Resource;

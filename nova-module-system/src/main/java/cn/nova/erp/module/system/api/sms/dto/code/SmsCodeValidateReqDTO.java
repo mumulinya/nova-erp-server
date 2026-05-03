@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.api.sms.dto.code;
 
-import cn.iocoder.yudao.framework.common.validation.InEnum;
-import cn.iocoder.yudao.framework.common.validation.Mobile;
-import cn.iocoder.yudao.module.system.enums.sms.SmsSceneEnum;
+import cn.nova.erp.framework.common.validation.InEnum;
+import cn.nova.erp.framework.common.validation.Mobile;
+import cn.nova.erp.module.system.enums.sms.SmsSceneEnum;
 import lombok.Data;
 
 import jakarta.validation.constraints.NotEmpty;

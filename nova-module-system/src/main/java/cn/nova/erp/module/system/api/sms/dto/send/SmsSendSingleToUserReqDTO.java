@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.sms.dto.send;
 
-import cn.iocoder.yudao.framework.common.validation.Mobile;
+import cn.nova.erp.framework.common.validation.Mobile;
 import lombok.Data;
 
 import jakarta.validation.constraints.NotEmpty;

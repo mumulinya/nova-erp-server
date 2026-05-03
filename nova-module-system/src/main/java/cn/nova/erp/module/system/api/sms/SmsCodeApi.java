@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.api.sms;
 
-import cn.iocoder.yudao.framework.common.exception.ServiceException;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeValidateReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
+import cn.nova.erp.framework.common.exception.ServiceException;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeValidateReqDTO;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
+import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
 
 import jakarta.validation.Valid;
 

@@ -1,12 +1,12 @@
 package cn.nova.erp.module.system.api.logger;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogPageReqDTO;
-import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogRespDTO;
-import cn.iocoder.yudao.module.system.dal.dataobject.logger.OperateLogDO;
-import cn.iocoder.yudao.module.system.service.logger.OperateLogService;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
+import cn.nova.erp.module.system.api.logger.dto.OperateLogPageReqDTO;
+import cn.nova.erp.module.system.api.logger.dto.OperateLogRespDTO;
+import cn.nova.erp.module.system.dal.dataobject.logger.OperateLogDO;
+import cn.nova.erp.module.system.service.logger.OperateLogService;
 import com.fhs.core.trans.anno.TransMethodResult;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;

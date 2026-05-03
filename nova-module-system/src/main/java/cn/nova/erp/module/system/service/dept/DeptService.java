@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.dept;
 
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
+import cn.nova.erp.module.system.controller.admin.dept.vo.dept.DeptSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.dept.DeptDO;
 
 import java.util.*;
 

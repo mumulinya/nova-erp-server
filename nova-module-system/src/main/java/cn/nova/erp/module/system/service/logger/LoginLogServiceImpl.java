@@ -1,11 +1,11 @@
 package cn.nova.erp.module.system.service.logger;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.api.logger.dto.LoginLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.logger.LoginLogDO;
-import cn.iocoder.yudao.module.system.dal.mysql.logger.LoginLogMapper;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.api.logger.dto.LoginLogCreateReqDTO;
+import cn.nova.erp.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.logger.LoginLogDO;
+import cn.nova.erp.module.system.dal.mysql.logger.LoginLogMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

@@ -4,15 +4,15 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.func.Func1;
 import cn.hutool.core.lang.func.LambdaUtil;
 import cn.hutool.core.util.ArrayUtil;
-import cn.nova.erp.framework.common.pojo.PageParam;
-import cn.nova.erp.framework.common.pojo.SortablePageParam;
-import cn.nova.erp.framework.common.pojo.SortingField;
+import cn.iocoder.yudao.framework.common.pojo.PageParam;
+import cn.iocoder.yudao.framework.common.pojo.SortablePageParam;
+import cn.iocoder.yudao.framework.common.pojo.SortingField;
 import org.springframework.util.Assert;
 
 import static java.util.Collections.singletonList;
 
 /**
- * {@link cn.nova.erp.framework.common.pojo.PageParam} 工具类
+ * {@link cn.iocoder.yudao.framework.common.pojo.PageParam} 工具类
  *
  * @author 芋道源码
  */

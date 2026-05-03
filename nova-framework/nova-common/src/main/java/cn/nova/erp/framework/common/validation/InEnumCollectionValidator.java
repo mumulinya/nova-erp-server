@@ -1,7 +1,7 @@
 package cn.nova.erp.framework.common.validation;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.core.ArrayValuable;
+import cn.iocoder.yudao.framework.common.core.ArrayValuable;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

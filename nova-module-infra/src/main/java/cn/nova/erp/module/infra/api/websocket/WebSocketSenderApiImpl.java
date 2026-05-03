@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.api.websocket;
 
-import cn.iocoder.yudao.framework.websocket.core.sender.WebSocketMessageSender;
+import cn.nova.erp.framework.websocket.core.sender.WebSocketMessageSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,18 +1,18 @@
 package cn.nova.erp.module.system.controller.admin.dept;
 
-import cn.iocoder.yudao.framework.apilog.core.annotation.ApiAccessLog;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostSaveReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostSimpleRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.PostDO;
-import cn.iocoder.yudao.module.system.service.dept.PostService;
+import cn.nova.erp.framework.apilog.core.annotation.ApiAccessLog;
+import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageParam;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.excel.core.util.ExcelUtils;
+import cn.nova.erp.module.system.controller.admin.dept.vo.post.PostPageReqVO;
+import cn.nova.erp.module.system.controller.admin.dept.vo.post.PostRespVO;
+import cn.nova.erp.module.system.controller.admin.dept.vo.post.PostSaveReqVO;
+import cn.nova.erp.module.system.controller.admin.dept.vo.post.PostSimpleRespVO;
+import cn.nova.erp.module.system.dal.dataobject.dept.PostDO;
+import cn.nova.erp.module.system.service.dept.PostService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -28,8 +28,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.apilog.core.enums.OperateTypeEnum.EXPORT;
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.nova.erp.framework.apilog.core.enums.OperateTypeEnum.EXPORT;
+import static cn.nova.erp.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 岗位")
 @RestController

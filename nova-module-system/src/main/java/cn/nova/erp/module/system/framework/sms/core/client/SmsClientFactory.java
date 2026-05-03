@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.framework.sms.core.client;
 
-import cn.iocoder.yudao.module.system.framework.sms.core.property.SmsChannelProperties;
+import cn.nova.erp.module.system.framework.sms.core.property.SmsChannelProperties;
 
 /**
  * 短信客户端的工厂接口

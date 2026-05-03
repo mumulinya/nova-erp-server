@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.framework.web.config;
 
-import cn.iocoder.yudao.framework.swagger.config.YudaoSwaggerAutoConfiguration;
+import cn.nova.erp.framework.swagger.config.NovaSwaggerAutoConfiguration;
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class SystemWebConfiguration {
      */
     @Bean
     public GroupedOpenApi systemGroupedOpenApi() {
-        return YudaoSwaggerAutoConfiguration.buildGroupedOpenApi("system");
+        return NovaSwaggerAutoConfiguration.buildGroupedOpenApi("system");
     }
 
 }

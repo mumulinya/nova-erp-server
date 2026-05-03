@@ -3,7 +3,7 @@ package cn.nova.erp.framework.common.util.collection;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ObjUtil;
-import cn.nova.erp.framework.common.core.KeyValue;
+import cn.iocoder.yudao.framework.common.core.KeyValue;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Multimap;
 

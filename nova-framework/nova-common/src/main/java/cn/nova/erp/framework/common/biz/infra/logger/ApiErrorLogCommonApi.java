@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.biz.infra.logger;
 
-import cn.nova.erp.framework.common.biz.infra.logger.dto.ApiErrorLogCreateReqDTO;
+import cn.iocoder.yudao.framework.common.biz.infra.logger.dto.ApiErrorLogCreateReqDTO;
 
 import jakarta.validation.Valid;
 import org.springframework.scheduling.annotation.Async;

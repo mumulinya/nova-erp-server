@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.api.dict;
 
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.common.biz.system.dict.dto.DictDataRespDTO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictDataDO;
-import cn.iocoder.yudao.module.system.service.dict.DictDataService;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.common.biz.system.dict.dto.DictDataRespDTO;
+import cn.nova.erp.module.system.dal.dataobject.dict.DictDataDO;
+import cn.nova.erp.module.system.service.dict.DictDataService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 

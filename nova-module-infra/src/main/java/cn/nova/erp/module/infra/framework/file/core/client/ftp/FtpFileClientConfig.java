@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.framework.file.core.client.ftp;
 
-import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientConfig;
+import cn.nova.erp.module.infra.framework.file.core.client.FileClientConfig;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;

@@ -1,9 +1,9 @@
 package cn.nova.erp.module.infra.service.logger;
 
-import cn.iocoder.yudao.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.logger.ApiAccessLogDO;
+import cn.nova.erp.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
+import cn.nova.erp.module.infra.dal.dataobject.logger.ApiAccessLogDO;
 
 /**
  * API 访问日志 Service 接口

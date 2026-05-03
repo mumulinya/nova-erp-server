@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.api.file;
 
-import cn.iocoder.yudao.module.infra.service.file.FileService;
+import cn.nova.erp.module.infra.service.file.FileService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;

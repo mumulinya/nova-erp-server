@@ -1,16 +1,16 @@
 package cn.nova.erp.module.erp.service.finance;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.erp.controller.admin.finance.vo.account.ErpAccountPageReqVO;
-import cn.iocoder.yudao.module.erp.controller.admin.finance.vo.account.ErpAccountSaveReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.finance.ErpAccountDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.module.erp.controller.admin.finance.vo.account.ErpAccountPageReqVO;
+import cn.nova.erp.module.erp.controller.admin.finance.vo.account.ErpAccountSaveReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.finance.ErpAccountDO;
 import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
 
 /**
  * ERP 结算账户 Service 接口

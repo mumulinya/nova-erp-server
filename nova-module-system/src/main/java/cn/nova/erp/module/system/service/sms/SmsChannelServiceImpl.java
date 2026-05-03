@@ -1,23 +1,23 @@
 package cn.nova.erp.module.system.service.sms;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.channel.SmsChannelPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.channel.SmsChannelSaveReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsChannelDO;
-import cn.iocoder.yudao.module.system.dal.mysql.sms.SmsChannelMapper;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.SmsClient;
-import cn.iocoder.yudao.module.system.framework.sms.core.client.SmsClientFactory;
-import cn.iocoder.yudao.module.system.framework.sms.core.property.SmsChannelProperties;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.system.controller.admin.sms.vo.channel.SmsChannelPageReqVO;
+import cn.nova.erp.module.system.controller.admin.sms.vo.channel.SmsChannelSaveReqVO;
+import cn.nova.erp.module.system.dal.dataobject.sms.SmsChannelDO;
+import cn.nova.erp.module.system.dal.mysql.sms.SmsChannelMapper;
+import cn.nova.erp.module.system.framework.sms.core.client.SmsClient;
+import cn.nova.erp.module.system.framework.sms.core.client.SmsClientFactory;
+import cn.nova.erp.module.system.framework.sms.core.property.SmsChannelProperties;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.SMS_CHANNEL_HAS_CHILDREN;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.SMS_CHANNEL_NOT_EXISTS;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.SMS_CHANNEL_HAS_CHILDREN;
+import static cn.nova.erp.module.system.enums.ErrorCodeConstants.SMS_CHANNEL_NOT_EXISTS;
 
 /**
  * 短信渠道 Service 实现类

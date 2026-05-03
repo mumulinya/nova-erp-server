@@ -1,10 +1,10 @@
 package cn.nova.erp.module.erp.service.product;
 
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.module.erp.controller.admin.product.vo.category.ErpProductCategoryListReqVO;
-import cn.iocoder.yudao.module.erp.controller.admin.product.vo.category.ErpProductCategorySaveReqVO;
-import cn.iocoder.yudao.module.erp.dal.dataobject.product.ErpProductCategoryDO;
-import cn.iocoder.yudao.module.erp.dal.mysql.product.ErpProductCategoryMapper;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.module.erp.controller.admin.product.vo.category.ErpProductCategoryListReqVO;
+import cn.nova.erp.module.erp.controller.admin.product.vo.category.ErpProductCategorySaveReqVO;
+import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductCategoryDO;
+import cn.nova.erp.module.erp.dal.mysql.product.ErpProductCategoryMapper;
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -14,8 +14,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.erp.enums.ErrorCodeConstants.*;
+import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.*;
 
 /**
  * ERP 产品分类 Service 实现类

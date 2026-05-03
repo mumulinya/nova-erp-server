@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.service.logger;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogPageReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.logger.OperateLogDO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
+import cn.nova.erp.module.system.api.logger.dto.OperateLogPageReqDTO;
+import cn.nova.erp.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
+import cn.nova.erp.module.system.dal.dataobject.logger.OperateLogDO;
 
 /**
  * 操作日志 Service 接口

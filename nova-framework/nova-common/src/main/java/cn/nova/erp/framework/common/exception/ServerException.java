@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.common.exception;
 
-import cn.nova.erp.framework.common.exception.enums.GlobalErrorCodeConstants;
+import cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

@@ -8,31 +8,31 @@ import cn.hutool.extra.template.TemplateConfig;
 import cn.hutool.extra.template.TemplateEngine;
 import cn.hutool.extra.template.engine.velocity.VelocityEngine;
 import cn.hutool.system.SystemUtil;
-import cn.iocoder.yudao.framework.apilog.core.annotation.ApiAccessLog;
-import cn.iocoder.yudao.framework.apilog.core.enums.OperateTypeEnum;
-import cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.common.util.date.DateUtils;
-import cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.common.util.object.ObjectUtils;
-import cn.iocoder.yudao.framework.common.util.string.StrUtils;
-import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
-import cn.iocoder.yudao.framework.excel.core.convert.DictConvert;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenColumnDO;
-import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenTableDO;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenFrontTypeEnum;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenSceneEnum;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenTemplateTypeEnum;
-import cn.iocoder.yudao.module.infra.enums.codegen.CodegenVOTypeEnum;
-import cn.iocoder.yudao.module.infra.framework.codegen.config.CodegenProperties;
+import cn.nova.erp.framework.apilog.core.annotation.ApiAccessLog;
+import cn.nova.erp.framework.apilog.core.enums.OperateTypeEnum;
+import cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil;
+import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.nova.erp.framework.common.pojo.PageParam;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.nova.erp.framework.common.util.date.DateUtils;
+import cn.nova.erp.framework.common.util.date.LocalDateTimeUtils;
+import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.nova.erp.framework.common.util.object.ObjectUtils;
+import cn.nova.erp.framework.common.util.string.StrUtils;
+import cn.nova.erp.framework.excel.core.annotations.DictFormat;
+import cn.nova.erp.framework.excel.core.convert.DictConvert;
+import cn.nova.erp.framework.excel.core.util.ExcelUtils;
+import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenColumnDO;
+import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenTableDO;
+import cn.nova.erp.module.infra.enums.codegen.CodegenFrontTypeEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenSceneEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenTemplateTypeEnum;
+import cn.nova.erp.module.infra.enums.codegen.CodegenVOTypeEnum;
+import cn.nova.erp.module.infra.framework.codegen.config.CodegenProperties;
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableTable;
@@ -270,7 +270,7 @@ public class CodegenEngine {
         this.jakartaEnable = SystemUtil.getJavaInfo().isJavaVersionAtLeast(1700) // 17.00 * 100
                 && ClassUtils.isPresent("jakarta.annotation.Resource", ClassUtils.getDefaultClassLoader());
         // 设置 cloudEnable，按照是否使用 Spring Cloud 来判断
-        this.cloudEnable = ClassUtils.isPresent("cn.iocoder.yudao.module.infra.framework.rpc.config.RpcConfiguration",
+        this.cloudEnable = ClassUtils.isPresent("cn.nova.erp.module.infra.framework.rpc.config.RpcConfiguration",
                 ClassUtils.getDefaultClassLoader());
     }
 
