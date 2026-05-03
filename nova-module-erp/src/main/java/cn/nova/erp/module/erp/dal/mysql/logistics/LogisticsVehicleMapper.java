@@ -1,0 +1,20 @@
+package cn.nova.erp.module.erp.dal.mysql.logistics;
+
+import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.nova.erp.module.erp.dal.dataobject.logistics.LogisticsVehicleDO;
+import cn.nova.erp.module.erp.controller.admin.logistics.vo.LogisticsVehiclePageReqVO;
+import cn.nova.erp.framework.common.pojo.PageResult;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface LogisticsVehicleMapper extends BaseMapperX<LogisticsVehicleDO> {
+
+    default PageResult<LogisticsVehicleDO> selectPage(LogisticsVehiclePageReqVO reqVO) {
+        return selectPage(reqVO, new LambdaQueryWrapperX<LogisticsVehicleDO>()
+                .likeIfPresent(LogisticsVehicleDO::getPlateNo, reqVO.getPlateNo())
+                .eqIfPresent(LogisticsVehicleDO::getVehicleType, reqVO.getVehicleType())
+                .eqIfPresent(LogisticsVehicleDO::getStatus, reqVO.getStatus())
+                .orderByDesc(LogisticsVehicleDO::getId));
+    }
+}

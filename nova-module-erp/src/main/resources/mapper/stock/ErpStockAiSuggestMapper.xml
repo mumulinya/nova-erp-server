@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nova.erp.module.erp.dal.mysql.stock.ErpStockAiSuggestMapper">
+
+    <select id="selectStockStatsForAi" resultType="java.util.Map">
+        SELECT
+            p.id AS productId,
+            p.name AS productName,
+            w.id AS warehouseId,
+            w.name AS warehouseName,
+            IFNULL(s.count, 0) AS currentStock,
+            IFNULL(p.safe_stock, 0) AS safetyStock,
+            0 AS maxStock
+        FROM erp_stock s
+        INNER JOIN erp_product p ON s.product_id = p.id AND p.deleted = 0
+        INNER JOIN erp_warehouse w ON s.warehouse_id = w.id AND w.deleted = 0
+        WHERE s.deleted = 0
+    </select>
+
+    <select id="selectStockOutStats" resultType="java.util.Map">
+        SELECT
+            i.product_id AS productId,
+            i.warehouse_id AS warehouse_id,
+            SUM(i.count) AS totalOutCount
+        FROM erp_stock_out_item i
+        INNER JOIN erp_stock_out o ON i.out_id = o.id
+        WHERE i.deleted = 0 AND o.deleted = 0
+          AND o.out_time &gt;= #{startTime} AND o.out_time &lt;= #{endTime}
+        GROUP BY i.product_id, i.warehouse_id
+    </select>
+
+    <select id="selectLatestSuggests" resultType="nova.erp.module.erp.dal.dataobject.stock.ErpStockAiSuggestDO">
+        SELECT * FROM erp_stock_ai_suggest
+        WHERE deleted = 0
+        AND create_time = (
+            SELECT MAX(create_time) FROM erp_stock_ai_suggest WHERE deleted = 0
+        )
+        ORDER BY priority ASC, id DESC
+    </select>
+
+</mapper>

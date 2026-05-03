@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nova.erp.module.erp.dal.mysql.purchase.ErpPurchaseAiSuggestMapper">
+
+    <select id="selectNeedReplenishProducts" resultType="java.util.Map">
+        SELECT
+            p.id AS productId,
+            p.name AS productName,
+            IFNULL(p.safe_stock, 0) AS safetyStock,
+            IFNULL(SUM(s.count), 0) AS currentStock
+        FROM erp_product p
+        LEFT JOIN erp_stock s ON p.id = s.product_id AND s.deleted = 0
+        WHERE p.deleted = 0
+        GROUP BY p.id, p.name, p.safe_stock
+        HAVING IFNULL(SUM(s.count), 0) &lt; IFNULL(p.safe_stock, 0)
+    </select>
+
+    <select id="selectProductSaleCounts" resultType="java.util.Map">
+        SELECT
+            i.product_id AS productId,
+            SUM(i.count) AS totalSaleCount
+        FROM erp_sale_out_items i
+        INNER JOIN erp_sale_out o ON i.out_id = o.id
+        WHERE i.deleted = 0 AND o.deleted = 0
+          AND o.out_time &gt;= #{startTime} AND o.out_time &lt;= #{endTime}
+          <if test="productIds != null and productIds.size > 0">
+              AND i.product_id IN
+              <foreach collection="productIds" item="id" open="(" separator="," close=")">
+                  #{id}
+              </foreach>
+          </if>
+        GROUP BY i.product_id
+    </select>
+
+    <select id="selectProductRecentPurchaseRecords" resultType="java.util.Map">
+        SELECT
+            i.product_id AS productId,
+            sup.name AS supplierName,
+            i.product_price AS productPrice,
+            pin.in_time AS inTime
+        FROM erp_purchase_in_items i
+        INNER JOIN erp_purchase_in pin ON i.in_id = pin.id
+        INNER JOIN erp_supplier sup ON pin.supplier_id = sup.id
+        WHERE i.deleted = 0 AND pin.deleted = 0 AND sup.deleted = 0
+          AND pin.in_time &gt;= #{startTime} AND pin.in_time &lt;= #{endTime}
+          <if test="productIds != null and productIds.size > 0">
+              AND i.product_id IN
+              <foreach collection="productIds" item="id" open="(" separator="," close=")">
+                  #{id}
+              </foreach>
+          </if>
+        ORDER BY pin.in_time DESC
+    </select>
+
+    <select id="selectLatestSuggests" resultType="nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseAiSuggestDO">
+        SELECT * FROM erp_purchase_ai_suggest
+        WHERE deleted = 0
+        AND create_time = (
+            SELECT MAX(create_time) FROM erp_purchase_ai_suggest WHERE deleted = 0
+        )
+        ORDER BY id DESC
+    </select>
+
+</mapper>

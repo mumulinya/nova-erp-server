@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>nova-framework</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>nova-spring-boot-starter-biz-data-permission</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>鏁版嵁鏉冮檺</description>
+    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-common</artifactId>
+        </dependency>
+
+        <!-- Web 鐩稿叧 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-spring-boot-starter-security</artifactId>
+            <optional>true</optional> <!-- 鍙€夛紝濡傛灉浣跨敤 DeptDataPermissionRule 蹇呴』鎻愪緵 -->
+        </dependency>
+
+        <!-- DB 鐩稿叧 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <!-- Test 娴嬭瘯鐩稿叧 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

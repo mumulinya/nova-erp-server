@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nova.erp.module.erp.dal.mysql.statistics.ErpReportMapper">
+
+    <!-- 采购汇总报表 -->
+    <select id="getPurchaseReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpPurchaseReportRespVO">
+        SELECT
+            s.id AS supplierId,
+            s.name AS supplierName,
+            IFNULL(pin.in_total, 0) AS inPrice,
+            IFNULL(prt.return_total, 0) AS returnPrice,
+            (IFNULL(pin.in_total, 0) - IFNULL(prt.return_total, 0)) AS netPrice
+        FROM erp_supplier s
+        LEFT JOIN (
+            SELECT supplier_id, SUM(total_price) AS in_total
+            FROM erp_purchase_in
+            WHERE deleted = 0
+            <if test="beginTime != null"> AND in_time &gt;= #{beginTime} </if>
+            <if test="endTime != null"> AND in_time &lt; #{endTime} </if>
+            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            </if>
+            GROUP BY supplier_id
+        ) pin ON s.id = pin.supplier_id
+        LEFT JOIN (
+            SELECT supplier_id, SUM(total_price) AS return_total
+            FROM erp_purchase_return
+            WHERE deleted = 0
+            <if test="beginTime != null"> AND return_time &gt;= #{beginTime} </if>
+            <if test="endTime != null"> AND return_time &lt; #{endTime} </if>
+            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            </if>
+            GROUP BY supplier_id
+        ) prt ON s.id = prt.supplier_id
+        WHERE s.deleted = 0
+        <if test="supplierId != null"> AND s.id = #{supplierId} </if>
+        <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+            AND s.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+        </if>
+        HAVING inPrice > 0 OR returnPrice > 0
+        ORDER BY netPrice DESC
+    </select>
+
+    <!-- 销售汇总报表 -->
+    <select id="getSaleReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpSaleReportRespVO">
+        SELECT
+            c.id AS customerId,
+            c.name AS customerName,
+            IFNULL(so.out_total, 0) AS outPrice,
+            IFNULL(sr.return_total, 0) AS returnPrice,
+            (IFNULL(so.out_total, 0) - IFNULL(sr.return_total, 0)) AS netPrice
+        FROM erp_customer c
+        LEFT JOIN (
+            SELECT customer_id, SUM(total_price) AS out_total
+            FROM erp_sale_out
+            WHERE deleted = 0
+            <if test="beginTime != null"> AND out_time &gt;= #{beginTime} </if>
+            <if test="endTime != null"> AND out_time &lt; #{endTime} </if>
+            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            </if>
+            GROUP BY customer_id
+        ) so ON c.id = so.customer_id
+        LEFT JOIN (
+            SELECT customer_id, SUM(total_price) AS return_total
+            FROM erp_sale_return
+            WHERE deleted = 0
+            <if test="beginTime != null"> AND return_time &gt;= #{beginTime} </if>
+            <if test="endTime != null"> AND return_time &lt; #{endTime} </if>
+            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            </if>
+            GROUP BY customer_id
+        ) sr ON c.id = sr.customer_id
+        WHERE c.deleted = 0
+        <if test="customerId != null"> AND c.id = #{customerId} </if>
+        <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+            AND c.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+        </if>
+        HAVING outPrice > 0 OR returnPrice > 0
+        ORDER BY netPrice DESC
+    </select>
+
+    <!-- 库存预警报表 -->
+    <select id="getStockAlertReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpStockAlertRespVO">
+        SELECT
+            p.id AS productId,
+            p.name AS productName,
+            w.name AS warehouseName,
+            s.count AS currentStock,
+            IFNULL(p.safe_stock, 10) AS safeStock,
+            (IFNULL(p.safe_stock, 10) - s.count) AS gapCount
+        FROM erp_stock s
+        INNER JOIN erp_product p ON s.product_id = p.id AND p.deleted = 0
+        INNER JOIN erp_warehouse w ON s.warehouse_id = w.id AND w.deleted = 0
+        WHERE s.count &lt; IFNULL(p.safe_stock, 10)
+          AND s.deleted = 0
+          <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+              AND s.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+          </if>
+        ORDER BY gapCount DESC
+    </select>
+
+    <!-- 物流费用汇总报表 -->
+    <select id="getLogisticsCostReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpLogisticsCostReportRespVO">
+        SELECT
+            o.order_no AS orderNo,
+            c.transport_cost AS transportCost,
+            c.fuel_cost AS fuelCost,
+            c.toll_cost AS tollCost,
+            c.other_cost AS otherCost,
+            c.total_cost AS totalCost
+        FROM logistics_cost c
+        INNER JOIN logistics_order o ON c.logistics_order_id = o.id AND o.deleted = 0
+        WHERE c.deleted = 0
+          <if test="beginTime != null"> AND c.create_time &gt;= #{beginTime} </if>
+          <if test="endTime != null"> AND c.create_time &lt; #{endTime} </if>
+          <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+              AND c.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+          </if>
+        ORDER BY c.create_time DESC
+    </select>
+
+</mapper>

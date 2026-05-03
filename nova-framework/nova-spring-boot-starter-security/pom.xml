@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>nova-framework</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>nova-spring-boot-starter-security</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>
+        1. security锛氱敤鎴风殑璁よ瘉銆佹潈闄愮殑鏍￠獙锛屽疄鐜般€岃皝銆嶅彲浠ュ仛銆屼粈涔堜簨銆?        2. operatelog锛氭搷浣滄棩蹇楋紝瀹炵幇銆岃皝銆嶅湪銆屼粈涔堟椂闂淬€嶅銆屼粈涔堛€嶅仛浜嗐€屼粈涔堜簨銆?    </description>
+    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-common</artifactId>
+        </dependency>
+
+        <!-- Spring 鏍稿績 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!-- Web 鐩稿叧 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- spring boot 閰嶇疆鎵€闇€渚濊禆 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- 宸ュ叿绫荤浉鍏?-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <dependency>
+            <!-- Spring Boot 閫氱敤鎿嶄綔鏃ュ織缁勪欢锛屽熀浜庢敞瑙ｅ疄鐜?-->
+            <!-- 姝ょ粍浠惰В鍐崇殑闂鏄細銆岃皝銆嶅湪銆屼粈涔堟椂闂淬€嶅銆屼粈涔堛€嶅仛浜嗐€屼粈涔堜簨銆?-->
+            <groupId>io.github.mouzt</groupId>
+            <artifactId>bizlog-sdk</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
+

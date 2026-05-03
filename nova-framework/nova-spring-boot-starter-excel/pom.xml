@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>nova-framework</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>nova-spring-boot-starter-excel</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>Excel 鎷撳睍</description>
+    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-common</artifactId>
+        </dependency>
+
+        <!-- Spring 鏍稿績 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- Web 鐩稿叧 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <scope>provided</scope> <!-- 璁剧疆涓?provided锛屽彧鏈?ExcelUtils 浣跨敤 -->
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>provided</scope> <!-- 璁剧疆涓?provided锛屽彧鏈?ExcelUtils 浣跨敤 -->
+        </dependency>
+
+        <!-- 宸ュ叿绫荤浉鍏?-->
+        <dependency>
+            <groupId>cn.idev.excel</groupId>
+            <artifactId>fastexcel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-spring-boot-starter-biz-ip</artifactId>
+            <optional>true</optional> <!-- 璁剧疆涓?optional锛屽彧鏈夊湪 AreaConvert 鐨勬椂鍊欎娇鐢?-->
+        </dependency>
+
+        <!-- Test 娴嬭瘯鐩稿叧 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>nova-spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+
