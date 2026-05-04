@@ -125,4 +125,9 @@ public class ErpSaleOutDO extends BaseDO {
      */
     private String remark;
 
+    /**
+     * 物流状态
+     */
+    private Integer logisticsStatus;
+
 }

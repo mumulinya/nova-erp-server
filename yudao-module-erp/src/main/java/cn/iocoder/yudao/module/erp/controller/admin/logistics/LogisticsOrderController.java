@@ -24,7 +24,7 @@ import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
-import cn.nova.erp.module.erp.controller.admin.logistics.vo.*;
+import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.*;
 import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsOrderDO;
 import cn.iocoder.yudao.module.erp.service.logistics.LogisticsOrderService;
 import cn.iocoder.yudao.module.erp.service.logistics.LogisticsAiDispatchService;

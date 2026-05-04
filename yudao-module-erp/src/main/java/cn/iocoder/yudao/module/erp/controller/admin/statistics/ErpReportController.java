@@ -5,8 +5,8 @@ import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpLogi
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpPurchaseReportRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpSaleReportRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpStockAlertRespVO;
-import cn.nova.erp.module.erp.controller.admin.statistics.vo.report.*;
-import cn.nova.erp.module.erp.service.statistics.ErpReportService;
+import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.*;
+import cn.iocoder.yudao.module.erp.service.statistics.ErpReportService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;

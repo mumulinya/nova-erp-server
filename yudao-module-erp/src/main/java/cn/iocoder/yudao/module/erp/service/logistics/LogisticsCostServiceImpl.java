@@ -7,7 +7,7 @@ import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.LogisticsCostSa
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import jakarta.annotation.Resource;
-import cn.nova.erp.module.erp.controller.admin.logistics.vo.*;
+import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.*;
 import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsCostDO;
 import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsOrderDO;
 import cn.iocoder.yudao.module.erp.dal.mysql.logistics.LogisticsCostMapper;

@@ -2,7 +2,7 @@ package cn.iocoder.yudao.module.erp.controller.admin.sale;
 
 import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.iocoder.yudao.module.erp.controller.admin.sale.vo.aianalysis.ErpSaleAiAnalysisRespVO;
-import cn.nova.erp.module.erp.service.sale.ErpSaleAiAnalysisService;
+import cn.iocoder.yudao.module.erp.service.sale.ErpSaleAiAnalysisService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;

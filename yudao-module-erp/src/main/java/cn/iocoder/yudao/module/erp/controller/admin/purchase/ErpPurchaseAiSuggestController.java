@@ -3,7 +3,7 @@ package cn.iocoder.yudao.module.erp.controller.admin.purchase;
 import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
 import cn.iocoder.yudao.module.erp.controller.admin.purchase.vo.aisuggest.ErpPurchaseAiSuggestRespVO;
-import cn.nova.erp.module.erp.service.purchase.ErpPurchaseAiSuggestService;
+import cn.iocoder.yudao.module.erp.service.purchase.ErpPurchaseAiSuggestService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;

@@ -4,7 +4,7 @@ import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpD
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardLogisticsStatusRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardStockHealthRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO;
-import cn.nova.erp.module.erp.controller.admin.statistics.vo.dashboard.*;
+import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.*;
 import cn.iocoder.yudao.module.erp.dal.mysql.statistics.ErpDashboardStatisticsMapper;
 import cn.iocoder.yudao.module.erp.enums.logistics.LogisticsOrderStatusEnum;
 import jakarta.annotation.Resource;

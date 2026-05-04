@@ -4,8 +4,8 @@ import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpD
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardLogisticsStatusRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardStockHealthRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO;
-import cn.nova.erp.module.erp.controller.admin.statistics.vo.dashboard.*;
-import cn.nova.erp.module.erp.service.statistics.ErpDashboardService;
+import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.*;
+import cn.iocoder.yudao.module.erp.service.statistics.ErpDashboardService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import cn.hutool.json.JSONObject;

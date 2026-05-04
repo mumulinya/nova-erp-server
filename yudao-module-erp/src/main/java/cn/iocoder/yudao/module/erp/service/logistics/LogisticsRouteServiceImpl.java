@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import jakarta.annotation.Resource;
 import java.util.List;
-import cn.nova.erp.module.erp.controller.admin.logistics.vo.*;
+import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.*;
 import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsRouteDO;
 import cn.iocoder.yudao.module.erp.dal.mysql.logistics.LogisticsRouteMapper;
 import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;

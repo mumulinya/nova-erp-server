@@ -5,7 +5,7 @@ import java.util.*;
 import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.LogisticsCostPageReqVO;
 import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.LogisticsCostSaveReqVO;
 import jakarta.validation.*;
-import cn.nova.erp.module.erp.controller.admin.logistics.vo.*;
+import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.*;
 import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsCostDO;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
 

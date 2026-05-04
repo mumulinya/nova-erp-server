@@ -4,7 +4,7 @@ import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpLogi
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpPurchaseReportRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpSaleReportRespVO;
 import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpStockAlertRespVO;
-import cn.nova.erp.module.erp.controller.admin.statistics.vo.report.*;
+import cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.*;
 import cn.iocoder.yudao.module.erp.dal.mysql.statistics.ErpReportMapper;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;

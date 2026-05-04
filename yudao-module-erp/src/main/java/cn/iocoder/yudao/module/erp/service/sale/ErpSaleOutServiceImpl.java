@@ -207,6 +207,14 @@ public class ErpSaleOutServiceImpl implements ErpSaleOutService {
         saleOutMapper.updateById(new ErpSaleOutDO().setId(id).setReceiptPrice(receiptPrice));
     }
 
+    @Override
+    public void updateSaleOutLogisticsStatus(Long id, Integer logisticsStatus) {
+        ErpSaleOutDO saleOut = validateSaleOutExists(id);
+        if (ObjectUtil.notEqual(saleOut.getLogisticsStatus(), logisticsStatus)) {
+            saleOutMapper.updateById(new ErpSaleOutDO().setId(id).setLogisticsStatus(logisticsStatus));
+        }
+    }
+
     private List<ErpSaleOutItemDO> validateSaleOutItems(List<ErpSaleOutSaveReqVO.Item> list) {
         // 1. 校验产品存在
         List<ErpProductDO> productList = productService.validProductList(

@@ -42,6 +42,14 @@ public interface ErpSaleOutService {
     void updateSaleOutStatus(Long id, Integer status);
 
     /**
+     * 更新销售出库的物流状态
+     *
+     * @param id 编号
+     * @param logisticsStatus 物流状态
+     */
+    void updateSaleOutLogisticsStatus(Long id, Integer logisticsStatus);
+
+    /**
      * 更新销售出库的收款金额
      *
      * @param id 编号
