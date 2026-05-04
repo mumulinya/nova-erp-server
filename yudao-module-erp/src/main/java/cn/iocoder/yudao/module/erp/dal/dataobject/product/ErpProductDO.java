@@ -67,7 +67,7 @@ public class ErpProductDO extends BaseDO {
      */
     private Integer expiryDay;
     /**
-     * 基础重量（kg）
+     * 基础重量(kg)
      */
     private BigDecimal weight;
     /**
@@ -82,5 +82,13 @@ public class ErpProductDO extends BaseDO {
      * 最低价格，单位：元
      */
     private BigDecimal minPrice;
+    /**
+     * 安全库存数量
+     */
+    private BigDecimal safeStock;
+    /**
+     * 最大库存数量
+     */
+    private BigDecimal maxStock;
 
 }

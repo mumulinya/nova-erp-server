@@ -33,6 +33,8 @@ public class LogisticsOrderSaveReqVO {
     private Long routeId;
     @Schema(description = "出库时间")
     private java.time.LocalDateTime outTime;
+    @Schema(description = "运输总费用(元)")
+    private java.math.BigDecimal totalCost;
     @Schema(description = "运输状态")
     private Integer status;
     @Schema(description = "备注")

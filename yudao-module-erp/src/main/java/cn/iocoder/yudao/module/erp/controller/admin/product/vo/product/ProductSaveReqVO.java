@@ -43,7 +43,7 @@ public class ProductSaveReqVO {
     @Schema(description = "保质期天数", example = "10")
     private Integer expiryDay;
 
-    @Schema(description = "基础重量（kg）", example = "1.00")
+    @Schema(description = "基础重量(kg)", example = "1.00")
     private BigDecimal weight;
 
     @Schema(description = "采购价格，单位：元", example = "10.30")
@@ -54,5 +54,11 @@ public class ProductSaveReqVO {
 
     @Schema(description = "最低价格，单位：元", example = "161.87")
     private BigDecimal minPrice;
+
+    @Schema(description = "安全库存数量", example = "10")
+    private BigDecimal safeStock;
+
+    @Schema(description = "最大库存数量", example = "1000")
+    private BigDecimal maxStock;
 
 }

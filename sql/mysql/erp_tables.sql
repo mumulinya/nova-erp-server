@@ -125,6 +125,8 @@ CREATE TABLE `erp_product` (
   `purchase_price` DECIMAL(24, 6) COMMENT "采购价格，单位：元",
   `sale_price` DECIMAL(24, 6) COMMENT "销售价格，单位：元",
   `min_price` DECIMAL(24, 6) COMMENT "最低价格，单位：元",
+  `safe_stock` DECIMAL(24, 6) DEFAULT 10.000000 COMMENT "安全库存数量",
+  `max_stock` DECIMAL(24, 6) DEFAULT 1000.000000 COMMENT "最大库存数量",
   `creator` varchar(64) DEFAULT '' COMMENT '创建者',
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `updater` varchar(64) DEFAULT '' COMMENT '更新者',

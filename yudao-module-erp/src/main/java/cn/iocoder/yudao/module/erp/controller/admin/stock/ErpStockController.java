@@ -104,7 +104,8 @@ public class ErpStockController {
                 convertSet(pageResult.getList(), ErpStockDO::getWarehouseId));
         return BeanUtils.toBean(pageResult, ErpStockRespVO.class, stock -> {
             MapUtils.findAndThen(productMap, stock.getProductId(), product -> stock.setProductName(product.getName())
-                    .setCategoryName(product.getCategoryName()).setUnitName(product.getUnitName()));
+                    .setCategoryName(product.getCategoryName()).setUnitName(product.getUnitName())
+                    .setMaxStock(product.getMaxStock()).setSafeStock(product.getSafeStock()));
             MapUtils.findAndThen(warehouseMap, stock.getWarehouseId(), warehouse -> stock.setWarehouseName(warehouse.getName()));
         });
     }

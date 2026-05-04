@@ -26,6 +26,14 @@ public class ErpStockRespVO {
     @ExcelProperty("库存数量")
     private BigDecimal count;
 
+    @Schema(description = "最大库存", example = "10000")
+    @ExcelProperty("最大库存")
+    private BigDecimal maxStock;
+
+    @Schema(description = "安全库存", example = "100")
+    @ExcelProperty("安全库存")
+    private BigDecimal safeStock;
+
     // ========== 产品信息 ==========
 
     @Schema(description = "产品名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "苹果")

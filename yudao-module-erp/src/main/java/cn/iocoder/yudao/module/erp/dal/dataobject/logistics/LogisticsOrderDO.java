@@ -88,6 +88,10 @@ public class LogisticsOrderDO extends BaseDO {
     @com.baomidou.mybatisplus.annotation.TableField(exist = false)
     private Boolean hasCost;
     /**
+     * 运输总费用(元)
+     */
+    private java.math.BigDecimal totalCost;
+    /**
      * 运输状态
      */
     private Integer status;

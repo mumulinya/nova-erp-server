@@ -47,6 +47,14 @@ public class LogisticsVehicleDO extends BaseDO {
      */
     private java.math.BigDecimal maxVolume;
     /**
+     * 每日运费(元/天)
+     */
+    private java.math.BigDecimal pricePerDay;
+    /**
+     * 每公里油费(元/公里)
+     */
+    private java.math.BigDecimal fuelCostPerKm;
+    /**
      * 车辆状态
      */
     private Integer status;

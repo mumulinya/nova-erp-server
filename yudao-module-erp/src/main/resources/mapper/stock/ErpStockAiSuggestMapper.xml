@@ -9,8 +9,8 @@
             w.id AS warehouseId,
             w.name AS warehouseName,
             IFNULL(s.count, 0) AS currentStock,
-            IFNULL(p.safe_stock, 0) AS safetyStock,
-            0 AS maxStock
+            IFNULL(p.safe_stock, 10) AS safetyStock,
+            IFNULL(p.max_stock, 1000) AS maxStock
         FROM erp_stock s
         INNER JOIN erp_product p ON s.product_id = p.id AND p.deleted = 0
         INNER JOIN erp_warehouse w ON s.warehouse_id = w.id AND w.deleted = 0

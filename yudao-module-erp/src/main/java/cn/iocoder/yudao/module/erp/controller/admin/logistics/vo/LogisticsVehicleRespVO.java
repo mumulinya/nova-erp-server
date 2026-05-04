@@ -22,6 +22,10 @@ public class LogisticsVehicleRespVO {
     private java.math.BigDecimal maxWeight;
     @Schema(description = "最大容积")
     private java.math.BigDecimal maxVolume;
+    @Schema(description = "每日运费(元/天)")
+    private java.math.BigDecimal pricePerDay;
+    @Schema(description = "每公里油费(元/公里)")
+    private java.math.BigDecimal fuelCostPerKm;
     @Schema(description = "车辆状态")
     private Integer status;
     @Schema(description = "备注")

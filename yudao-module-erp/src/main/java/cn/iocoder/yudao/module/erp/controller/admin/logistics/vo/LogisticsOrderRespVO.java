@@ -56,6 +56,10 @@ public class LogisticsOrderRespVO {
     @ExcelProperty("出库时间")
     private LocalDateTime outTime;
 
+    @Schema(description = "运输总费用(元)")
+    @ExcelProperty("运输费用(元)")
+    private java.math.BigDecimal totalCost;
+
     @Schema(description = "是否可发货（当前时间 >= 出库时间）")
     private Boolean canDispatch;
 

@@ -53,8 +53,8 @@ public class ErpProductRespVO {
     @ExcelProperty("保质期天数")
     private Integer expiryDay;
 
-    @Schema(description = "基础重量（kg）", example = "1.00")
-    @ExcelProperty("基础重量（kg）")
+    @Schema(description = "基础重量(kg)", example = "1.00")
+    @ExcelProperty("基础重量(kg)")
     private BigDecimal weight;
 
     @Schema(description = "采购价格，单位：元", example = "10.30")
@@ -68,6 +68,14 @@ public class ErpProductRespVO {
     @Schema(description = "最低价格，单位：元", example = "161.87")
     @ExcelProperty("最低价格，单位：元")
     private BigDecimal minPrice;
+
+    @Schema(description = "安全库存数量", example = "10")
+    @ExcelProperty("安全库存数量")
+    private BigDecimal safeStock;
+
+    @Schema(description = "最大库存数量", example = "1000")
+    @ExcelProperty("最大库存数量")
+    private BigDecimal maxStock;
 
     @Schema(description = "创建时间", requiredMode = Schema.RequiredMode.REQUIRED)
     @ExcelProperty("创建时间")

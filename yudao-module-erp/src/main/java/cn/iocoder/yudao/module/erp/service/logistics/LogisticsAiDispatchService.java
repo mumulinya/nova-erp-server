@@ -2,8 +2,10 @@ package cn.iocoder.yudao.module.erp.service.logistics;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.LogisticsCostSaveReqVO;
 import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.LogisticsOrderSaveReqVO;
 import cn.iocoder.yudao.module.erp.controller.admin.logistics.vo.LogisticsRouteSaveReqVO;
+import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsCostDO;
 import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsOrderDO;
 import cn.iocoder.yudao.module.erp.dal.dataobject.logistics.LogisticsVehicleDO;
 import cn.iocoder.yudao.module.erp.dal.dataobject.sale.ErpSaleOutItemDO;
@@ -20,6 +22,7 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -51,13 +54,16 @@ public class LogisticsAiDispatchService {
     @Resource
     private ErpWarehouseService warehouseService;
 
+    @Resource
+    private LogisticsCostService logisticsCostService;
+
     @PostConstruct
     public void init() {
         this.chatClient = ChatClient.create(chatModel);
     }
 
     /**
-     * 统一调用大模型 API 的方法（基于 Spring AI）
+     * 统一调用大模型 API 的方法（基于 Spring AI)
      */
     private String callThirdPartyApi(String promptText) {
         log.info("========== 开始调用大模型 API ==========");
@@ -85,7 +91,7 @@ public class LogisticsAiDispatchService {
     }
 
     /**
-     * 从 AI 返回的文本中解析距离（公里）
+     * 从 AI 返回的文本中解析距离（公里)
      * 支持格式：约2,150-2,200公里、约2150公里、2200km、2,200 km 等
      */
     private BigDecimal parseDistanceFromAi(String aiText) {
@@ -127,7 +133,7 @@ public class LogisticsAiDispatchService {
     }
 
     /**
-     * 从 AI 返回的文本中解析预计时长（小时）
+     * 从 AI 返回的文本中解析预计时长（小时)
      * 支持格式：约24-28小时、约26小时、24~28h 等
      */
     private BigDecimal parseEstimatedHoursFromAi(String aiText) {
@@ -191,6 +197,111 @@ public class LogisticsAiDispatchService {
         }
     }
 
+    /**
+     * 从 AI 返回的文本中解析过路费(元)
+     * 支持格式：过路费约800元、高速费600-900元、约750元 等
+     */
+    private BigDecimal parseTollCostFromAi(String aiText) {
+        if (aiText == null || aiText.isEmpty()) {
+            return BigDecimal.ZERO;
+        }
+        try {
+            // 模式1: "过路费/高速费 约XXX-YYY元"
+            Pattern rangePattern = Pattern.compile(
+                    "(?:过路费|高速费|通行费|路桥费)\\s*(?:约|大约|约为|：|:)?\\s*([\\d,]+(?:\\.\\d+)?)\\s*[-~至到]\\s*([\\d,]+(?:\\.\\d+)?)\\s*元",
+                    Pattern.CASE_INSENSITIVE);
+            Matcher rangeMatcher = rangePattern.matcher(aiText);
+            if (rangeMatcher.find()) {
+                double val1 = Double.parseDouble(rangeMatcher.group(1).replace(",", ""));
+                double val2 = Double.parseDouble(rangeMatcher.group(2).replace(",", ""));
+                BigDecimal avg = BigDecimal.valueOf((val1 + val2) / 2).setScale(0, RoundingMode.HALF_UP);
+                log.info("从AI文本中解析到过路费范围: {}-{} 元, 取中间值: {}", val1, val2, avg);
+                return avg;
+            }
+
+            // 模式2: "过路费 约XXX元"
+            Pattern singlePattern = Pattern.compile(
+                    "(?:过路费|高速费|通行费|路桥费)\\s*(?:约|大约|约为|：|:)?\\s*([\\d,]+(?:\\.\\d+)?)\\s*元",
+                    Pattern.CASE_INSENSITIVE);
+            Matcher singleMatcher = singlePattern.matcher(aiText);
+            if (singleMatcher.find()) {
+                double val = Double.parseDouble(singleMatcher.group(1).replace(",", ""));
+                BigDecimal result = BigDecimal.valueOf(val).setScale(0, RoundingMode.HALF_UP);
+                log.info("从AI文本中解析到过路费: {} 元", result);
+                return result;
+            }
+
+            // 模式3: 匹配"XX元/公里"格式，乘以距离估算
+            Pattern perKmPattern = Pattern.compile(
+                    "([\\d.]+)\\s*元\\s*/\\s*(?:公里|km)",
+                    Pattern.CASE_INSENSITIVE);
+            Matcher perKmMatcher = perKmPattern.matcher(aiText);
+            if (perKmMatcher.find()) {
+                double perKm = Double.parseDouble(perKmMatcher.group(1));
+                BigDecimal estimate = BigDecimal.valueOf(perKm * 500).setScale(0, RoundingMode.HALF_UP); // 按500公里估算
+                log.info("从AI文本中解析到过路费单价: {} 元/km, 按500km估算: {} 元", perKm, estimate);
+                return estimate;
+            }
+
+            log.warn("未能从AI文本中解析出过路费信息");
+            return BigDecimal.ZERO;
+        } catch (Exception e) {
+            log.warn("解析AI过路费信息异常: {}", e.getMessage());
+            return BigDecimal.ZERO;
+        }
+    }
+
+    /**
+     * 根据车辆配置和AI解析结果自动计算物流费用
+     * 运输费 = 每日运费 × 天数(不足1天按1天算)
+     * 油费 = 每公里油费 × 距离
+     * 过路费 = AI 估算值
+     */
+    private LogisticsCostSaveReqVO calculateAndBuildCost(
+            Long orderId, LogisticsVehicleDO vehicle,
+            BigDecimal distance, BigDecimal hours, BigDecimal tollCost) {
+
+        // 运输费 = 每日运费 × 天数
+        BigDecimal transportCost = BigDecimal.ZERO;
+        if (vehicle.getPricePerDay() != null && vehicle.getPricePerDay().compareTo(BigDecimal.ZERO) > 0) {
+            // 按天计费，不足1天按1天算
+            BigDecimal days = hours.divide(BigDecimal.valueOf(24), 1, RoundingMode.CEILING);
+            if (days.compareTo(BigDecimal.ONE) < 0) {
+                days = BigDecimal.ONE;
+            }
+            transportCost = vehicle.getPricePerDay().multiply(days).setScale(2, RoundingMode.HALF_UP);
+        }
+
+        // 油费 = 每公里油费 × 距离
+        BigDecimal fuelCost = BigDecimal.ZERO;
+        if (vehicle.getFuelCostPerKm() != null && vehicle.getFuelCostPerKm().compareTo(BigDecimal.ZERO) > 0) {
+            fuelCost = vehicle.getFuelCostPerKm().multiply(distance).setScale(2, RoundingMode.HALF_UP);
+        }
+
+        // 过路费 = AI 估算值(如果为0则留空由人工补录)
+        if (tollCost == null) {
+            tollCost = BigDecimal.ZERO;
+        }
+
+        BigDecimal totalCost = transportCost.add(fuelCost).add(tollCost).setScale(2, RoundingMode.HALF_UP);
+
+        log.info("费用计算结果 => 运输费:{}元(每日{}元×{}天), 油费:{}元(每公里{}元×{}km), 过路费:{}元, 合计:{}元",
+                transportCost, vehicle.getPricePerDay(),
+                hours.divide(BigDecimal.valueOf(24), 1, RoundingMode.CEILING),
+                fuelCost, vehicle.getFuelCostPerKm(), distance, tollCost, totalCost);
+
+        LogisticsCostSaveReqVO costReq = new LogisticsCostSaveReqVO();
+        costReq.setLogisticsOrderId(orderId);
+        costReq.setTransportCost(transportCost);
+        costReq.setFuelCost(fuelCost);
+        costReq.setTollCost(tollCost);
+        costReq.setOtherCost(BigDecimal.ZERO);
+        costReq.setTotalCost(totalCost);
+        costReq.setSettlementStatus(0); // 0=未结算
+        costReq.setRemark("AI调度自动计算费用");
+        return costReq;
+    }
+
     public void autoDispatch(Long logisticsOrderId, String startAddress) {
 
         log.info("开始执行 AI 自动调度, 订单ID: {}", logisticsOrderId);
@@ -229,12 +340,12 @@ public class LogisticsAiDispatchService {
                     // 让 AI 选择
                     String vehicleJson = JsonUtils.toJsonString(availableVehicles);
                     String promptText = String.format(
-                            "你是一个专业的物流调度专家。这里有一个运输订单，货物信息为：%s。\n" +
-                            "发货仓库地址为：%s。\n" +
-                            "以下是当前可用的空闲车辆列表（JSON格式）：\n%s\n\n" +
-                            "请根据货物的重量、体积等信息，选择一辆最合适的车辆。同时，请根据发货仓库地址，优先分配车牌归属地与仓库所在地相匹配的车辆。\n" +
-                            "如果无法判断，请随机选择一辆。\n" +
-                            "请只返回选中的车辆ID（纯数字，不要包含任何其他字符和符号）。",
+                            "你是一个专业的物流调度专家。这里有一个运输订单, 货物信息为: %s。\n" +
+                            "发货仓库地址为: %s。\n" +
+                            "以下是当前可用的空闲车辆列表(JSON格式):\n%s\n\n" +
+                            "请根据货物的重量、体积等信息, 选择一辆最合适的车辆。同时, 请根据发货仓库地址, 优先分配车牌归属地与仓库所在地相匹配的车辆。\n" +
+                            "如果无法判断, 请随机选择一辆。\n" +
+                            "请只返回选中的车辆ID(纯数字, 不要包含任何其他字符和符号)。",
                             order.getGoodsInfo(), realStartAddress, vehicleJson);
                             
                     // 调用第三方 API 选择车辆
@@ -269,19 +380,20 @@ public class LogisticsAiDispatchService {
             LogisticsVehicleDO selectedVehicle = logisticsVehicleService.getLogisticsVehicle(selectedVehicleId);
             String vehicleInfo = selectedVehicle.getPlateNo() + " (载重" + selectedVehicle.getMaxWeight() + "吨)";
 
-            // 2. 规划路线
+            // 2. 规划路线（含费用估算)
             String routePromptText = String.format(
-                    "你是一个专业的物流路线规划专家。请根据以下订单信息，规划一条最优配送路线，并给出合理的建议。\n" +
-                            "【起点（发货地）】：%s\n" +
-                            "【终点（收货地）】：%s\n" +
-                            "【车辆信息】：%s\n" +
-                            "【货物信息】：%s\n" +
-                            "【时效要求】：无限制\n\n" +
-                            "请输出以下内容（使用 Markdown 格式）：\n" +
-                            "1. 路线建议（推荐的高速/省道，途经关键节点）\n" +
-                            "2. 预计距离（公里估算）\n" +
-                            "3. 预计时长（小时估算）\n" +
-                            "4. 注意事项（天气、限行、货物保护等）",
+                    "你是一个专业的物流路线规划专家。请根据以下订单信息, 规划一条最优配送路线, 并给出合理的建议。\n" +
+                            "【起点(发货地)】: %s\n" +
+                            "【终点(收货地)】: %s\n" +
+                            "【车辆信息】: %s\n" +
+                            "【货物信息】: %s\n" +
+                            "【时效要求】: 无限制\n\n" +
+                            "请输出以下内容(使用 Markdown 格式):\n" +
+                            "1. 路线建议(推荐的高速/省道, 途经关键节点)\n" +
+                            "2. 预计距离(公里估算)\n" +
+                            "3. 预计时长(小时估算)\n" +
+                            "4. 预计高速过路费(元估算, 基于该距离的高速收费标准)\n" +
+                            "5. 注意事项(天气、限行、货物保护等)",
                     realStartAddress != null ? realStartAddress : "仓库中心",
                     order.getReceiverAddress(),
                     vehicleInfo,
@@ -295,10 +407,11 @@ public class LogisticsAiDispatchService {
             }
             log.info("第三方 API 规划路线完成。");
 
-            // 3. 从 AI 返回文本中解析距离和预计时长
+            // 3. 从 AI 返回文本中解析距离、预计时长和过路费
             BigDecimal parsedDistance = parseDistanceFromAi(aiSuggestion);
             BigDecimal parsedHours = parseEstimatedHoursFromAi(aiSuggestion);
-            log.info("AI 路线解析结果 => 距离: {} 公里, 预计时长: {} 小时", parsedDistance, parsedHours);
+            BigDecimal parsedTollCost = parseTollCostFromAi(aiSuggestion);
+            log.info("AI 路线解析结果 => 距离: {} 公里, 预计时长: {} 小时, 预计过路费: {} 元", parsedDistance, parsedHours, parsedTollCost);
 
             // 4. 保存路线
             LogisticsRouteSaveReqVO routeReq = new LogisticsRouteSaveReqVO();
@@ -310,23 +423,37 @@ public class LogisticsAiDispatchService {
             routeReq.setStatus(0); // 0=可用
             routeReq.setRemark("AI自动规划路线");
             routeReq.setAiSuggestion(aiSuggestion);
-            
+
             Long routeId = logisticsRouteService.createLogisticsRoute(routeReq);
 
-            // 4. 更新订单和车辆状态
+            // 5. 自动计算并保存物流费用, 同时写回运单总金额
+            BigDecimal orderTotalCost = BigDecimal.ZERO;
+            try {
+                LogisticsCostSaveReqVO costReq = calculateAndBuildCost(
+                        logisticsOrderId, selectedVehicle, parsedDistance, parsedHours, parsedTollCost);
+                if (costReq != null) {
+                    logisticsCostService.createLogisticsCost(costReq);
+                    orderTotalCost = costReq.getTotalCost();
+                    log.info("AI 自动创建费用记录成功: 运输费={}, 油费={}, 过路费={}, 合计={}",
+                            costReq.getTransportCost(), costReq.getFuelCost(),
+                            costReq.getTollCost(), costReq.getTotalCost());
+                }
+            } catch (Exception e) {
+                log.warn("AI 自动创建费用记录失败, 需手动录入: {}", e.getMessage());
+            }
+
+            // 6. 更新订单(含总金额)和车辆状态
             logisticsVehicleService.updateVehicleStatus(selectedVehicleId, 1); // 1=运输中
-            
+
             LogisticsOrderSaveReqVO updateOrder = new LogisticsOrderSaveReqVO();
             updateOrder.setId(logisticsOrderId);
             updateOrder.setVehicleId(selectedVehicleId);
             updateOrder.setRouteId(routeId);
-            // 虽然有了车和路线，但是根据需求，如果要直接“发货”也可以。这里先设为待发货或运输中
-            // 因为之前是如果当天出库，则待发货，有车有路线后，可以由人工点发货或者这里直接发货。
-            // 需求说："运输订单状态设为待发货"
-            updateOrder.setStatus(LogisticsOrderStatusEnum.WAIT_DISPATCH.getStatus()); 
-            
+            updateOrder.setTotalCost(orderTotalCost);
+            updateOrder.setStatus(LogisticsOrderStatusEnum.WAIT_DISPATCH.getStatus());
+
             logisticsOrderService.updateLogisticsOrder(updateOrder);
-            
+
             log.info("AI 自动调度完成，已分配车辆 {} 和路线 {}", selectedVehicleId, routeId);
     }
 
