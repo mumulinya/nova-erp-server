@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.iocoder.yudao.module.erp.dal.mysql.statistics.ErpReportMapper">
 
@@ -17,8 +17,8 @@
             WHERE deleted = 0
             <if test="beginTime != null"> AND in_time &gt;= #{beginTime} </if>
             <if test="endTime != null"> AND in_time &lt; #{endTime} </if>
-            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
             </if>
             GROUP BY supplier_id
         ) pin ON s.id = pin.supplier_id
@@ -28,15 +28,15 @@
             WHERE deleted = 0
             <if test="beginTime != null"> AND return_time &gt;= #{beginTime} </if>
             <if test="endTime != null"> AND return_time &lt; #{endTime} </if>
-            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
             </if>
             GROUP BY supplier_id
         ) prt ON s.id = prt.supplier_id
         WHERE s.deleted = 0
         <if test="supplierId != null"> AND s.id = #{supplierId} </if>
-        <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-            AND s.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+        <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+            AND s.tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
         </if>
         HAVING inPrice > 0 OR returnPrice > 0
         ORDER BY netPrice DESC
@@ -57,8 +57,8 @@
             WHERE deleted = 0
             <if test="beginTime != null"> AND out_time &gt;= #{beginTime} </if>
             <if test="endTime != null"> AND out_time &lt; #{endTime} </if>
-            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
             </if>
             GROUP BY customer_id
         ) so ON c.id = so.customer_id
@@ -68,15 +68,15 @@
             WHERE deleted = 0
             <if test="beginTime != null"> AND return_time &gt;= #{beginTime} </if>
             <if test="endTime != null"> AND return_time &lt; #{endTime} </if>
-            <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-                AND tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+            <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+                AND tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
             </if>
             GROUP BY customer_id
         ) sr ON c.id = sr.customer_id
         WHERE c.deleted = 0
         <if test="customerId != null"> AND c.id = #{customerId} </if>
-        <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-            AND c.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+        <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+            AND c.tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
         </if>
         HAVING outPrice > 0 OR returnPrice > 0
         ORDER BY netPrice DESC
@@ -96,8 +96,8 @@
         INNER JOIN erp_warehouse w ON s.warehouse_id = w.id AND w.deleted = 0
         WHERE s.count &lt; IFNULL(p.safe_stock, 10)
           AND s.deleted = 0
-          <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-              AND s.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+          <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+              AND s.tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
           </if>
         ORDER BY gapCount DESC
     </select>
@@ -116,8 +116,8 @@
         WHERE c.deleted = 0
           <if test="beginTime != null"> AND c.create_time &gt;= #{beginTime} </if>
           <if test="endTime != null"> AND c.create_time &lt; #{endTime} </if>
-          <if test="@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
-              AND c.tenant_id = ${@nova.erp.framework.tenant.core.context.TenantContextHolder@getTenantId()}
+          <if test="@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId() != null">
+              AND c.tenant_id = ${@cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder@getTenantId()}
           </if>
         ORDER BY c.create_time DESC
     </select>
