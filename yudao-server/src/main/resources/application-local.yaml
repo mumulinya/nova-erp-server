@@ -1,6 +1,10 @@
 server:
   port: 48080
 
+yudao:
+  captcha:
+    enable: false # 本地环境关闭验证码，方便登录测试
+
 --- #################### 数据库相关配置 ####################
 spring:
   autoconfigure:
