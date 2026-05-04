@@ -4,10 +4,10 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
-import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
-import cn.nova.erp.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
+import cn.iocoder.yudao.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
 import cn.nova.erp.module.system.dal.dataobject.permission.MenuDO;
 import cn.nova.erp.module.system.dal.dataobject.permission.RoleDO;
 import cn.nova.erp.module.system.dal.dataobject.permission.RoleMenuDO;
@@ -33,8 +33,8 @@ import jakarta.annotation.Resource;
 import java.util.*;
 import java.util.function.Supplier;
 
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.nova.erp.framework.common.util.json.JsonUtils.toJsonString;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.util.json.JsonUtils.toJsonString;
 
 /**
  * 权限 Service 实现类

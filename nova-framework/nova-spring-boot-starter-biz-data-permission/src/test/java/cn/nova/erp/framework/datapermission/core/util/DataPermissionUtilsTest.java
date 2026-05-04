@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.datapermission.core.util;
 
-import cn.nova.erp.framework.datapermission.core.aop.DataPermissionContextHolder;
+import cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionContextHolder;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

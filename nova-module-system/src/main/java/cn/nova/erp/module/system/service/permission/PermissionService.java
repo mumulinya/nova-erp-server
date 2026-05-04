@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.permission;
 
-import cn.nova.erp.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
 
 import java.util.Collection;
 import java.util.Set;

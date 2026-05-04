@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.socail;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.api.social.SocialClientApi;
 import cn.nova.erp.module.system.api.social.dto.SocialWxaSubscribeMessageSendReqDTO;
 import cn.nova.erp.module.system.controller.admin.socail.vo.client.SocialClientPageReqVO;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 社交客户端")
 @RestController

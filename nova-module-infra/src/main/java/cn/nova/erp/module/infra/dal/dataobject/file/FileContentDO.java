@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.dal.dataobject.file;
 
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import cn.nova.erp.module.infra.framework.file.core.client.db.DBFileClient;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;

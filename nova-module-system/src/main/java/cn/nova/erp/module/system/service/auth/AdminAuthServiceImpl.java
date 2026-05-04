@@ -1,13 +1,13 @@
 package cn.nova.erp.module.system.service.auth;
 
 import cn.hutool.core.util.ObjectUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.util.monitor.TracerUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.common.util.servlet.ServletUtils;
-import cn.nova.erp.framework.common.util.validation.ValidationUtils;
-import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.util.monitor.TracerUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.servlet.ServletUtils;
+import cn.iocoder.yudao.framework.common.util.validation.ValidationUtils;
+import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
 import cn.nova.erp.module.system.api.logger.dto.LoginLogCreateReqDTO;
 import cn.nova.erp.module.system.api.sms.SmsCodeApi;
 import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
@@ -40,8 +40,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Objects;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.servlet.ServletUtils.getClientIP;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.servlet.ServletUtils.getClientIP;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**

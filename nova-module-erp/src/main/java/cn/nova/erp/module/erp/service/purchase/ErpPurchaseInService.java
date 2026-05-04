@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.service.purchase;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.erp.controller.admin.purchase.vo.in.ErpPurchaseInPageReqVO;
 import cn.nova.erp.module.erp.controller.admin.purchase.vo.in.ErpPurchaseInSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseInDO;

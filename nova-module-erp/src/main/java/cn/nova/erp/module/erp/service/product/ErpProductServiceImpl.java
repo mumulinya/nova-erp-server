@@ -1,10 +1,10 @@
 package cn.nova.erp.module.erp.service.product;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.collection.MapUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.erp.controller.admin.product.vo.product.ErpProductPageReqVO;
 import cn.nova.erp.module.erp.controller.admin.product.vo.product.ErpProductRespVO;
 import cn.nova.erp.module.erp.controller.admin.product.vo.product.ProductSaveReqVO;
@@ -18,8 +18,8 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.*;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.*;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.*;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.*;
 
 /**

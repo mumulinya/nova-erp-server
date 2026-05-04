@@ -9,9 +9,9 @@ import cn.hutool.crypto.digest.HmacAlgorithm;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import cn.nova.erp.framework.common.core.KeyValue;
-import cn.nova.erp.framework.common.util.collection.ArrayUtils;
-import cn.nova.erp.framework.common.util.http.HttpUtils;
+import cn.iocoder.yudao.framework.common.core.KeyValue;
+import cn.iocoder.yudao.framework.common.util.collection.ArrayUtils;
+import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
@@ -23,7 +23,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import static cn.hutool.crypto.digest.DigestUtil.sha256Hex;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
 
 /**
  * 腾讯云短信功能实现

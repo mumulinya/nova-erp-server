@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.controller.app.tenant;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import cn.nova.erp.module.system.controller.app.tenant.vo.AppTenantRespVO;
 import cn.nova.erp.module.system.dal.dataobject.tenant.TenantDO;
 import cn.nova.erp.module.system.service.tenant.TenantService;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "用户 App - 租户")
 @RestController

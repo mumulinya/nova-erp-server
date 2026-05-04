@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.controller.admin.user.vo.user;
 
 import cn.hutool.core.util.ObjectUtil;
-import cn.nova.erp.framework.common.validation.Mobile;
+import cn.iocoder.yudao.framework.common.validation.Mobile;
 import cn.nova.erp.module.system.framework.operatelog.core.DeptParseFunction;
 import cn.nova.erp.module.system.framework.operatelog.core.PostParseFunction;
 import cn.nova.erp.module.system.framework.operatelog.core.SexParseFunction;

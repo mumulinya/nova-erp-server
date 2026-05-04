@@ -1,8 +1,8 @@
 package cn.nova.erp.module.infra.dal.dataobject.db;
 
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
-import cn.nova.erp.framework.mybatis.core.type.EncryptTypeHandler;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.mybatis.core.type.EncryptTypeHandler;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

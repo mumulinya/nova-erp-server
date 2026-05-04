@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.controller.admin.product.vo.unit;
 
-import cn.nova.erp.framework.excel.core.annotations.DictFormat;
+import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
 import cn.nova.erp.module.system.enums.DictTypeConstants;
 import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
 import cn.idev.excel.annotation.ExcelProperty;

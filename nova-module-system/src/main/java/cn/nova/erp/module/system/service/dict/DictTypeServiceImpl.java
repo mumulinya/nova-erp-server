@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.dict;
 
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.date.LocalDateTimeUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.dict.vo.type.DictTypePageReqVO;
 import cn.nova.erp.module.system.controller.admin.dict.vo.type.DictTypeSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.dict.DictTypeDO;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**

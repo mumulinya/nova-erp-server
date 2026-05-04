@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.controller.admin.statistics;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.nova.erp.module.erp.controller.admin.statistics.vo.report.*;
 import cn.nova.erp.module.erp.service.statistics.ErpReportService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
-import static cn.nova.erp.framework.common.util.date.DateUtils.FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.util.date.DateUtils.FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND;
 
 @Tag(name = "管理后台 - ERP 业务报表")
 @RestController

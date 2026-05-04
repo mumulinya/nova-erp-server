@@ -1,11 +1,11 @@
 package cn.nova.erp.module.infra.service.job;
 
 import cn.hutool.extra.spring.SpringUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.quartz.core.handler.JobHandler;
-import cn.nova.erp.framework.quartz.core.scheduler.SchedulerManager;
-import cn.nova.erp.framework.quartz.core.util.CronUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
+import cn.iocoder.yudao.framework.quartz.core.scheduler.SchedulerManager;
+import cn.iocoder.yudao.framework.quartz.core.util.CronUtils;
 import cn.nova.erp.module.infra.controller.admin.job.vo.job.JobPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.job.vo.job.JobSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.job.JobDO;
@@ -22,8 +22,8 @@ import org.springframework.validation.annotation.Validated;
 import java.util.List;
 import java.util.Objects;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.containsAny;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.containsAny;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**

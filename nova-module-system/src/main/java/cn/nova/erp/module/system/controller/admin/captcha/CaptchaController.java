@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.captcha;
 
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.servlet.ServletUtils;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.common.util.servlet.ServletUtils;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import com.anji.captcha.model.common.ResponseModel;
 import com.anji.captcha.model.vo.CaptchaVO;
 import com.anji.captcha.service.CaptchaService;

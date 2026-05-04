@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.service.sms;
 
 import cn.hutool.core.map.MapUtil;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
 import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
 import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeValidateReqDTO;
@@ -19,9 +19,9 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;

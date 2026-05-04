@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.dal.dataobject.logger;
 
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.nova.erp.module.infra.enums.logger.ApiErrorLogProcessStatusEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;

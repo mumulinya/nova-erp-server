@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.dal.dataobject.finance;
 
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseInDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;

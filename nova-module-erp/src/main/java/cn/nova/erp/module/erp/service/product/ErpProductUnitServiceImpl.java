@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.service.product;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.erp.controller.admin.product.vo.unit.ErpProductUnitPageReqVO;
 import cn.nova.erp.module.erp.controller.admin.product.vo.unit.ErpProductUnitSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductUnitDO;
@@ -15,7 +15,7 @@ import org.springframework.validation.annotation.Validated;
 import java.util.Collection;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.*;
 
 /**

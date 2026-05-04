@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.sms;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.util.servlet.ServletUtils;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.util.servlet.ServletUtils;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import cn.nova.erp.module.system.framework.sms.core.enums.SmsChannelEnum;
 import cn.nova.erp.module.system.service.sms.SmsSendService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -13,7 +13,7 @@ import jakarta.annotation.Resource;
 import jakarta.annotation.security.PermitAll;
 import jakarta.servlet.http.HttpServletRequest;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 短信回调")
 @RestController

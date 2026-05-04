@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.job.logger;
 
-import cn.nova.erp.framework.quartz.core.handler.JobHandler;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import cn.nova.erp.module.infra.service.logger.ApiErrorLogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

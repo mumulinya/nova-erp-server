@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.user;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
 import cn.nova.erp.module.system.controller.admin.user.vo.profile.UserProfileRespVO;
 import cn.nova.erp.module.system.controller.admin.user.vo.profile.UserProfileUpdatePasswordReqVO;
 import cn.nova.erp.module.system.controller.admin.user.vo.profile.UserProfileUpdateReqVO;
@@ -26,8 +26,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
-import static cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 
 @Tag(name = "管理后台 - 用户个人中心")
 @RestController

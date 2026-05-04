@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.controller.admin.sale;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.nova.erp.module.erp.controller.admin.sale.vo.aianalysis.ErpSaleAiAnalysisRespVO;
 import cn.nova.erp.module.erp.service.sale.ErpSaleAiAnalysisService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - ERP AI 销售趋势分析")
 @RestController

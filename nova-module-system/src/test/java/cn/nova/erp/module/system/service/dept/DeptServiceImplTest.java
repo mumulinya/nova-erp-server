@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.service.dept;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.util.object.ObjectUtils;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.util.object.ObjectUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
 import cn.nova.erp.module.system.controller.admin.dept.vo.dept.DeptSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.dept.DeptDO;
@@ -15,9 +15,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 import static java.util.Collections.singletonList;
 import static org.junit.jupiter.api.Assertions.*;

@@ -2,7 +2,7 @@ package cn.nova.erp.module.infra.framework.file.core.s3;
 
 import cn.hutool.core.io.resource.ResourceUtil;
 import cn.hutool.core.util.IdUtil;
-import cn.nova.erp.framework.common.util.validation.ValidationUtils;
+import cn.iocoder.yudao.framework.common.util.validation.ValidationUtils;
 import cn.nova.erp.module.infra.framework.file.core.client.s3.S3FileClient;
 import cn.nova.erp.module.infra.framework.file.core.client.s3.S3FileClientConfig;
 import jakarta.validation.Validation;

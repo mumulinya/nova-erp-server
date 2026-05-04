@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.service.file;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.file.FileConfigDO;

@@ -1,11 +1,11 @@
 package cn.nova.erp.module.infra.controller.admin.demo.demo03.erp;
 
-import cn.nova.erp.framework.apilog.core.annotation.ApiAccessLog;
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.pojo.PageParam;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.excel.core.util.ExcelUtils;
+import cn.iocoder.yudao.framework.apilog.core.annotation.ApiAccessLog;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.PageParam;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpRespVO;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpSaveReqVO;
@@ -26,8 +26,8 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-import static cn.nova.erp.framework.apilog.core.enums.OperateTypeEnum.EXPORT;
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.apilog.core.enums.OperateTypeEnum.EXPORT;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 学生")
 @RestController

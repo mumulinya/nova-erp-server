@@ -3,8 +3,8 @@ package cn.nova.erp.module.system.util.oauth2;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.LocalDateTimeUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.http.HttpUtils;
-import cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils;
+import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
+import cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;

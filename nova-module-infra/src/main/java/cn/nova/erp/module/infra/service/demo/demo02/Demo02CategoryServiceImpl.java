@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.service.demo.demo02;
 
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.infra.controller.admin.demo.demo02.vo.Demo02CategoryListReqVO;
 import cn.nova.erp.module.infra.controller.admin.demo.demo02.vo.Demo02CategorySaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.demo.demo02.Demo02CategoryDO;
@@ -12,7 +12,7 @@ import org.springframework.validation.annotation.Validated;
 import java.util.List;
 import java.util.Objects;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**

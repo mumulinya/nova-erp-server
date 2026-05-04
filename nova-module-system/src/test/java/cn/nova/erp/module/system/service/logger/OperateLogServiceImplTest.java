@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.logger;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
-import cn.nova.erp.framework.test.core.util.RandomUtils;
-import cn.nova.erp.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.test.core.util.RandomUtils;
+import cn.iocoder.yudao.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
 import cn.nova.erp.module.system.api.logger.dto.OperateLogPageReqDTO;
 import cn.nova.erp.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
 import cn.nova.erp.module.system.dal.dataobject.logger.OperateLogDO;
@@ -12,10 +12,10 @@ import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildTime;
-import static cn.nova.erp.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
+import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Import({OperateLogServiceImpl.class})

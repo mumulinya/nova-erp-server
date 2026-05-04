@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.controller.admin.logger.vo.apierrorlog;
 
-import cn.nova.erp.framework.excel.core.annotations.DictFormat;
-import cn.nova.erp.framework.excel.core.convert.DictConvert;
+import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
+import cn.iocoder.yudao.framework.excel.core.convert.DictConvert;
 import cn.nova.erp.module.infra.enums.DictTypeConstants;
 import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
 import cn.idev.excel.annotation.ExcelProperty;

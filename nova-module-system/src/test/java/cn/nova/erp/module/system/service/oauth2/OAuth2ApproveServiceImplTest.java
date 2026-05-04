@@ -2,9 +2,9 @@ package cn.nova.erp.module.system.service.oauth2;
 
 import cn.hutool.core.date.LocalDateTimeUtil;
 import cn.hutool.core.util.ObjectUtil;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.util.date.DateUtils;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.util.date.DateUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 import cn.nova.erp.module.system.dal.mysql.oauth2.OAuth2ApproveMapper;
@@ -22,9 +22,9 @@ import java.util.List;
 import java.util.Map;
 
 import static cn.hutool.core.util.RandomUtil.*;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomString;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomString;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;

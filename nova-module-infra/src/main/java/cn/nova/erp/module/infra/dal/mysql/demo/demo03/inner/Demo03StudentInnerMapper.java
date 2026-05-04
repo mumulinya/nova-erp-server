@@ -1,8 +1,8 @@
 package cn.nova.erp.module.infra.dal.mysql.demo.demo03.inner;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
-import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.inner.vo.Demo03StudentInnerPageReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
 import org.apache.ibatis.annotations.Mapper;

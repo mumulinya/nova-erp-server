@@ -1,8 +1,8 @@
 package cn.nova.erp.module.erp.dal.mysql.purchase;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
-import cn.nova.erp.framework.mybatis.core.query.MPJLambdaWrapperX;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.mybatis.core.query.MPJLambdaWrapperX;
 import cn.nova.erp.module.erp.controller.admin.purchase.vo.returns.ErpPurchaseReturnPageReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseInDO;
 import cn.nova.erp.module.erp.dal.dataobject.purchase.ErpPurchaseReturnDO;

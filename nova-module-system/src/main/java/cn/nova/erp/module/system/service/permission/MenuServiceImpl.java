@@ -3,8 +3,8 @@ package cn.nova.erp.module.system.service.permission;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
 import cn.nova.erp.module.system.dal.dataobject.permission.MenuDO;
@@ -24,9 +24,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
 import static cn.nova.erp.module.system.dal.dataobject.permission.MenuDO.ID_ROOT;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 

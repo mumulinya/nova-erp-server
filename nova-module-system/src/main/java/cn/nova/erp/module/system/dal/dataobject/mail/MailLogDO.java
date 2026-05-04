@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.dal.dataobject.mail;
 
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
-import cn.nova.erp.framework.mybatis.core.type.StringListTypeHandler;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.mybatis.core.type.StringListTypeHandler;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import cn.nova.erp.module.system.enums.mail.MailSendStatusEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;

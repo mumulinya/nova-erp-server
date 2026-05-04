@@ -1,8 +1,8 @@
 package cn.nova.erp.module.erp.controller.admin.statistics;
 
 import cn.hutool.core.date.LocalDateTimeUtil;
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.util.date.LocalDateTimeUtils;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils;
 import cn.nova.erp.module.erp.controller.admin.statistics.vo.sale.ErpSaleSummaryRespVO;
 import cn.nova.erp.module.erp.controller.admin.statistics.vo.sale.ErpSaleTimeSummaryRespVO;
 import cn.nova.erp.module.erp.service.statistics.ErpSaleStatisticsService;
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static cn.hutool.core.date.DatePattern.NORM_MONTH_PATTERN;
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - ERP 销售统计")
 @RestController

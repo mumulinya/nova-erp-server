@@ -7,7 +7,7 @@ import cn.nova.erp.module.infra.framework.file.core.client.local.LocalFileClient
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomString;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomString;
 
 public class LocalFileClientTest {
 

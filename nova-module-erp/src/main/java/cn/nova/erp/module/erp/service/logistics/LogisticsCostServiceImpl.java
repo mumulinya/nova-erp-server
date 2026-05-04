@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.service.logistics;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import jakarta.annotation.Resource;
@@ -10,9 +10,9 @@ import cn.nova.erp.module.erp.dal.dataobject.logistics.LogisticsCostDO;
 import cn.nova.erp.module.erp.dal.dataobject.logistics.LogisticsOrderDO;
 import cn.nova.erp.module.erp.dal.mysql.logistics.LogisticsCostMapper;
 import java.util.*;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 
 @Service
 @Validated
@@ -29,7 +29,7 @@ public class LogisticsCostServiceImpl implements LogisticsCostService {
         // 校验：是否已存在关联该运输订单的费用记录
         LogisticsCostDO existingCost = mapper.selectOne(LogisticsCostDO::getLogisticsOrderId, createReqVO.getLogisticsOrderId());
         if (existingCost != null) {
-            throw exception(new cn.nova.erp.framework.common.exception.ErrorCode(1_030_200_001, "该运输订单已存在关联的费用记录，无法重复录入"));
+            throw exception(new cn.iocoder.yudao.framework.common.exception.ErrorCode(1_030_200_001, "该运输订单已存在关联的费用记录，无法重复录入"));
         }
         
         LogisticsCostDO data = BeanUtils.toBean(createReqVO, LogisticsCostDO.class);

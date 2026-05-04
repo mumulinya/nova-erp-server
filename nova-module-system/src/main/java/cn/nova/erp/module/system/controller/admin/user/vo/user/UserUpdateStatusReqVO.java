@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.user.vo.user;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.validation.InEnum;
-import cn.nova.erp.framework.dict.validation.InDict;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.validation.InEnum;
+import cn.iocoder.yudao.framework.dict.validation.InDict;
 import cn.nova.erp.module.system.enums.DictTypeConstants;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;

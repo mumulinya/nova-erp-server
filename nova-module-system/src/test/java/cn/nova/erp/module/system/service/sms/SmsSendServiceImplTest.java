@@ -1,13 +1,13 @@
 package cn.nova.erp.module.system.service.sms;
 
 import cn.hutool.core.map.MapUtil;
-import cn.nova.erp.framework.common.core.KeyValue;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.core.KeyValue;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.nova.erp.module.system.framework.sms.core.client.SmsClient;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
-import cn.nova.erp.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
 import cn.nova.erp.module.system.dal.dataobject.sms.SmsChannelDO;
 import cn.nova.erp.module.system.dal.dataobject.sms.SmsTemplateDO;
 import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
@@ -26,8 +26,8 @@ import java.util.List;
 import java.util.Map;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;

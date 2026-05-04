@@ -5,8 +5,8 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import cn.idev.excel.annotation.*;
-import cn.nova.erp.framework.excel.core.annotations.DictFormat;
-import cn.nova.erp.framework.excel.core.convert.DictConvert;
+import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
+import cn.iocoder.yudao.framework.excel.core.convert.DictConvert;
 
 @Schema(description = "管理后台 - ERP 客户 Response VO")
 @Data

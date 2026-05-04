@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.controller.admin.permission.vo.permission;
 
-import cn.nova.erp.framework.common.validation.InEnum;
+import cn.iocoder.yudao.framework.common.validation.InEnum;
 import cn.nova.erp.module.system.enums.permission.DataScopeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.framework.sms.core.client.impl;
 
 import cn.hutool.core.collection.ListUtil;
-import cn.nova.erp.framework.common.core.KeyValue;
+import cn.iocoder.yudao.framework.common.core.KeyValue;
 import cn.nova.erp.module.system.framework.sms.core.client.SmsClient;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
@@ -148,4 +148,3 @@ public class SmsClientTests {
         System.out.println(template);
     }
 }
-

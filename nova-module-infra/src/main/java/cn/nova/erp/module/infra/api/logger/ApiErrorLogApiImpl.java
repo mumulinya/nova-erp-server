@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.api.logger;
 
-import cn.nova.erp.framework.common.biz.infra.logger.ApiErrorLogCommonApi;
-import cn.nova.erp.framework.common.biz.infra.logger.dto.ApiErrorLogCreateReqDTO;
+import cn.iocoder.yudao.framework.common.biz.infra.logger.ApiErrorLogCommonApi;
+import cn.iocoder.yudao.framework.common.biz.infra.logger.dto.ApiErrorLogCreateReqDTO;
 import cn.nova.erp.module.infra.service.logger.ApiErrorLogService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;

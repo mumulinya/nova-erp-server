@@ -2,9 +2,9 @@ package cn.nova.erp.module.infra.service.codegen;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.mybatis.core.util.JdbcUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.mybatis.core.util.JdbcUtils;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenCreateListReqVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenUpdateReqVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.table.CodegenTablePageReqVO;
@@ -34,9 +34,9 @@ import java.util.function.BiPredicate;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**

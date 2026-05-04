@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.service.dict;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
 import cn.nova.erp.module.system.controller.admin.dict.vo.data.DictDataSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.dict.DictDataDO;
@@ -20,7 +20,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**

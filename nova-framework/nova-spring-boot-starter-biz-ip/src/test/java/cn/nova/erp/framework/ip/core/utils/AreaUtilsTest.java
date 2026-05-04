@@ -1,8 +1,8 @@
 package cn.nova.erp.framework.ip.core.utils;
 
 
-import cn.nova.erp.framework.ip.core.Area;
-import cn.nova.erp.framework.ip.core.enums.AreaTypeEnum;
+import cn.iocoder.yudao.framework.ip.core.Area;
+import cn.iocoder.yudao.framework.ip.core.enums.AreaTypeEnum;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

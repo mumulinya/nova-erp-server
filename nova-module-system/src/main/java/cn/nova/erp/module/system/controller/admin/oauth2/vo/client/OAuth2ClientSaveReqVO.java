@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.controller.admin.oauth2.vo.client;
 
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import org.hibernate.validator.constraints.URL;

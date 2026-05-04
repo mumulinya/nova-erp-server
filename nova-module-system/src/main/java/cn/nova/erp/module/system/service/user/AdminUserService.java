@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.service.user;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
 import cn.nova.erp.module.system.controller.admin.auth.vo.AuthRegisterReqVO;
 import cn.nova.erp.module.system.controller.admin.user.vo.profile.UserProfileUpdatePasswordReqVO;
 import cn.nova.erp.module.system.controller.admin.user.vo.profile.UserProfileUpdateReqVO;

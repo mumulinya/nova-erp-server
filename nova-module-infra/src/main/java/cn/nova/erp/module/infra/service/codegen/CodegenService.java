@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.service.codegen;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenCreateListReqVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenUpdateReqVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.table.CodegenTablePageReqVO;

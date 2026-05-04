@@ -5,10 +5,10 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.permission.vo.role.RolePageReqVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.role.RoleSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.permission.RoleDO;
@@ -31,8 +31,8 @@ import org.springframework.util.StringUtils;
 
 import java.util.*;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 import static cn.nova.erp.module.system.enums.LogRecordConstants.*;
 

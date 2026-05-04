@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.oauth2;
 
 import cn.hutool.core.util.RandomUtil;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.util.date.DateUtils;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.util.date.DateUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2CodeDO;
 import cn.nova.erp.module.system.dal.mysql.oauth2.OAuth2CodeMapper;
 import org.assertj.core.util.Lists;
@@ -14,9 +14,9 @@ import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.OAUTH2_CODE_EXPIRE;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.OAUTH2_CODE_NOT_EXISTS;
 import static org.junit.jupiter.api.Assertions.*;

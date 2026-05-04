@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.service.stock;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.erp.controller.admin.stock.vo.move.ErpStockMovePageReqVO;
 import cn.nova.erp.module.erp.controller.admin.stock.vo.move.ErpStockMoveSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockMoveDO;

@@ -2,8 +2,8 @@ package cn.nova.erp.module.system.service.social;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
-import cn.nova.erp.framework.common.exception.ServiceException;
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.exception.ServiceException;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
 import cn.nova.erp.module.system.api.social.dto.SocialUserRespDTO;
 import cn.nova.erp.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
@@ -23,9 +23,9 @@ import org.springframework.validation.annotation.Validated;
 import java.util.Collections;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.nova.erp.framework.common.util.json.JsonUtils.toJsonString;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.util.json.JsonUtils.toJsonString;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.SOCIAL_USER_NOT_FOUND;
 
 /**

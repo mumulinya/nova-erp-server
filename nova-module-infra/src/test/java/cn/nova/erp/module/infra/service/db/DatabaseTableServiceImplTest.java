@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.service.db;
 
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.infra.dal.dataobject.db.DataSourceConfigDO;
 import com.baomidou.mybatisplus.generator.config.po.TableField;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
@@ -13,7 +13,7 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomLongId;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomLongId;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;

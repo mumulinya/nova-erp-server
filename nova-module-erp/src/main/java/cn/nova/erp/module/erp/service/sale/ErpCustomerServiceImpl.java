@@ -1,8 +1,8 @@
 package cn.nova.erp.module.erp.service.sale;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.erp.controller.admin.sale.vo.customer.ErpCustomerPageReqVO;
 import cn.nova.erp.module.erp.controller.admin.sale.vo.customer.ErpCustomerSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.sale.ErpCustomerDO;
@@ -14,7 +14,7 @@ import org.springframework.validation.annotation.Validated;
 import java.util.Collection;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.CUSTOMER_NOT_ENABLE;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.CUSTOMER_NOT_EXISTS;
 

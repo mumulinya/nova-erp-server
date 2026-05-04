@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.ip.core.utils;
 
-import cn.nova.erp.framework.ip.core.Area;
+import cn.iocoder.yudao.framework.ip.core.Area;
 import org.junit.jupiter.api.Test;
 import org.lionsoul.ip2region.xdb.Searcher;
 

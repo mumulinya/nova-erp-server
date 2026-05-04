@@ -17,8 +17,8 @@ import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static cn.hutool.core.util.RandomUtil.randomInt;
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.date.DateUtils.isToday;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.date.DateUtils.isToday;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**

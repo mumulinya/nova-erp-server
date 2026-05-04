@@ -10,7 +10,6 @@ import com.anji.captcha.util.ImageUtils;
 import com.anji.captcha.util.RandomUtils;
 import cn.hutool.core.util.RandomUtil;
 import org.apache.commons.lang3.Strings;
-
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;

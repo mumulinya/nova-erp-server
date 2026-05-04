@@ -1,9 +1,9 @@
 package cn.nova.erp.framework.datapermission.core.db;
 
-import cn.nova.erp.framework.datapermission.core.rule.DataPermissionRule;
-import cn.nova.erp.framework.datapermission.core.rule.DataPermissionRuleFactory;
-import cn.nova.erp.framework.mybatis.core.util.MyBatisUtils;
-import cn.nova.erp.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.datapermission.core.rule.DataPermissionRule;
+import cn.iocoder.yudao.framework.datapermission.core.rule.DataPermissionRuleFactory;
+import cn.iocoder.yudao.framework.mybatis.core.util.MyBatisUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
 import com.baomidou.mybatisplus.extension.plugins.inner.DataPermissionInterceptor;
 import net.sf.jsqlparser.expression.Alias;
 import net.sf.jsqlparser.expression.Expression;
@@ -21,7 +21,7 @@ import org.mockito.Mock;
 import java.util.Arrays;
 import java.util.Set;
 
-import static cn.nova.erp.framework.common.util.collection.SetUtils.asSet;
+import static cn.iocoder.yudao.framework.common.util.collection.SetUtils.asSet;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;

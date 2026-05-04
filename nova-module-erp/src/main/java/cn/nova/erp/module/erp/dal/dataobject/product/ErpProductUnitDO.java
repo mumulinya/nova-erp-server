@@ -5,7 +5,7 @@ import java.util.*;
 import java.time.LocalDateTime;
 import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.*;
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 
 /**
  * ERP 产品单位 DO

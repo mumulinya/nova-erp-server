@@ -1,9 +1,9 @@
 package cn.nova.erp.module.erp.dal.mysql.sale;
 
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
-import cn.nova.erp.framework.mybatis.core.query.MPJLambdaWrapperX;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.mybatis.core.query.MPJLambdaWrapperX;
 import cn.nova.erp.module.erp.controller.admin.sale.vo.out.ErpSaleOutPageReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleOutDO;
 import cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleOutItemDO;

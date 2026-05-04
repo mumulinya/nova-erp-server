@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.controller.admin.statistics;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.nova.erp.module.erp.controller.admin.statistics.vo.dashboard.*;
 import cn.nova.erp.module.erp.service.statistics.ErpDashboardService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - ERP 供应链大屏")
 @RestController

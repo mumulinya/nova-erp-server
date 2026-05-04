@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.dept.dto;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
 import lombok.Data;
 
 /**

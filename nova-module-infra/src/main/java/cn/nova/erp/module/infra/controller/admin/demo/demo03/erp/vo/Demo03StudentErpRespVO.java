@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo;
 
-import cn.nova.erp.framework.excel.core.annotations.DictFormat;
-import cn.nova.erp.framework.excel.core.convert.DictConvert;
+import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
+import cn.iocoder.yudao.framework.excel.core.convert.DictConvert;
 import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
 import cn.idev.excel.annotation.ExcelProperty;
 import io.swagger.v3.oas.annotations.media.Schema;

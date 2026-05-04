@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.controller.admin.purchase;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.excel.core.util.ExcelUtils;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
 import cn.nova.erp.module.erp.controller.admin.purchase.vo.aisuggest.ErpPurchaseAiSuggestRespVO;
 import cn.nova.erp.module.erp.service.purchase.ErpPurchaseAiSuggestService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - ERP AI采购建议")
 @RestController

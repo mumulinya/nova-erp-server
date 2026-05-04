@@ -1,9 +1,9 @@
 package cn.nova.erp.module.infra.dal.dataobject.file;
 
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.json.JsonUtils;
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import cn.nova.erp.module.infra.framework.file.core.client.FileClientConfig;
 import cn.nova.erp.module.infra.framework.file.core.client.db.DBFileClientConfig;
 import cn.nova.erp.module.infra.framework.file.core.client.ftp.FtpFileClientConfig;

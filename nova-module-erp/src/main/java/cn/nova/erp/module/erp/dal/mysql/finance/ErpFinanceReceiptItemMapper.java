@@ -2,7 +2,7 @@ package cn.nova.erp.module.erp.dal.mysql.finance;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.map.MapUtil;
-import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
 import cn.nova.erp.module.erp.dal.dataobject.finance.ErpFinanceReceiptItemDO;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.ibatis.annotations.Mapper;

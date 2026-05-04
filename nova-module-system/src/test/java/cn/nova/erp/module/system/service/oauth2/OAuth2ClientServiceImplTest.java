@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.oauth2;
 
 import cn.hutool.extra.spring.SpringUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
@@ -15,10 +15,10 @@ import org.springframework.context.annotation.Import;
 import jakarta.annotation.Resource;
 import java.util.Collections;
 
-import static cn.nova.erp.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;

@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.logger.dto;
 
-import cn.nova.erp.framework.common.pojo.PageParam;
+import cn.iocoder.yudao.framework.common.pojo.PageParam;
 import lombok.Data;
 
 /**

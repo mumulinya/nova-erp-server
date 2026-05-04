@@ -3,7 +3,7 @@ package cn.nova.erp;
 import cn.hutool.core.io.FileTypeUtil;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.collection.SetUtils;
+import cn.iocoder.yudao.framework.common.util.collection.SetUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;

@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.framework.operatelog.core;
 
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.dict.core.DictFrameworkUtils;
+import cn.iocoder.yudao.framework.dict.core.DictFrameworkUtils;
 import cn.nova.erp.module.infra.enums.DictTypeConstants;
 import com.mzt.logapi.service.IParseFunction;
 import lombok.extern.slf4j.Slf4j;

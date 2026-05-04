@@ -9,10 +9,10 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 import cn.nova.erp.module.erp.controller.admin.logistics.vo.*;
 import cn.nova.erp.module.erp.dal.dataobject.logistics.LogisticsCostDO;

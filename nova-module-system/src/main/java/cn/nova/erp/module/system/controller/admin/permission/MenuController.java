@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.permission;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuRespVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Comparator;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 菜单")
 @RestController

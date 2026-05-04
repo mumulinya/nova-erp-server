@@ -1,10 +1,10 @@
 package cn.nova.erp.framework.desensitize.core;
 
-import cn.nova.erp.framework.common.util.json.JsonUtils;
-import cn.nova.erp.framework.desensitize.core.annotation.Address;
-import cn.nova.erp.framework.desensitize.core.regex.annotation.EmailDesensitize;
-import cn.nova.erp.framework.desensitize.core.regex.annotation.RegexDesensitize;
-import cn.nova.erp.framework.desensitize.core.slider.annotation.*;
+import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.framework.desensitize.core.annotation.Address;
+import cn.iocoder.yudao.framework.desensitize.core.regex.annotation.EmailDesensitize;
+import cn.iocoder.yudao.framework.desensitize.core.regex.annotation.RegexDesensitize;
+import cn.iocoder.yudao.framework.desensitize.core.slider.annotation.*;
 import lombok.Data;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

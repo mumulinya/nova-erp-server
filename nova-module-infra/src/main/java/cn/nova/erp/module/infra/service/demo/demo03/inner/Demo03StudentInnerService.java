@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.service.demo.demo03.inner;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.inner.vo.Demo03StudentInnerPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.inner.vo.Demo03StudentInnerSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;

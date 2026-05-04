@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.controller.admin.logger.vo.operatelog;
 
-import cn.nova.erp.framework.excel.core.annotations.DictFormat;
+import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
 import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
 import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
 import cn.idev.excel.annotation.ExcelProperty;

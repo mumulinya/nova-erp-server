@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.service.job;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.infra.controller.admin.job.vo.log.JobLogPageReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.job.JobLogDO;
 import cn.nova.erp.module.infra.dal.mysql.job.JobLogMapper;
@@ -14,11 +14,11 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.addTime;
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildTime;
-import static cn.nova.erp.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.addTime;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
+import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 

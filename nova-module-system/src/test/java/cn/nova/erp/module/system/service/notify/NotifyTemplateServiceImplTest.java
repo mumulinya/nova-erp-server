@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.service.notify;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.controller.admin.notify.vo.template.NotifyTemplatePageReqVO;
 import cn.nova.erp.module.system.controller.admin.notify.vo.template.NotifyTemplateSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.notify.NotifyTemplateDO;
@@ -14,12 +14,12 @@ import jakarta.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildTime;
-import static cn.nova.erp.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
+import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.NOTIFY_TEMPLATE_NOT_EXISTS;
 import static org.junit.jupiter.api.Assertions.*;
 

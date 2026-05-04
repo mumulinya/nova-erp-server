@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.service.sms;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.sms.vo.channel.SmsChannelPageReqVO;
 import cn.nova.erp.module.system.controller.admin.sms.vo.channel.SmsChannelSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.sms.SmsChannelDO;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.SMS_CHANNEL_HAS_CHILDREN;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.SMS_CHANNEL_NOT_EXISTS;
 

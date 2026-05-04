@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.service.demo.demo01;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.infra.controller.admin.demo.demo01.vo.Demo01ContactPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.demo.demo01.vo.Demo01ContactSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.demo.demo01.Demo01ContactDO;

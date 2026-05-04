@@ -2,8 +2,8 @@ package cn.nova.erp.module.infra.service.demo.demo03.normal;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjectUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.normal.vo.Demo03StudentNormalPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.normal.vo.Demo03StudentNormalSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
@@ -19,9 +19,9 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.diffList;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.diffList;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.DEMO03_STUDENT_NOT_EXISTS;
 
 /**

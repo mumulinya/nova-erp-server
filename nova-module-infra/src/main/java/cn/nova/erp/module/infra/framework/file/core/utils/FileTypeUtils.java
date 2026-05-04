@@ -2,7 +2,7 @@ package cn.nova.erp.module.infra.framework.file.core.utils;
 
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.http.HttpUtils;
+import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

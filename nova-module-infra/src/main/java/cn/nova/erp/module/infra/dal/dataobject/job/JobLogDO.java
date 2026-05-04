@@ -1,8 +1,8 @@
 package cn.nova.erp.module.infra.dal.dataobject.job;
 
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
-import cn.nova.erp.framework.quartz.core.handler.JobHandler;
-import cn.nova.erp.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
+import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
 import cn.nova.erp.module.infra.enums.job.JobLogStatusEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableName;

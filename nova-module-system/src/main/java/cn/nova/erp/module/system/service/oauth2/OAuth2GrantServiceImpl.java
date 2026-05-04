@@ -3,7 +3,7 @@ package cn.nova.erp.module.system.service.oauth2;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2CodeDO;
 import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import jakarta.annotation.Resource;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 
 /**
  * OAuth2 授予 Service 实现类

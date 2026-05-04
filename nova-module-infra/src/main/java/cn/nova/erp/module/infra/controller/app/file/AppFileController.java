@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.controller.app.file;
 
 import cn.hutool.core.io.IoUtil;
-import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.nova.erp.module.infra.controller.admin.file.vo.file.FileCreateReqVO;
 import cn.nova.erp.module.infra.controller.admin.file.vo.file.FilePresignedUrlRespVO;
 import cn.nova.erp.module.infra.controller.app.file.vo.AppFileUploadReqVO;
@@ -19,7 +19,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "用户 App - 文件存储")
 @RestController

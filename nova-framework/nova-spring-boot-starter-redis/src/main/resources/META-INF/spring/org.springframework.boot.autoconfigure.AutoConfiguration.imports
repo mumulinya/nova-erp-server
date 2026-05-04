@@ -1,2 +1,2 @@
-cn.nova.erp.framework.redis.config.YudaoRedisAutoConfiguration
-cn.nova.erp.framework.redis.config.YudaoCacheAutoConfiguration
+cn.iocoder.yudao.framework.redis.config.YudaoRedisAutoConfiguration
+cn.iocoder.yudao.framework.redis.config.YudaoCacheAutoConfiguration

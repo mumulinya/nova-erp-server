@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.sms;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.system.controller.admin.sms.vo.channel.SmsChannelPageReqVO;
 import cn.nova.erp.module.system.controller.admin.sms.vo.channel.SmsChannelSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.sms.SmsChannelDO;

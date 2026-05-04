@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.framework.web.config;
 
-import cn.nova.erp.framework.swagger.config.NovaSwaggerAutoConfiguration;
+import cn.iocoder.yudao.framework.swagger.config.NovaSwaggerAutoConfiguration;
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

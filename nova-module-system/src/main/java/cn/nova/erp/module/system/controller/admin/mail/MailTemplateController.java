@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.controller.admin.mail;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.mail.vo.template.*;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailTemplateDO;
 import cn.nova.erp.module.system.service.mail.MailSendService;
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
-import static cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 
 @Tag(name = "管理后台 - 邮件模版")
 @RestController

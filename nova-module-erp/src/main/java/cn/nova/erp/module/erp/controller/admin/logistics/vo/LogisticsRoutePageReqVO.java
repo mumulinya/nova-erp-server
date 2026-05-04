@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.controller.admin.logistics.vo;
 
-import cn.nova.erp.framework.common.pojo.PageParam;
+import cn.iocoder.yudao.framework.common.pojo.PageParam;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 

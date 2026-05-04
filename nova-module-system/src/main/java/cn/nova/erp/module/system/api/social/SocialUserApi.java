@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.social;
 
-import cn.nova.erp.framework.common.exception.ServiceException;
+import cn.iocoder.yudao.framework.common.exception.ServiceException;
 import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
 import cn.nova.erp.module.system.api.social.dto.SocialUserRespDTO;
 import cn.nova.erp.module.system.api.social.dto.SocialUserUnbindReqDTO;

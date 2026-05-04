@@ -6,7 +6,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.ftp.FtpConfig;
 import cn.hutool.extra.ssh.JschRuntimeException;
 import cn.hutool.extra.ssh.Sftp;
-import cn.nova.erp.framework.common.util.io.FileUtils;
+import cn.iocoder.yudao.framework.common.util.io.FileUtils;
 import cn.nova.erp.module.infra.framework.file.core.client.AbstractFileClient;
 import com.jcraft.jsch.JSch;
 

@@ -4,10 +4,10 @@ import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.util.http.HttpUtils;
-import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
+import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenCheckTokenRespVO;
@@ -35,12 +35,11 @@ import jakarta.servlet.http.HttpServletRequest;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-
-import cn.nova.erp.framework.common.exception.enums.GlobalErrorCodeConstants.BAD_REQUEST;
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception0;
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants.BAD_REQUEST;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception0;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 
 /**
  * 提供给外部应用调用为主

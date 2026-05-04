@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.framework.sms.core.client.impl;
 
-import cn.nova.erp.framework.common.core.KeyValue;
-import cn.nova.erp.framework.common.util.http.HttpUtils;
-import cn.nova.erp.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.common.core.KeyValue;
+import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
@@ -17,7 +17,7 @@ import org.mockito.MockedStatic;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.ArgumentMatchers.anyString;

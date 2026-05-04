@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.service.config;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.infra.controller.admin.config.vo.ConfigPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.config.vo.ConfigSaveReqVO;
 import cn.nova.erp.module.infra.convert.config.ConfigConvert;
@@ -15,7 +15,7 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**

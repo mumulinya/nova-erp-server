@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.service.social;
 
 import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.system.api.social.dto.SocialWxQrcodeReqDTO;
 import cn.nova.erp.module.system.api.social.dto.SocialWxaOrderNotifyConfirmReceiveReqDTO;
 import cn.nova.erp.module.system.api.social.dto.SocialWxaOrderUploadShippingInfoReqDTO;

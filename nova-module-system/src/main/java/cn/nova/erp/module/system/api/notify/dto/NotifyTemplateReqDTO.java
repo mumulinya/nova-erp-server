@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.api.notify.dto;
 
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.validation.InEnum;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.validation.InEnum;
 import lombok.Data;
 
 import jakarta.validation.constraints.NotEmpty;

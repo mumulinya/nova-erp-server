@@ -1,2 +1,2 @@
-cn.nova.erp.framework.tracer.config.YudaoTracerAutoConfiguration
-cn.nova.erp.framework.tracer.config.YudaoMetricsAutoConfiguration
+cn.iocoder.yudao.framework.tracer.config.YudaoTracerAutoConfiguration
+cn.iocoder.yudao.framework.tracer.config.YudaoMetricsAutoConfiguration

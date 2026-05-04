@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.service.stock;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.erp.controller.admin.stock.vo.stock.ErpStockPageReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.stock.ErpStockDO;
 import cn.nova.erp.module.erp.dal.mysql.stock.ErpStockMapper;
@@ -11,7 +11,7 @@ import org.springframework.validation.annotation.Validated;
 
 import java.math.BigDecimal;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.STOCK_COUNT_NEGATIVE;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.STOCK_COUNT_NEGATIVE2;
 

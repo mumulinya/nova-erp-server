@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.service.mail;
 
 import cn.hutool.core.map.MapUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.test.core.ut.BaseMockitoUnitTest;
-import cn.nova.erp.framework.test.core.util.RandomUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.test.core.util.RandomUtils;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailTemplateDO;
 import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
@@ -27,8 +27,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;

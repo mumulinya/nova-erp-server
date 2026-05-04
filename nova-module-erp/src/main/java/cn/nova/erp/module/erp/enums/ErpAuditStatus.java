@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.enums;
 
-import cn.nova.erp.framework.common.core.ArrayValuable;
+import cn.iocoder.yudao.framework.common.core.ArrayValuable;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

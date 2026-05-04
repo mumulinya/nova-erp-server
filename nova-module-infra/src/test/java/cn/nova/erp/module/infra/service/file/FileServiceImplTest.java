@@ -1,10 +1,10 @@
 package cn.nova.erp.module.infra.service.file;
 
 import cn.hutool.core.io.resource.ResourceUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.ObjectUtils;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
-import cn.nova.erp.framework.test.core.util.AssertUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.ObjectUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.test.core.util.AssertUtils;
 import cn.nova.erp.module.infra.controller.admin.file.vo.file.FilePageReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.file.FileDO;
 import cn.nova.erp.module.infra.dal.mysql.file.FileMapper;
@@ -18,9 +18,9 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import java.time.LocalDateTime;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildTime;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.FILE_NOT_EXISTS;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.same;

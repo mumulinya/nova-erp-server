@@ -1,8 +1,8 @@
 package cn.nova.erp.framework.desensitize.core.handler;
 
-import cn.nova.erp.framework.desensitize.core.DesensitizeTest;
-import cn.nova.erp.framework.desensitize.core.base.handler.DesensitizationHandler;
-import cn.nova.erp.framework.desensitize.core.annotation.Address;
+import cn.iocoder.yudao.framework.desensitize.core.DesensitizeTest;
+import cn.iocoder.yudao.framework.desensitize.core.base.handler.DesensitizationHandler;
+import cn.iocoder.yudao.framework.desensitize.core.annotation.Address;
 
 /**
  * {@link Address} 的脱敏处理器

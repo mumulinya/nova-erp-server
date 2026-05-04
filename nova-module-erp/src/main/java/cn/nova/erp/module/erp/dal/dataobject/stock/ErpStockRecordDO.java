@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.dal.dataobject.stock;
 
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductDO;
 import cn.nova.erp.module.erp.enums.stock.ErpStockRecordBizTypeEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;

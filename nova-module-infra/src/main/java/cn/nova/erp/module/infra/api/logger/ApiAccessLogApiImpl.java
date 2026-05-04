@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.api.logger;
 
-import cn.nova.erp.framework.common.biz.infra.logger.ApiAccessLogCommonApi;
-import cn.nova.erp.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
+import cn.iocoder.yudao.framework.common.biz.infra.logger.ApiAccessLogCommonApi;
+import cn.iocoder.yudao.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
 import cn.nova.erp.module.infra.service.logger.ApiAccessLogService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;

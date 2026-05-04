@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.service.logistics;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -13,9 +13,9 @@ import cn.nova.erp.module.erp.controller.admin.logistics.vo.*;
 import cn.nova.erp.module.erp.dal.dataobject.logistics.*;
 import cn.nova.erp.module.erp.dal.mysql.logistics.LogisticsOrderMapper;
 import cn.nova.erp.module.erp.service.sale.ErpSaleOutService;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 
 @Service
 @Validated
@@ -65,7 +65,7 @@ public class LogisticsOrderServiceImpl implements LogisticsOrderService {
             if (newStatus == 1) {
                 // ★ 核心校验：如果设置了出库时间，当前时间必须 >= 出库时间才允许发货
                 if (order.getOutTime() != null && LocalDateTime.now().isBefore(order.getOutTime())) {
-                    throw exception(new cn.nova.erp.framework.common.exception.ErrorCode(
+                    throw exception(new cn.iocoder.yudao.framework.common.exception.ErrorCode(
                             1_030_100_001, "未到出库时间（" + order.getOutTime() + "），暂不能发货"));
                 }
                 Long vehicleId = order.getVehicleId();

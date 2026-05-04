@@ -1,6 +1,6 @@
 package cn.nova.erp.framework.datapermission.core.aop;
 
-import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
+import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

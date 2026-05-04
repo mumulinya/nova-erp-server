@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.mail;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.system.controller.admin.mail.vo.account.MailAccountPageReqVO;
 import cn.nova.erp.module.system.controller.admin.mail.vo.account.MailAccountSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;

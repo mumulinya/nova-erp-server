@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.enums.logistics;
 
-import cn.nova.erp.framework.common.core.ArrayValuable;
+import cn.iocoder.yudao.framework.common.core.ArrayValuable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import java.util.Arrays;

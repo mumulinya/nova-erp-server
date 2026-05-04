@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.dal.mysql.oauth2;
 
-import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
-import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
 import org.apache.ibatis.annotations.Mapper;
 

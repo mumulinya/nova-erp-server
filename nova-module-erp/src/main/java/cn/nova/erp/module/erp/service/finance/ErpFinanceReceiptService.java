@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.service.finance;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.erp.controller.admin.finance.vo.receipt.ErpFinanceReceiptPageReqVO;
 import cn.nova.erp.module.erp.controller.admin.finance.vo.receipt.ErpFinanceReceiptSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.finance.ErpFinanceReceiptDO;

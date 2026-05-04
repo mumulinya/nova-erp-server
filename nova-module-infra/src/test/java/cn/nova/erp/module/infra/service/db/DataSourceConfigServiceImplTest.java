@@ -3,9 +3,9 @@ package cn.nova.erp.module.infra.service.db;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.crypto.symmetric.AES;
-import cn.nova.erp.framework.mybatis.core.type.EncryptTypeHandler;
-import cn.nova.erp.framework.mybatis.core.util.JdbcUtils;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.mybatis.core.type.EncryptTypeHandler;
+import cn.iocoder.yudao.framework.mybatis.core.util.JdbcUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.db.DataSourceConfigDO;
 import cn.nova.erp.module.infra.dal.mysql.db.DataSourceConfigMapper;
@@ -21,10 +21,10 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomLongId;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomLongId;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.DATA_SOURCE_CONFIG_NOT_EXISTS;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;

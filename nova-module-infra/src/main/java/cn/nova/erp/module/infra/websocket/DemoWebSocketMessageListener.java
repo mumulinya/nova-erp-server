@@ -1,9 +1,9 @@
 package cn.nova.erp.module.infra.websocket;
 
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.websocket.core.listener.WebSocketMessageListener;
-import cn.nova.erp.framework.websocket.core.sender.WebSocketMessageSender;
-import cn.nova.erp.framework.websocket.core.util.WebSocketFrameworkUtils;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.websocket.core.listener.WebSocketMessageListener;
+import cn.iocoder.yudao.framework.websocket.core.sender.WebSocketMessageSender;
+import cn.iocoder.yudao.framework.websocket.core.util.WebSocketFrameworkUtils;
 import cn.nova.erp.module.infra.websocket.message.DemoReceiveMessage;
 import cn.nova.erp.module.infra.websocket.message.DemoSendMessage;
 import org.springframework.beans.factory.annotation.Autowired;

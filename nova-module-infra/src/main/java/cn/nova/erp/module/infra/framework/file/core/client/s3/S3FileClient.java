@@ -4,7 +4,7 @@ import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.BooleanUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpUtil;
-import cn.nova.erp.framework.common.util.http.HttpUtils;
+import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
 import cn.nova.erp.module.infra.framework.file.core.client.AbstractFileClient;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.AwsCredentialsProvider;

@@ -1,11 +1,11 @@
 package cn.nova.erp.module.infra.service.logger;
 
-import cn.nova.erp.framework.common.biz.infra.logger.dto.ApiErrorLogCreateReqDTO;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.common.util.string.StrUtils;
-import cn.nova.erp.framework.tenant.core.context.TenantContextHolder;
-import cn.nova.erp.framework.tenant.core.util.TenantUtils;
+import cn.iocoder.yudao.framework.common.biz.infra.logger.dto.ApiErrorLogCreateReqDTO;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.string.StrUtils;
+import cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder;
+import cn.iocoder.yudao.framework.tenant.core.util.TenantUtils;
 import cn.nova.erp.module.infra.controller.admin.logger.vo.apierrorlog.ApiErrorLogPageReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.logger.ApiErrorLogDO;
 import cn.nova.erp.module.infra.dal.mysql.logger.ApiErrorLogMapper;
@@ -17,7 +17,7 @@ import org.springframework.validation.annotation.Validated;
 
 import java.time.LocalDateTime;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.infra.dal.dataobject.logger.ApiErrorLogDO.REQUEST_PARAMS_MAX_LENGTH;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.API_ERROR_LOG_NOT_FOUND;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.API_ERROR_LOG_PROCESSED;

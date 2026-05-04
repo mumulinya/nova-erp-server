@@ -2,9 +2,9 @@ package cn.nova.erp.module.system.api.user;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
-import cn.nova.erp.framework.datapermission.core.util.DataPermissionUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
+import cn.iocoder.yudao.framework.datapermission.core.util.DataPermissionUtils;
 import cn.nova.erp.module.system.api.user.dto.AdminUserRespDTO;
 import cn.nova.erp.module.system.dal.dataobject.dept.DeptDO;
 import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
 
 /**
  * Admin 用户 API 实现类

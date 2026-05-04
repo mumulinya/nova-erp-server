@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.permission;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.system.controller.admin.permission.vo.role.RolePageReqVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.role.RoleSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.permission.RoleDO;

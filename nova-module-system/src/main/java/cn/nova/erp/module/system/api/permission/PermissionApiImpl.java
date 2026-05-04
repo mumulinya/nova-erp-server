@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.permission;
 
-import cn.nova.erp.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
 import cn.nova.erp.module.system.service.permission.PermissionService;
 import org.springframework.stereotype.Service;
 

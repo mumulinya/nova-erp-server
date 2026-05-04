@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.service.logistics;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
 import cn.nova.erp.module.erp.controller.admin.logistics.vo.LogisticsOrderSaveReqVO;
 import cn.nova.erp.module.erp.controller.admin.logistics.vo.LogisticsRouteSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.logistics.LogisticsOrderDO;

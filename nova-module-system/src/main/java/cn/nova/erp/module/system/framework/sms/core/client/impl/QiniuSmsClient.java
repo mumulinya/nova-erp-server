@@ -9,8 +9,8 @@ import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.digest.HmacAlgorithm;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import cn.nova.erp.framework.common.core.KeyValue;
-import cn.nova.erp.framework.common.util.http.HttpUtils;
+import cn.iocoder.yudao.framework.common.core.KeyValue;
+import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
 import cn.nova.erp.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
@@ -22,7 +22,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 import java.util.function.Function;
 
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
 
 /**
  * 七牛云短信客户端的实现类

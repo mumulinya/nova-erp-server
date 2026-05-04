@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.api.dict;
 
-import cn.nova.erp.framework.common.biz.system.dict.DictDataCommonApi;
+import cn.iocoder.yudao.framework.common.biz.system.dict.DictDataCommonApi;
 
 import java.util.Collection;
 

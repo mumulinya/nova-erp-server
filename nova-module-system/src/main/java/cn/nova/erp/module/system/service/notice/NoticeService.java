@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.notice;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.system.controller.admin.notice.vo.NoticePageReqVO;
 import cn.nova.erp.module.system.controller.admin.notice.vo.NoticeSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.notice.NoticeDO;

@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.dal.mysql.sale;
 
-import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
 import cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleAiAnalysisDO;
 import org.apache.ibatis.annotations.Mapper;
 

@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.convert.codegen;
 
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenDetailRespVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenPreviewRespVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.column.CodegenColumnRespVO;

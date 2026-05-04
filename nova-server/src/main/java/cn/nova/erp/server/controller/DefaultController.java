@@ -1,14 +1,14 @@
 package cn.nova.erp.server.controller;
 
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.util.servlet.ServletUtils;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.util.servlet.ServletUtils;
 import jakarta.annotation.security.PermitAll;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static cn.nova.erp.framework.common.exception.enums.GlobalErrorCodeConstants.NOT_IMPLEMENTED;
+import static cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants.NOT_IMPLEMENTED;
 
 /**
  * 默认 Controller，解决部分 module 未开启时的 404 提示。

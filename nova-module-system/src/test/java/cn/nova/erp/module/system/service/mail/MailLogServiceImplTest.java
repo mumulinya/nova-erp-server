@@ -1,9 +1,9 @@
 package cn.nova.erp.module.system.service.mail;
 
 import cn.hutool.core.map.MapUtil;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.controller.admin.mail.vo.log.MailLogPageReqVO;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailLogDO;
@@ -19,11 +19,11 @@ import java.util.Collection;
 import java.util.Map;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildTime;
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
-import static cn.nova.erp.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
+import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

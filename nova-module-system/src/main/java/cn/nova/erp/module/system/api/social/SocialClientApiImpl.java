@@ -4,7 +4,7 @@ import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.api.social.dto.*;
 import cn.nova.erp.module.system.enums.social.SocialTypeEnum;
 import cn.nova.erp.module.system.service.social.SocialClientService;
@@ -19,7 +19,7 @@ import org.springframework.validation.annotation.Validated;
 import java.util.List;
 
 import static cn.hutool.core.collection.CollUtil.findOne;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertList;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
 
 /**
  * 社交应用的 API 实现类

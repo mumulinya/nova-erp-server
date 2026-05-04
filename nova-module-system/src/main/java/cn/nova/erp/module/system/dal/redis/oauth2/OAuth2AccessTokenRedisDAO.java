@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.dal.redis.oauth2;
 
 import cn.hutool.core.date.LocalDateTimeUtil;
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
-import cn.nova.erp.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;

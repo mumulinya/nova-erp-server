@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.service.product;
 
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.erp.controller.admin.product.vo.category.ErpProductCategoryListReqVO;
 import cn.nova.erp.module.erp.controller.admin.product.vo.category.ErpProductCategorySaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductCategoryDO;
@@ -14,7 +14,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.*;
 
 /**

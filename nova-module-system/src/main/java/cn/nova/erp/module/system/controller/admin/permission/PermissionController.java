@@ -1,7 +1,7 @@
 package cn.nova.erp.module.system.controller.admin.permission;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.nova.erp.module.system.controller.admin.permission.vo.permission.PermissionAssignRoleDataScopeReqVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.permission.PermissionAssignRoleMenuReqVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.permission.PermissionAssignUserRoleReqVO;
@@ -18,7 +18,7 @@ import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import java.util.Set;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 /**
  * 权限 Controller，提供赋予用户、角色的权限的 API 接口

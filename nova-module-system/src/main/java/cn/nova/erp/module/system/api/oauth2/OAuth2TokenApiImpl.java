@@ -1,10 +1,10 @@
 package cn.nova.erp.module.system.api.oauth2;
 
-import cn.nova.erp.framework.common.biz.system.oauth2.OAuth2TokenCommonApi;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCheckRespDTO;
-import cn.nova.erp.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCreateReqDTO;
-import cn.nova.erp.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.oauth2.OAuth2TokenCommonApi;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCheckRespDTO;
+import cn.iocoder.yudao.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCreateReqDTO;
+import cn.iocoder.yudao.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenRespDTO;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import cn.nova.erp.module.system.service.oauth2.OAuth2TokenService;
 import org.springframework.stereotype.Service;

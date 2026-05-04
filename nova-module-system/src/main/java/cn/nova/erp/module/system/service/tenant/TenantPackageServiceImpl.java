@@ -2,9 +2,9 @@ package cn.nova.erp.module.system.service.tenant;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.tenant.vo.packages.TenantPackagePageReqVO;
 import cn.nova.erp.module.system.controller.admin.tenant.vo.packages.TenantPackageSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.tenant.TenantDO;
@@ -19,7 +19,7 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**

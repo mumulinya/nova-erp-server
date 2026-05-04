@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.service.logistics;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import jakarta.annotation.Resource;
@@ -9,7 +9,7 @@ import java.util.List;
 import cn.nova.erp.module.erp.controller.admin.logistics.vo.*;
 import cn.nova.erp.module.erp.dal.dataobject.logistics.LogisticsRouteDO;
 import cn.nova.erp.module.erp.dal.mysql.logistics.LogisticsRouteMapper;
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 
 @Service
 @Validated

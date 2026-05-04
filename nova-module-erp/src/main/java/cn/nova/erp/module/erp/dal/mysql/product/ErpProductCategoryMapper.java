@@ -1,7 +1,7 @@
 package cn.nova.erp.module.erp.dal.mysql.product;
 
-import cn.nova.erp.framework.mybatis.core.mapper.BaseMapperX;
-import cn.nova.erp.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
 import cn.nova.erp.module.erp.controller.admin.product.vo.category.ErpProductCategoryListReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductCategoryDO;
 import org.apache.ibatis.annotations.Mapper;

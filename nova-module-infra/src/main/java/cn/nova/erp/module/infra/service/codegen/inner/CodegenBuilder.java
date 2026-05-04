@@ -3,7 +3,7 @@ package cn.nova.erp.module.infra.service.codegen.inner;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.nova.erp.module.infra.convert.codegen.CodegenConvert;
 import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenColumnDO;
 import cn.nova.erp.module.infra.dal.dataobject.codegen.CodegenTableDO;
@@ -64,7 +64,7 @@ public class CodegenBuilder {
      */
     public static final String TENANT_ID_FIELD = "tenantId";
     /**
-     * {@link cn.nova.erp.framework.mybatis.core.dataobject.BaseDO} 的字段
+     * {@link cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO} 的字段
      */
     public static final Set<String> BASE_DO_FIELDS = new HashSet<>();
     /**

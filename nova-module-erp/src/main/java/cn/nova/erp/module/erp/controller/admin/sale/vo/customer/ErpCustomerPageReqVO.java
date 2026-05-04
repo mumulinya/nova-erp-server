@@ -2,7 +2,7 @@ package cn.nova.erp.module.erp.controller.admin.sale.vo.customer;
 
 import lombok.*;
 import io.swagger.v3.oas.annotations.media.Schema;
-import cn.nova.erp.framework.common.pojo.PageParam;
+import cn.iocoder.yudao.framework.common.pojo.PageParam;
 
 @Schema(description = "管理后台 - ERP 客户分页 Request VO")
 @Data

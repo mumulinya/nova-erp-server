@@ -1,11 +1,11 @@
 package cn.nova.erp.module.system.convert.oauth2;
 
 import cn.hutool.core.date.LocalDateTimeUtil;
-import cn.nova.erp.framework.common.core.KeyValue;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils;
+import cn.iocoder.yudao.framework.common.core.KeyValue;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.open.OAuth2OpenCheckTokenRespVO;

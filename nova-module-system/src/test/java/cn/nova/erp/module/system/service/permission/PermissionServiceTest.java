@@ -2,9 +2,9 @@ package cn.nova.erp.module.system.service.permission;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import cn.nova.erp.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.biz.system.permission.dto.DeptDataPermissionRespDTO;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.system.dal.dataobject.dept.DeptDO;
 import cn.nova.erp.module.system.dal.dataobject.permission.MenuDO;
 import cn.nova.erp.module.system.dal.dataobject.permission.RoleDO;
@@ -27,10 +27,10 @@ import java.util.List;
 import java.util.Set;
 
 import static cn.hutool.core.collection.ListUtil.toList;
-import static cn.nova.erp.framework.common.util.collection.SetUtils.asSet;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomLongId;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.common.util.collection.SetUtils.asSet;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomLongId;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
 import static java.util.Collections.singleton;
 import static java.util.Collections.singletonList;
 import static org.junit.jupiter.api.Assertions.*;

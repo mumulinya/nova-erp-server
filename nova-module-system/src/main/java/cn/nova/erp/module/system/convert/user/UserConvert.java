@@ -1,8 +1,8 @@
 package cn.nova.erp.module.system.convert.user;
 
-import cn.nova.erp.framework.common.util.collection.CollectionUtils;
-import cn.nova.erp.framework.common.util.collection.MapUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
+import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.controller.admin.dept.vo.dept.DeptSimpleRespVO;
 import cn.nova.erp.module.system.controller.admin.dept.vo.post.PostSimpleRespVO;
 import cn.nova.erp.module.system.controller.admin.permission.vo.role.RoleSimpleRespVO;

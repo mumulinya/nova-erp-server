@@ -1,17 +1,17 @@
 package cn.nova.erp.framework.dict.core.util;
 
 import cn.hutool.core.collection.ListUtil;
-import cn.nova.erp.framework.common.biz.system.dict.DictDataCommonApi;
-import cn.nova.erp.framework.common.biz.system.dict.dto.DictDataRespDTO;
-import cn.nova.erp.framework.dict.core.DictFrameworkUtils;
-import cn.nova.erp.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.common.biz.system.dict.DictDataCommonApi;
+import cn.iocoder.yudao.framework.common.biz.system.dict.dto.DictDataRespDTO;
+import cn.iocoder.yudao.framework.dict.core.DictFrameworkUtils;
+import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;

@@ -1,8 +1,8 @@
 package cn.nova.erp.framework.datapermission.core.aop;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
-import cn.nova.erp.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
+import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
 import org.aopalliance.intercept.MethodInvocation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

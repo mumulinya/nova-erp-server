@@ -3,8 +3,8 @@ package cn.nova.erp.module.system.service.mail;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Validator;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailAccountDO;
 import cn.nova.erp.module.system.dal.dataobject.mail.MailTemplateDO;
 import cn.nova.erp.module.system.dal.dataobject.user.AdminUserDO;
@@ -25,7 +25,7 @@ import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.Map;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**

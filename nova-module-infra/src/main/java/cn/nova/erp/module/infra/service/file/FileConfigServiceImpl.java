@@ -2,9 +2,9 @@ package cn.nova.erp.module.infra.service.file;
 
 import cn.hutool.core.io.resource.ResourceUtil;
 import cn.hutool.core.util.IdUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.json.JsonUtils;
-import cn.nova.erp.framework.common.util.validation.ValidationUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
+import cn.iocoder.yudao.framework.common.util.validation.ValidationUtils;
 import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
 import cn.nova.erp.module.infra.convert.file.FileConfigConvert;
@@ -29,8 +29,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.cache.CacheUtils.buildAsyncReloadingCache;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.cache.CacheUtils.buildAsyncReloadingCache;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.FILE_CONFIG_DELETE_FAIL_MASTER;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.FILE_CONFIG_NOT_EXISTS;
 

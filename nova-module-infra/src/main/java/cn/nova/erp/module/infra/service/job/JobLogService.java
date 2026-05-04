@@ -1,7 +1,7 @@
 package cn.nova.erp.module.infra.service.job;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.quartz.core.service.JobLogFrameworkService;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.quartz.core.service.JobLogFrameworkService;
 import cn.nova.erp.module.infra.controller.admin.job.vo.log.JobLogPageReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.job.JobLogDO;
 

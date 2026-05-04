@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.mail;
 
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.nova.erp.module.system.mq.message.mail.MailSendMessage;
 
 import java.io.File;

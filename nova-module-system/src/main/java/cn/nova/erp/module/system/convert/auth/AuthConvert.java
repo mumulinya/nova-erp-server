@@ -2,7 +2,7 @@ package cn.nova.erp.module.system.convert.auth;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
 import cn.nova.erp.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
 import cn.nova.erp.module.system.api.social.dto.SocialUserBindReqDTO;
@@ -20,8 +20,8 @@ import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.filterList;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.filterList;
 import static cn.nova.erp.module.system.dal.dataobject.permission.MenuDO.ID_ROOT;
 
 @Mapper

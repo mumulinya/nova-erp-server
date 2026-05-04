@@ -4,10 +4,10 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import cn.nova.erp.framework.common.enums.CommonStatusEnum;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
-import cn.nova.erp.framework.common.util.string.StrUtils;
+import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.util.string.StrUtils;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
@@ -24,7 +24,7 @@ import org.springframework.validation.annotation.Validated;
 import java.util.Collection;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.system.enums.ErrorCodeConstants.*;
 
 /**

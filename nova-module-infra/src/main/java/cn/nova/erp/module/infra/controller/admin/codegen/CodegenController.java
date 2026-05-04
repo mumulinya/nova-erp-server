@@ -2,9 +2,9 @@ package cn.nova.erp.module.infra.controller.admin.codegen;
 
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.ZipUtil;
-import cn.nova.erp.framework.common.pojo.CommonResult;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenCreateListReqVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenDetailRespVO;
 import cn.nova.erp.module.infra.controller.admin.codegen.vo.CodegenPreviewRespVO;
@@ -33,8 +33,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import static cn.nova.erp.framework.common.pojo.CommonResult.success;
-import static cn.nova.erp.framework.security.core.util.SecurityFrameworkUtils.getLoginUserNickname;
+import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserNickname;
 import static cn.nova.erp.module.infra.framework.file.core.utils.FileTypeUtils.writeAttachment;
 
 @Tag(name = "管理后台 - 代码生成器")

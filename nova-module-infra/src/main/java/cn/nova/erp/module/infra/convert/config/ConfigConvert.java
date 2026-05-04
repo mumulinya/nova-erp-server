@@ -1,6 +1,6 @@
 package cn.nova.erp.module.infra.convert.config;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.infra.controller.admin.config.vo.ConfigRespVO;
 import cn.nova.erp.module.infra.controller.admin.config.vo.ConfigSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.config.ConfigDO;

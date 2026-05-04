@@ -1,6 +1,6 @@
 package cn.nova.erp.module.erp.service.sale;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.erp.controller.admin.sale.vo.order.ErpSaleOrderPageReqVO;
 import cn.nova.erp.module.erp.controller.admin.sale.vo.order.ErpSaleOrderSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.sale.ErpSaleOrderDO;

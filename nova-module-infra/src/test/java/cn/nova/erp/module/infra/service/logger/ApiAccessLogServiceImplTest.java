@@ -1,10 +1,10 @@
 package cn.nova.erp.module.infra.service.logger;
 
-import cn.nova.erp.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
-import cn.nova.erp.framework.common.enums.UserTypeEnum;
-import cn.nova.erp.framework.common.exception.enums.GlobalErrorCodeConstants;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
+import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
+import cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
 import cn.nova.erp.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.logger.ApiAccessLogDO;
 import cn.nova.erp.module.infra.dal.mysql.logger.ApiAccessLogMapper;
@@ -15,10 +15,10 @@ import org.springframework.context.annotation.Import;
 import java.time.Duration;
 import java.util.List;
 
-import static cn.nova.erp.framework.common.util.date.LocalDateTimeUtils.*;
-import static cn.nova.erp.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.nova.erp.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.*;
+import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
+import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Import(ApiAccessLogServiceImpl.class)

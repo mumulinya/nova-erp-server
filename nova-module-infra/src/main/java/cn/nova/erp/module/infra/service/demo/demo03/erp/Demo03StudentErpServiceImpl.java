@@ -1,9 +1,9 @@
 package cn.nova.erp.module.infra.service.demo.demo03.erp;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.pojo.PageParam;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageParam;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpPageReqVO;
 import cn.nova.erp.module.infra.controller.admin.demo.demo03.erp.vo.Demo03StudentErpSaveReqVO;
 import cn.nova.erp.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
@@ -19,7 +19,7 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.nova.erp.module.infra.enums.ErrorCodeConstants.*;
 
 /**

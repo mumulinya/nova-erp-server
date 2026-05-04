@@ -1,6 +1,6 @@
 package cn.nova.erp.module.system.service.oauth2;
 
-import cn.nova.erp.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
 import cn.nova.erp.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;

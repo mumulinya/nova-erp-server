@@ -1,9 +1,9 @@
 package cn.nova.erp.module.erp.service.stock;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.nova.erp.framework.common.pojo.PageResult;
-import cn.nova.erp.framework.common.util.number.MoneyUtils;
-import cn.nova.erp.framework.common.util.object.BeanUtils;
+import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.framework.common.util.number.MoneyUtils;
+import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
 import cn.nova.erp.module.erp.controller.admin.stock.vo.move.ErpStockMovePageReqVO;
 import cn.nova.erp.module.erp.controller.admin.stock.vo.move.ErpStockMoveSaveReqVO;
 import cn.nova.erp.module.erp.dal.dataobject.product.ErpProductDO;
@@ -28,8 +28,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import static cn.nova.erp.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.*;
+import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.*;
 import static cn.nova.erp.module.erp.enums.ErrorCodeConstants.*;
 
 // TODO 芋艿：记录操作日志

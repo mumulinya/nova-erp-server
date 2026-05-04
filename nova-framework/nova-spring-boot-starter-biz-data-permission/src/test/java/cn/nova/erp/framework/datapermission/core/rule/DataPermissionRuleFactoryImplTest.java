@@ -1,8 +1,8 @@
 package cn.nova.erp.framework.datapermission.core.rule;
 
-import cn.nova.erp.framework.datapermission.core.annotation.DataPermission;
-import cn.nova.erp.framework.datapermission.core.aop.DataPermissionContextHolder;
-import cn.nova.erp.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
+import cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionContextHolder;
+import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
 import net.sf.jsqlparser.expression.Alias;
 import net.sf.jsqlparser.expression.Expression;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-import static cn.nova.erp.framework.test.core.util.RandomUtils.randomString;
+import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomString;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

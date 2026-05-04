@@ -3,7 +3,7 @@ package cn.nova.erp.module.infra.service.db;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.StrUtil;
-import cn.nova.erp.framework.mybatis.core.util.JdbcUtils;
+import cn.iocoder.yudao.framework.mybatis.core.util.JdbcUtils;
 import cn.nova.erp.module.infra.dal.dataobject.db.DataSourceConfigDO;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;

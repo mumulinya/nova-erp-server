@@ -2,7 +2,7 @@ package cn.nova.erp.module.system.service.oauth2;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
-import cn.nova.erp.framework.common.util.date.DateUtils;
+import cn.iocoder.yudao.framework.common.util.date.DateUtils;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
 import cn.nova.erp.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 import cn.nova.erp.module.system.dal.mysql.oauth2.OAuth2ApproveMapper;
@@ -15,7 +15,7 @@ import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 
-import static cn.nova.erp.framework.common.util.collection.CollectionUtils.convertSet;
+import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
 
 /**
  * OAuth2 批准 Service 实现类
