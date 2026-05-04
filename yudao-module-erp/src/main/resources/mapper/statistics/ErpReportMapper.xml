@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="nova.erp.module.erp.dal.mysql.statistics.ErpReportMapper">
+<mapper namespace="cn.iocoder.yudao.module.erp.dal.mysql.statistics.ErpReportMapper">
 
-    <!-- 采购汇总报表 -->
-    <select id="getPurchaseReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpPurchaseReportRespVO">
+    <!-- 閲囪喘姹囨€绘姤琛?-->
+    <select id="getPurchaseReport" resultType="cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpPurchaseReportRespVO">
         SELECT
             s.id AS supplierId,
             s.name AS supplierName,
@@ -42,8 +42,8 @@
         ORDER BY netPrice DESC
     </select>
 
-    <!-- 销售汇总报表 -->
-    <select id="getSaleReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpSaleReportRespVO">
+    <!-- 閿€鍞眹鎬绘姤琛?-->
+    <select id="getSaleReport" resultType="cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpSaleReportRespVO">
         SELECT
             c.id AS customerId,
             c.name AS customerName,
@@ -82,8 +82,8 @@
         ORDER BY netPrice DESC
     </select>
 
-    <!-- 库存预警报表 -->
-    <select id="getStockAlertReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpStockAlertRespVO">
+    <!-- 搴撳瓨棰勮鎶ヨ〃 -->
+    <select id="getStockAlertReport" resultType="cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpStockAlertRespVO">
         SELECT
             p.id AS productId,
             p.name AS productName,
@@ -102,8 +102,8 @@
         ORDER BY gapCount DESC
     </select>
 
-    <!-- 物流费用汇总报表 -->
-    <select id="getLogisticsCostReport" resultType="nova.erp.module.erp.controller.admin.statistics.vo.report.ErpLogisticsCostReportRespVO">
+    <!-- 鐗╂祦璐圭敤姹囨€绘姤琛?-->
+    <select id="getLogisticsCostReport" resultType="cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.report.ErpLogisticsCostReportRespVO">
         SELECT
             o.order_no AS orderNo,
             c.transport_cost AS transportCost,

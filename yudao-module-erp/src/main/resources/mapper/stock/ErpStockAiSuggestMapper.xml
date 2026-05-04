@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="nova.erp.module.erp.dal.mysql.stock.ErpStockAiSuggestMapper">
+<mapper namespace="cn.iocoder.yudao.module.erp.dal.mysql.stock.ErpStockAiSuggestMapper">
 
     <select id="selectStockStatsForAi" resultType="java.util.Map">
         SELECT
@@ -29,7 +29,7 @@
         GROUP BY i.product_id, i.warehouse_id
     </select>
 
-    <select id="selectLatestSuggests" resultType="nova.erp.module.erp.dal.dataobject.stock.ErpStockAiSuggestDO">
+    <select id="selectLatestSuggests" resultType="cn.iocoder.yudao.module.erp.dal.dataobject.stock.ErpStockAiSuggestDO">
         SELECT * FROM erp_stock_ai_suggest
         WHERE deleted = 0
         AND create_time = (

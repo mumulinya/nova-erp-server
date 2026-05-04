@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="nova.erp.module.erp.dal.mysql.statistics.ErpDashboardStatisticsMapper">
+<mapper namespace="cn.iocoder.yudao.module.erp.dal.mysql.statistics.ErpDashboardStatisticsMapper">
 
-    <!-- 今日销售订单数 -->
+    <!-- 浠婃棩閿€鍞鍗曟暟 -->
     <select id="getTodayOrderCount" resultType="java.lang.Integer">
         SELECT COUNT(*)
         FROM erp_sale_order
@@ -13,7 +13,7 @@
           </if>
     </select>
 
-    <!-- 今日出库数 -->
+    <!-- 浠婃棩鍑哄簱鏁?-->
     <select id="getTodayOutCount" resultType="java.lang.Integer">
         SELECT COUNT(*)
         FROM erp_sale_out
@@ -24,7 +24,7 @@
           </if>
     </select>
 
-    <!-- 在途运输数 -->
+    <!-- 鍦ㄩ€旇繍杈撴暟 -->
     <select id="getTransportingCount" resultType="java.lang.Integer">
         SELECT COUNT(*)
         FROM logistics_order
@@ -35,7 +35,7 @@
           </if>
     </select>
 
-    <!-- 库存预警数：库存 < 安全库存 的产品（去重） -->
+    <!-- 搴撳瓨棰勮鏁帮細搴撳瓨 < 瀹夊叏搴撳瓨 鐨勪骇鍝侊紙鍘婚噸锛?-->
     <select id="getStockAlertCount" resultType="java.lang.Integer">
         SELECT COUNT(DISTINCT s.product_id)
         FROM erp_stock s
@@ -47,8 +47,8 @@
           </if>
     </select>
 
-    <!-- 近N天每日销售金额 -->
-    <select id="getSaleTrend" resultType="nova.erp.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO">
+    <!-- 杩慛澶╂瘡鏃ラ攢鍞噾棰?-->
+    <select id="getSaleTrend" resultType="cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO">
         SELECT DATE_FORMAT(out_time, '%Y-%m-%d') AS date,
                IFNULL(SUM(total_price), 0) AS value
         FROM erp_sale_out
@@ -61,7 +61,7 @@
         ORDER BY date
     </select>
 
-    <!-- 库存健康度：正常数（库存 >= 安全库存） -->
+    <!-- 搴撳瓨鍋ュ悍搴︼細姝ｅ父鏁帮紙搴撳瓨 >= 瀹夊叏搴撳瓨锛?-->
     <select id="getStockNormalCount" resultType="java.lang.Integer">
         SELECT COUNT(DISTINCT s.product_id)
         FROM erp_stock s
@@ -74,7 +74,7 @@
           </if>
     </select>
 
-    <!-- 库存健康度：预警数（0 < 库存 < 安全库存） -->
+    <!-- 搴撳瓨鍋ュ悍搴︼細棰勮鏁帮紙0 < 搴撳瓨 < 瀹夊叏搴撳瓨锛?-->
     <select id="getStockAlertProductCount" resultType="java.lang.Integer">
         SELECT COUNT(DISTINCT s.product_id)
         FROM erp_stock s
@@ -87,7 +87,7 @@
           </if>
     </select>
 
-    <!-- 库存健康度：缺货数（库存 <= 0） -->
+    <!-- 搴撳瓨鍋ュ悍搴︼細缂鸿揣鏁帮紙搴撳瓨 <= 0锛?-->
     <select id="getStockOutOfStockCount" resultType="java.lang.Integer">
         SELECT COUNT(DISTINCT s.product_id)
         FROM erp_stock s
@@ -99,7 +99,7 @@
           </if>
     </select>
 
-    <!-- 物流状态分布 -->
+    <!-- 鐗╂祦鐘舵€佸垎甯?-->
     <select id="getLogisticsCountByStatus" resultType="java.lang.Integer">
         SELECT COUNT(*)
         FROM logistics_order
@@ -110,8 +110,8 @@
           </if>
     </select>
 
-    <!-- 近N天每日采购金额 -->
-    <select id="getPurchaseTrend" resultType="nova.erp.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO">
+    <!-- 杩慛澶╂瘡鏃ラ噰璐噾棰?-->
+    <select id="getPurchaseTrend" resultType="cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO">
         SELECT DATE_FORMAT(in_time, '%Y-%m-%d') AS date,
                IFNULL(SUM(total_price), 0) AS value
         FROM erp_purchase_in
@@ -124,8 +124,8 @@
         ORDER BY date
     </select>
 
-    <!-- 近N天物流费用汇总趋势 -->
-    <select id="getLogisticsCostTrend" resultType="nova.erp.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO">
+    <!-- 杩慛澶╃墿娴佽垂鐢ㄦ眹鎬昏秼鍔?-->
+    <select id="getLogisticsCostTrend" resultType="cn.iocoder.yudao.module.erp.controller.admin.statistics.vo.dashboard.ErpDashboardTrendRespVO">
         SELECT DATE_FORMAT(c.create_time, '%Y-%m-%d') AS date,
                IFNULL(SUM(c.total_cost), 0) AS value
         FROM logistics_cost c
